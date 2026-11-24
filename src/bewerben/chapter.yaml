@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Bewerben
+summary: Sophie sucht einen Ferienjob und findet die Anzeige einer Bücherei. Du lernst Berufe und Schulsysteme kennen und schreibst eine formelle E-Mail, einen Lebenslauf und eine Bewerbung. Am Ende bereitest du dich auf ein Vorstellungsgespräch vor.
+pages: [das-brauchst-du, berufswelt, bildungssystem, formelle-email]
