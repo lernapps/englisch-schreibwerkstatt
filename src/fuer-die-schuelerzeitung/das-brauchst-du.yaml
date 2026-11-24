@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+description: "Was du für die Schülerzeitung schon können solltest: simple past, Fragewörter, Alltagstexte, Figuren, Ort und Handlung."
+recap:
+  - englisch/simple-past
+  - englisch/fragewoerter
+  - englisch/alltagstexte
+  - englisch/figuren-ort-handlung
+scope: Die Seite wiederholt vier Bausteine, die dieses Kapitel voraussetzt (simple past mit regelmäßigen Verben, Fragewörter, Alltagstexte, Figuren, Ort und Handlung), jeweils mit dem Ich-kann-Satz der Lernlandkarte und einer kurzen Erinnerung. Es gibt keine neue Regel. Eine einzige Übung prüft, ob das simple past mit der Endung -ed noch sitzt. Die Seiten danach üben Bericht, Interview, Sachtext und erfundener Text sowie Umwandeln.
+blocks:
+  - type: section
+    id: wiederholung
+    title: Das solltest du schon können
+    blocks:
+      - type: text
+        text: "Die Schülerzeitung „The Millbrook Messenger“ erzählt von Dingen, die passiert sind, und stellt Fragen. Dafür helfen dir vier Dinge, die du schon kennst. Kannst du sie noch?"
+      - type: table
+        caption: Vier Bausteine und was du dazu kannst
+        header: [Baustein, Ich kann]
+        rows:
+          - [
+              "Simple past",
+              "Ich kann im simple past mit regelmäßigen Verben (-ed) von abgeschlossenen Ereignissen erzählen.",
+            ]
+          - ["Fragewörter", "Ich kann Fragen mit who, what, where, when, why, how und whose stellen."]
+          - [
+              "Alltagstexte",
+              "Ich kann Alltagstexte wie Fahrpläne, Speisekarten, Flyer und Schilder erkennen und ihnen gezielt Informationen entnehmen.",
+            ]
+          - [
+              "Figuren, Ort und Handlung",
+              "Ich kann in einer Geschichte oder einem Film herausfinden, wer vorkommt, wo und wann sie spielt und was passiert.",
+            ]
+      - type: text
+        text: |
+          **Simple past:** Bei regelmäßigen Verben hängst du **-ed** an: *walk* wird zu *walked*, *like* zu *liked*. Du brauchst es für Berichte, denn ein Bericht erzählt, was schon passiert ist.
+
+          **Fragewörter:** *who*, *what*, *where*, *when*, *why*, *how* und *whose* beginnen eine Frage. Du brauchst sie für Interviews.
+
+          **Alltagstexte:** Schilder, Flyer und Speisekarten geben Informationen, keine Geschichten. Das hilft dir, Sachtexte zu erkennen.
+
+          **Figuren, Ort und Handlung:** Wer kommt vor? Wo und wann spielt es? Was passiert? Mit diesen drei Fragen liest du eine Geschichte, bevor du sie in einen Bericht umschreibst.
+      - type: single-choice
+        id: recap-simple-past
+        text: "Welcher Satz erzählt von einem abgeschlossenen Ereignis?"
+        options:
+          - text: Sophie painted a poster yesterday
+            correct: true
+            info: "Richtig: paint plus -ed ergibt painted, und yesterday sagt, dass es vorbei ist."
+          - text: Sophie paints a poster yesterday
+            correct: false
+            info: "Hier steht noch das present (paints). Für Vergangenes brauchst du painted."
+          - text: Sophie paint a poster yesterday
+            correct: false
+            info: "Hier fehlt die Endung -ed. Bei regelmäßigen Verben schreibst du painted."
+        explanation: Abgeschlossene Ereignisse stehen im simple past. Bei regelmäßigen Verben kommt -ed ans Verb.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Auf der nächsten Seite schreibst du einen **Bericht** für die Schülerzeitung: mit den W-Fragen und im simple past. Die Karte zeigt dir, wie die Bausteine zusammenhängen: [Lernlandkarte Englisch](https://lernapps.net/apps/map/englisch/)."

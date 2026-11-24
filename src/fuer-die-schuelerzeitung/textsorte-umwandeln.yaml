@@ -1,0 +1,248 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Aus einer Geschichte einen Bericht machen
+description: "Eine Geschichte in einen Zeitungsbericht umschreiben: mit Wer, Wo, Wann, Was, indirekter Rede und ohne Gefühle."
+competencies: [textsorte-umwandeln]
+scope: Die Seite zeigt, wie man eine Geschichte in einen Zeitungsbericht umschreibt. Lesestück ist ein Chat mit Amirs erfundener Geschichte über seine Katze Mango auf dem Dach (Zeilen 3 bis 8) und dem Bericht, den die Zeitung daraus macht (headline in Zeile 9, Einleitung mit Wer, Wo, Wann und Was in Zeile 10, Ablauf mit indirekter Rede in Zeile 11, Schluss in Zeile 12; Zeilen 13 bis 15 sagen, was Amir geändert hat). Beim Umwandeln bleibt der Inhalt und die Form ändert sich. Der Erzählstil, die Gefühle und die Meinung fallen weg. Wer, Wo, Wann und Was kommen in die Einleitung, der Ablauf kommt der Reihe nach in den Hauptteil. Wörtliche Rede wird gestrichen oder zu indirekter Rede mit said that, das Verb rückt eine Zeit zurück (like wird liked). Die headline ist kurz. Ein kurzer Absatz erwähnt den Perspektivwechsel (aus ich wird der Name der Figur), ohne Übung. Geübt werden Sätze der Geschichte den Zeilen des Berichts zuordnen, wörtliche Rede in indirekte Rede umschreiben, Teile eines Berichts ordnen, Hören und Nachsprechen und zwei offene Aufgaben (welche Version gefällt dir, eigene Geschichte in einen Bericht umschreiben). Nicht hier sind Meinungstexte.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Eine Geschichte erzählt, ein Bericht informiert. Manchmal passt derselbe Inhalt in beide Textsorten. Danach kannst du einen Text in eine andere Textsorte umschreiben, zum Beispiel eine Geschichte in einen Zeitungsbericht."
+      - type: single-choice
+        id: umwandeln-start
+        text: "Aus einer Geschichte über einen verlorenen Schlüssel soll ein Bericht werden. Was machst du als Erstes?"
+        options:
+          - text: Ich suche die Fakten, also wer, wo, wann und was
+            correct: true
+            info: "Die Fakten sind der Kern eines Berichts. Aus ihnen baust du die Einleitung."
+          - text: Ich schreibe alle Sätze der Geschichte ab und ändere nichts
+            correct: false
+            info: "Dann bleibt es eine Geschichte. Ein Bericht hat einen anderen Bauplan und eine sachliche Sprache."
+          - text: Ich schreibe, wie traurig alle über den Schlüssel waren
+            correct: false
+            info: "Gefühle gehören in die Geschichte, nicht in einen Bericht."
+        explanation: Beim Umwandeln suchst du zuerst die Fakten. Danach baust du den Bericht nach seinem Bauplan.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Eine Geschichte und ihr Bericht
+    blocks:
+      - type: text
+        text: "Lies den Chat, die Geschichte und den Bericht in vier Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: roof
+            source: das Dach
+          - target: ladder
+            source: die Leiter
+          - target: neighbour
+            source: der Nachbar, die Nachbarin
+          - target: climb
+            source: klettern
+          - target: clap
+            source: klatschen
+          - target: rescue
+            source: die Rettung
+          - target: headline
+            source: die Überschrift
+      - type: text
+        text: |
+          1. **Mr Hill:** Amir, your cat story is lovely. Can you turn it into a report for the newspaper?
+          2. **Amir:** Yes. First the story, then my report.
+          3. *Mango on the Roof*
+          4. On Saturday morning, Amir opened the kitchen window. Mango, his orange cat, jumped out onto the garage roof.
+          5. “Come back!” shouted Amir, but Mango sat in the sun and looked down. She was a very silly cat.
+          6. Amir ran into the garden. A neighbour ran outside too. “Oh dear,” she said. “I have a ladder.”
+          7. Amir climbed up slowly and his heart beat fast. At the top he held out a piece of fish. Mango walked across the roof and jumped into his arms.
+          8. Everybody clapped. It was the happiest moment of the morning.
+      - type: single-choice
+        id: umwandeln-verstehen
+        text: "Was passiert in der Geschichte (Zeilen 4 bis 8)?"
+        options:
+          - text: Mango fällt vom Dach und Amir fängt sie
+            correct: false
+            info: "Mango springt freiwillig auf das Dach und später in Amirs Arme. Sie fällt nicht."
+          - text: Amir holt Mango vom Dach
+            correct: true
+            info: "Amir klettert mit einem Stück Fisch auf die Leiter und trägt Mango nach unten (Zeile 7)."
+          - text: Die Nachbarin holt Mango allein vom Dach
+            correct: false
+            info: "Die Nachbarin hat nur die Leiter (Zeile 6). Amir klettert hinauf."
+        explanation: Amir holt seine Katze mit Hilfe einer Leiter vom Dach.
+      - type: text
+        text: |
+          9. *Cat Rescue in Oak Road*
+          10. A cat sat on a garage roof in Oak Road on Saturday morning. Amir, a student of Millbrook School, and a neighbour got the cat down.
+          11. The cat jumped out of a kitchen window and stayed on the roof. The neighbour said that she had a ladder. Amir climbed up with a piece of fish and carried the cat down.
+          12. At the end, the cat was safe. She is called Mango.
+      - type: single-choice
+        id: umwandeln-zeile
+        text: "In welcher Zeile des Berichts steht indirekte Rede, also etwas, das jemand sagte?"
+        options:
+          - text: Zeile 10
+            correct: false
+            info: "Zeile 10 nennt, wer, wo und wann. Niemand spricht."
+          - text: Zeile 11
+            correct: true
+            info: "In Zeile 11 steht said that she had a ladder. Das ist indirekte Rede."
+          - text: Zeile 12
+            correct: false
+            info: "Zeile 12 ist der Schluss. Niemand spricht."
+        explanation: Zeile 11 macht aus der wörtlichen Rede in Zeile 6 indirekte Rede.
+      - type: text
+        text: |
+          13. **Mr Hill:** Good work. The report tells who, where, when and what.
+          14. **Amir:** I left out the speech and the feelings, and I changed one sentence with “said that”.
+          15. **Sophie:** And the headline is short. It tells the news.
+      - type: open-task
+        id: umwandeln-meinung
+        task: "Welche Version gefällt dir besser, die Geschichte oder der Bericht, und warum? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst die Geschichte oder den Bericht.
+            source: /fuer-die-schuelerzeitung/textsorte-umwandeln/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I like the story better because it tells how Amir felt. The report is short, but it has no feelings.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: bauplan
+    title: Von der Geschichte zum Bericht
+    blocks:
+      - type: figure
+        image: images/bauplan-geschichte-zu-bericht.svg
+        alt: "Links vier Merkmale einer Geschichte, ein Pfeil nach rechts, rechts die Schablone eines Berichts mit headline und Einleitung, Hauptteil und Schluss."
+        caption: "Die Geschichte links wird in die Schablone rechts gegossen. Achte darauf, was links keinen Platz in der Schablone hat."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Beim Umwandeln bleibt der Inhalt, die Form ändert sich. Der **Erzählstil** und die **Gefühle** fallen weg. **Wer, wo, wann, was** kommen in die Einleitung, der Ablauf kommt der Reihe nach in den Hauptteil, ein letzter Fakt in den Schluss. Die **headline** ist kurz."
+      - type: text
+        text: "**Wörtliche Rede** streichst du oder du machst sie zu **indirekter Rede**: Das Verb rutscht eine Zeit zurück, aus *live* wird *lived*. *“I live here,” said Ellie* wird zu *Ellie said that she lived there.*"
+      - type: text
+        text: "Eine Geschichte kann auch aus der Sicht einer Figur erzählt sein (Perspektivwechsel, [mehr auf der Karte](https://lernapps.net/apps/map/englisch/c/perspektive-wechseln/)): *I climbed up.* Im Bericht schreibst du von außen und nennst den Namen: *Amir climbed up.*"
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Fakten behalten, Erzählstil und Gefühle streichen, Rede umbauen, headline schreiben."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: umwandeln-zuordnen
+        text: "Aus einer Geschichte über Ellies Tasche wird ein Bericht. Welche Zeile des Berichts gehört zu welchem Satz der Geschichte?"
+        pairs:
+          - {
+              left: "Ellie lost her red bag at the bus stop on Tuesday.",
+              right: "A student lost a bag at the bus stop on Tuesday.",
+            }
+          - { left: "“Where is it?” asked Ellie.", right: "Ellie asked where the bag was." }
+          - {
+              left: "A driver found the bag and brought it to the school office.",
+              right: "A bus driver found the bag and took it to the school office.",
+            }
+        distractors: ["Ellie was very sad and cried a lot."]
+        explanation: Fakten bleiben, wörtliche Rede wird indirekt. Die Zeile über Ellies Gefühle gehört nicht in den Bericht.
+      - type: language-task
+        id: umwandeln-rede
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Schreibe die wörtliche Rede als indirekte Rede für den Bericht. Beginne wie im Cue."
+        hint: "Das Verb rutscht eine Zeit zurück, und die Person ändert sich: aus I wird he oder she."
+        items:
+          - cue: "“I like the book,” said Amir. Amir said that ..."
+            target: "Amir said that he liked the book."
+            mistakes:
+              - answer: "Amir said that he like the book."
+                message: "Das Verb rutscht eine Zeit zurück: aus like wird liked."
+              - answer: "Amir said that I liked the book."
+                message: "Aus I wird in der indirekten Rede he, denn der Bericht spricht von außen."
+          - cue: "“We are hungry,” said the students. The students said that ..."
+            target: "The students said that they were hungry."
+            mistakes:
+              - answer: "The students said that they are hungry."
+                message: "Das Verb rutscht eine Zeit zurück: aus are wird were."
+              - answer: "The students said that we were hungry."
+                message: "Aus we wird in der indirekten Rede they, denn der Bericht spricht von außen."
+          - cue: "“I need help,” said Peter. Peter said that ..."
+            target: "Peter said that he needed help."
+            mistakes:
+              - answer: "Peter said that he need help."
+                message: "Das Verb rutscht eine Zeit zurück: aus need wird needed."
+              - answer: "Peter said that I needed help."
+                message: "Aus I wird in der indirekten Rede he, denn der Bericht spricht von außen."
+        explanation: Indirekte Rede steht im simple past, und die Person wechselt von ich zu er, sie oder sie (Mehrzahl).
+      - type: ordering
+        id: umwandeln-ordnen
+        text: "Ein Bericht über ein Fußballspiel ist durcheinander. Bringe die Teile in die Reihenfolge des Bauplans."
+        items:
+          - Millbrook Beats Oakfield
+          - Millbrook School played Oakfield School on the school field on Wednesday afternoon and won three to one.
+          - Many parents watched the game and clapped at the end.
+          - After the game, the teacher said that the team trained every week.
+          - The next game is in spring.
+        hint: "Die headline steht ganz oben, dann die Einleitung mit wer, was, wo und wann. Der Schluss sagt, was kommt."
+        explanation: Zuerst die headline und die Einleitung, dann der Ablauf mit der indirekten Rede, zuletzt der Schluss.
+      - type: language-task
+        id: umwandeln-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: a-report-leaves-out-the-feelings-of-the-characters.mp3
+            target: A report leaves out the feelings of the characters.
+          - audio: the-headline-must-be-short-and-interesting.mp3
+            target: The headline must be short and interesting.
+          - audio: change-the-story-into-a-report-about-the-adventure.mp3
+            target: Change the story into a report about the adventure.
+        explanation: Die Sätze zeigen, wie man über das Umwandeln spricht.
+  - type: section
+    id: anwenden
+    title: Selbst sprechen und schreiben
+    blocks:
+      - type: speaking-task
+        id: umwandeln-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So fragst du bei einem Ereignis nach."
+        items:
+          - audio: who-found-the-missing-umbrella-yesterday.mp3
+            text: Who found the missing umbrella yesterday?
+          - audio: please-tell-me-what-happened-on-saturday.mp3
+            text: Please tell me what happened on Saturday.
+          - audio: the-newspaper-printed-the-report-on-thursday.mp3
+            text: The newspaper printed the report on Thursday.
+      - type: open-task
+        id: umwandeln-schreiben
+        task: "Schreibe eine kurze Geschichte von drei bis vier Sätzen über ein Ereignis, mit wörtlicher Rede und Gefühlen. Schreibe daraus einen Bericht mit headline."
+        points:
+          - text: Der Bericht hat eine kurze headline.
+            source: /fuer-die-schuelerzeitung/textsorte-umwandeln/#bauplan
+          - text: Die Einleitung sagt, wer, wo, wann und was.
+            source: /fuer-die-schuelerzeitung/textsorte-umwandeln/#bauplan
+          - text: Die Verben stehen im simple past.
+            kind: form
+          - text: Es stehen keine Gefühle und keine wörtliche Rede im Bericht, höchstens indirekte Rede mit said that.
+            source: /fuer-die-schuelerzeitung/textsorte-umwandeln/#bauplan
+        solution: |
+          Geschichte
+          On Monday morning, Peter walked to school in the rain. “Oh no!” he shouted. “My umbrella is gone!” He was very sad and looked everywhere. At last, a teacher found it in the hall.
+
+          Bericht
+          Lost Umbrella Found at School
+
+          A student lost an umbrella on Monday morning on the way to school. Peter said that his umbrella was gone. A teacher found it in the school hall.
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Damit hast du alle Textsorten der Schülerzeitung kennengelernt: Bericht, Interview, Sachtext und erfundener Text. Du kannst sie ineinander umbauen."

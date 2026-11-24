@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Für die Schülerzeitung
+summary: Die erste Ausgabe von „The Millbrook Messenger“ braucht Texte. Du schreibst einen Bericht, bereitest ein Interview vor, unterscheidest Sachtexte von erfundenen Texten und machst aus einer Geschichte einen Zeitungsbericht.
+pages: [das-brauchst-du, bericht-artikel, interview, sachtext-fiktion, textsorte-umwandeln]
