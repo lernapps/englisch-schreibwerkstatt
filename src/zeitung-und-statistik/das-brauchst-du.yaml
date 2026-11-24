@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+description: "Zwei Dinge für dieses Kapitel kurz wiederholen: Vergleiche mit than und as … as sowie große Zahlen und Prozent."
+recap: [englisch/vergleiche, englisch/zahlen]
+scope: "Wiederholungsseite für das Kapitel über Zeitung und Statistik. Sie nennt die zwei Bausteine, die das Kapitel voraussetzt, und wiederholt sie kurz ohne neuen Inhalt. Vergleiche mit than, as … as und not as … as. Große Zahlen mit Komma als Tausenderzeichen (thousand, million) und Prozent als per cent. Eine einzige Aufgabe prüft die Vergleichswörter. Nicht hier sind Zeitungsartikel, Information und Meinung oder das Beschreiben von Diagrammen."
+blocks:
+  - type: text
+    text: "Kannst du das schon? In diesem Kapitel liest du Zeitungstexte und Statistiken. Zwei Dinge aus früheren Seiten brauchst du dafür."
+  - type: text
+    text: |
+      - **Vergleiche: than, as … as.** Ich kann mit than, as … as und not as … as vergleichen.
+      - **Zahlen und Preise.** Ich kann Grund- und Ordnungszahlen sagen und schreiben, auch große Zahlen und Preise.
+  - type: table
+    caption: Kurz wiederholt
+    header: [Muster, Beispiel]
+    rows:
+      - [than, The bus is cheaper than the taxi.]
+      - [as … as, The market is as busy as the station.]
+      - [not as … as, The tram is not as fast as the train.]
+      - [Prozent, "Seven per cent of the people walk."]
+      - [große Zahlen, "4,500 heißt four thousand five hundred."]
+  - type: text
+    text: "Große Zahlen schreibst du mit einem Komma als Tausenderzeichen: 12,000 ist twelve thousand und 3,400,000 ist three million four hundred thousand. In Statistiken stehen oft Prozente. Prozent heißt im britischen Englisch **per cent**, also zwei Wörter."
+  - type: language-task
+    id: recap-pruefen
+    languages: { source: de, target: en }
+    mode: gap
+    form: { case: ok, punctuation: ok }
+    task: "Setze das fehlende Wort ein."
+    hint: "Nach einer Steigerung (cheaper, faster) steht than. Bei so … wie steht as … as."
+    items:
+      - source: "Die Bücherei ist älter als die Kirche."
+        target: "The library is older [than] the church."
+        mistakes:
+          - answer: "as"
+            message: "As … as heißt so … wie und vergleicht gleiche Dinge. Nach older steht ein anderes Wort."
+          - answer: "then"
+            message: "Then heißt dann. Für einen Vergleich schreibst du than."
+      - source: "Das Café ist so groß wie die Bäckerei."
+        target: "The café is as big [as] the bakery."
+        mistakes:
+          - answer: "than"
+            message: "Than steht nach einer Steigerung wie bigger. Hier vergleichst du mit as … as."
+      - source: "In der Stadt wohnen zwei Millionen Menschen."
+        target: "Two [million] people live in the city."
+        mistakes:
+          - answer: "millions"
+            message: "Nach einer Zahl bleibt million ohne s: two million, five million."
+    explanation: Mit than vergleichst du nach einer Steigerung, mit as … as sagst du, dass etwas gleich ist. Große Zahlen sagst du mit thousand und million.
