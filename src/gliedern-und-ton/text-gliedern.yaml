@@ -1,0 +1,252 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Einen Text gliedern
+description: "Einen Sachtext in Einleitung, Hauptteil und Schluss gliedern und Absätze bilden: mit einem Chat der Schülerzeitung."
+competencies: [text-gliedern]
+scope: Die Seite zeigt, wie ein Sachtext nach einem Bauplan aus Einleitung, Hauptteil und Schluss gegliedert wird. Lesestück ist ein Team-Chat der Schülerzeitung mit Ellies Text über einen Schulgarten (Einleitung in Zeile 7, drei Ideen mit first, second, third in den Zeilen 8 bis 10, Schluss mit In short in Zeile 11). Die Einleitung sagt in ein bis zwei Sätzen, worum es geht. Im Hauptteil hat jede Idee einen eigenen Absatz mit einem Signalwort am Anfang. Der Schluss fasst kurz zusammen und bringt keine neue Idee. Eine Idee gehört in einen Absatz; hat ein Absatz zwei Ideen, wird er geteilt. Geübt werden Teile erkennen, Zeilen belegen, Sätze in die Reihenfolge des Bauplans bringen, Sätze den Teilen zuordnen, Signalwörter einsetzen, Hören und Nachsprechen und zwei offene Aufgaben (Meinung zur Idee, kurzer Text zu einer Pause mit Musik). Nicht hier sind Ton und Wortwahl, Vortrag und Blog.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Mr Hill gründet die Schülerzeitung und bittet das Team um den ersten Text. Du hilfst dabei. Danach kannst du einen Text in **Einleitung**, **Hauptteil** und **Schluss** gliedern und Absätze bilden."
+      - type: single-choice
+        id: gliedern-start
+        text: "Du hast einen langen englischen Text vor dir, ohne eine einzige Leerzeile. Was hilft den Lesern am meisten?"
+        options:
+          - text: Ich lasse alles in einem Absatz
+            correct: false
+            info: "Ein langer Block ohne Pause ist schwer zu lesen. Leser sehen nicht, wo eine neue Idee beginnt."
+          - text: Ich beginne nach jedem Satz einen neuen Absatz
+            correct: false
+            info: "Dann ist der Text in lauter Stücke zerschnitten. Ein Absatz braucht mehrere Sätze, die zu einer Idee gehören."
+          - text: Ich fasse Sätze zu einer Idee zusammen und beginne dann einen neuen Absatz
+            correct: true
+            info: "Ein Absatz gehört zu einer Idee. Wenn eine neue Idee beginnt, beginnt ein neuer Absatz."
+        explanation: Ein Absatz ist ein Stück Text zu einer Idee. Eine neue Idee bekommt einen neuen Absatz.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Ellies Text im Team-Chat
+    blocks:
+      - type: text
+        text: "Lies den Chat in drei Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: introduction
+            source: die Einleitung
+          - target: paragraph
+            source: der Absatz
+          - target: conclusion
+            source: der Schluss
+          - target: community
+            source: die Gemeinschaft
+          - target: insect
+            source: das Insekt
+          - target: seed
+            source: der Samen
+      - type: text
+        text: |
+          1. **Mr Hill:** Welcome to the newspaper team! Please write a short text about one idea for our school.
+          2. **Mr Hill:** Use three parts: an introduction, a main part and a conclusion.
+          3. **Ellie:** I have an idea. A school garden!
+          4. **Mr Hill:** Good. Send me your text tomorrow.
+      - type: single-choice
+        id: gliedern-teile
+        text: "Was verlangt Mr Hill von Ellies Text (Zeilen 1 und 2)?"
+        options:
+          - text: Einen Titel, einen Satz und eine Zeichnung
+            correct: false
+            info: "Von Titel und Zeichnung steht in den Zeilen 1 und 2 nichts."
+          - text: Eine Einleitung, einen Hauptteil und einen Schluss
+            correct: true
+            info: "So steht es in Zeile 2: introduction, main part, conclusion."
+          - text: Einen Hauptteil mit drei Sätzen
+            correct: false
+            info: "Zeile 2 nennt drei Teile, nicht drei Sätze."
+        explanation: Zeile 2 nennt die drei Teile des Bauplans.
+      - type: text
+        text: |
+          5. **Ellie:** Here is my text.
+          6. *A garden for Millbrook School*
+          7. Our school has a big empty space behind the sports hall. Many students sit there at lunch time, but there is nothing to do. I think a garden would be a good idea for this place.
+          8. First, a garden is good for learning. In science lessons we could look at plants and insects. We could also grow vegetables and use them in the school kitchen.
+          9. Second, a garden is good for the school community. Students from every year could work together on Saturdays, and parents could help too.
+          10. Third, a garden is cheap. Seeds and tools do not cost much, and the school shop could sell the vegetables.
+          11. In short, a school garden helps us learn, brings people together and costs little. Let us ask the head teacher to start it this year.
+      - type: single-choice
+        id: gliedern-zeile
+        text: "In welcher Zeile steht die Einleitung von Ellies Text?"
+        options:
+          - text: Zeile 7
+            correct: true
+            info: "Zeile 7 nennt den Ort und das Thema, den Garten. Das ist die Einleitung."
+          - text: Zeile 8
+            correct: false
+            info: "Zeile 8 beginnt mit First: Das ist die erste Idee, also schon der Hauptteil."
+          - text: Zeile 11
+            correct: false
+            info: "Zeile 11 beginnt mit In short: Das ist der Schluss."
+        explanation: Die Einleitung sagt, worum es geht. Ellie nennt in Zeile 7 den Ort und die Idee eines Gartens.
+      - type: text
+        text: |
+          12. **Mr Hill:** Thank you, Ellie. Your text has a clear plan: an introduction, three ideas in three paragraphs and a short conclusion.
+          13. **Sophie:** I like that every paragraph starts with a signal word: first, second, third.
+          14. **Amir:** And the conclusion says the ideas again. It has no new idea.
+      - type: multiple-choice
+        id: gliedern-schluss
+        text: "Welche Zeilen zeigen, wie Ellies Text gebaut ist? Wähle alle passenden Zeilen."
+        options:
+          - text: Zeile 13 nennt die Wörter, mit denen die Absätze beginnen
+            correct: true
+            info: "Richtig: first, second, third zeigen jedem Leser, wo ein neuer Absatz beginnt."
+          - text: Zeile 14 sagt, dass der Schluss keine neue Idee bringt
+            correct: true
+            info: "Richtig: Der Schluss fasst nur zusammen."
+          - text: Zeile 12 sagt, dass der Text drei Ideen in einem Absatz hat
+            correct: false
+            info: "In Zeile 12 stehen drei Ideen in drei Absätzen, nicht in einem."
+        explanation: Die Zeilen 12 bis 14 beschreiben den Bauplan von Ellies Text.
+  - type: section
+    id: bauplan
+    title: Der Bauplan eines Sachtextes
+    blocks:
+      - type: figure
+        image: images/bauplan-text-gliedern.svg
+        alt: "Drei Kästen untereinander. Oben die Einleitung, in der Mitte der Hauptteil mit drei Absätzen, unten der Schluss."
+        caption: "Der Bauplan mit Einleitung, Hauptteil (ein Absatz je Idee) und Schluss."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Die **Einleitung** sagt in ein bis zwei Sätzen, worum es geht. Im **Hauptteil** hat jede Idee einen eigenen Absatz, und ein Signalwort am Anfang hilft dem Leser. Der **Schluss** fasst kurz zusammen."
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Eine Idee gehört in einen Absatz. Im Schluss steht keine neue Idee mehr. Hat ein Absatz zwei Ideen, teile ihn."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: ordering
+        id: gliedern-ordnen
+        text: "Ein Text über einen ruhigen Raum für Hausaufgaben ist durcheinander. Bringe die Sätze in die Reihenfolge des Bauplans."
+        items:
+          - I want to tell you about a quiet place for homework.
+          - First, many students cannot work at home because it is noisy.
+          - Second, a quiet room in school has books and computers.
+          - Third, students can ask a teacher for help there.
+          - In short, a homework room helps students learn better.
+        explanation: Die Einleitung kommt zuerst, dann die drei Ideen mit first, second und third, zuletzt der Schluss mit In short.
+      - type: matching
+        id: gliedern-zuordnen
+        text: "Zu welchem Teil des Bauplans gehört der Satz?"
+        pairs:
+          - { left: "In this text I want to tell you about our school bus.", right: Einleitung }
+          - { left: "Second, the bus is safe because the driver knows every child.", right: Hauptteil }
+          - { left: "In short, a school bus helps everyone.", right: Schluss }
+        distractors: [Titel]
+        explanation: Die Einleitung nennt das Thema, der Hauptteil bringt eine Idee mit Grund, der Schluss fasst zusammen.
+      - type: single-choice
+        id: gliedern-absatz
+        text: "Ein Absatz erzählt, dass ein Fahrradclub Spaß macht und dass er wenig kostet. Was tust du?"
+        options:
+          - text: Ich lasse beide Ideen in einem Absatz
+            correct: false
+            info: "Zwei Ideen in einem Absatz verwirren die Leser. Teile ihn."
+          - text: Ich mache aus jeder Idee einen eigenen Absatz
+            correct: true
+            info: "So hat jeder Absatz eine Idee, und der Leser findet sie schnell."
+          - text: Ich schiebe die zweite Idee in den Schluss
+            correct: false
+            info: "Im Schluss steht keine neue Idee. Sie gehört in den Hauptteil."
+        explanation: Zwei Ideen bekommen zwei Absätze im Hauptteil.
+      - type: language-task
+        id: gliedern-signal
+        languages: { source: de, target: en }
+        mode: gap
+        form: { case: ok, punctuation: ok }
+        task: "Setze das Signalwort ein."
+        items:
+          - source: "Erstens ist ein Fahrrad billig."
+            target: "[First], a bike is cheap."
+            mistakes:
+              - answer: "At first"
+                message: "At first heißt zuerst, in einer Geschichte. Für eine Liste von Ideen schreibst du first."
+          - source: "Zweitens ist ein Fahrrad gut für dich."
+            target: "[Second], a bike is good for you."
+          - source: "Kurz gesagt ist ein Fahrrad eine gute Idee."
+            target: "[In short|To sum up], a bike is a good idea."
+        explanation: Signalwörter zeigen den Beginn eines Absatzes. Den Schluss leitest du mit In short oder To sum up ein.
+      - type: language-task
+        id: gliedern-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: write-your-first-idea-in-a-new-paragraph.mp3
+            target: Write your first idea in a new paragraph.
+          - audio: the-introduction-says-what-the-text-is-about.mp3
+            target: The introduction says what the text is about.
+          - audio: a-short-conclusion-helps-your-readers.mp3
+            target: A short conclusion helps your readers.
+        explanation: Die Sätze zeigen, wie man über Teile eines Textes spricht.
+  - type: section
+    id: anwenden
+    title: Selbst schreiben
+    blocks:
+      - type: speaking-task
+        id: gliedern-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So kannst du später einen Vortrag beginnen."
+        items:
+          - audio: my-text-is-about-a-quiet-reading-corner.mp3
+            text: My text is about a quiet reading corner.
+          - audio: first-i-want-to-explain-the-problem.mp3
+            text: First, I want to explain the problem.
+          - audio: let-us-write-the-text-together.mp3
+            text: Let us write the text together.
+      - type: open-task
+        id: gliedern-meinung
+        task: "Welche der drei Ideen in Ellies Garten-Text überzeugt dich am meisten, und warum? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst eine Idee, zum Beispiel Lernen, Gemeinschaft oder Kosten.
+            source: /gliedern-und-ton/text-gliedern/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I think the second idea is the best because students from every year can work together. A garden brings people together.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+      - type: open-task
+        id: gliedern-schreiben
+        task: "Die Schülerzeitung fragt nach Ideen zu einer Pause mit Musik. Schreibe einen kurzen Text mit Einleitung, drei Ideen in drei Absätzen und einem Schluss."
+        points:
+          - text: Die Einleitung nennt das Thema und was du willst.
+            source: /gliedern-und-ton/text-gliedern/#bauplan
+          - text: Jede Idee hat einen eigenen Absatz.
+            source: /gliedern-und-ton/text-gliedern/#bauplan
+          - text: Die Absätze beginnen mit einem Signalwort wie first, second, third.
+            kind: form
+          - text: Der Schluss fasst kurz zusammen und bringt keine neue Idee.
+            source: /gliedern-und-ton/text-gliedern/#bauplan
+        solution: |
+          I want to ask for a music break at school.
+
+          First, music helps students to relax.
+
+          Second, students can listen to songs from different countries.
+
+          Third, a music break is easy to organise.
+
+          In short, a music break is good for everybody.
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Der Text ist gegliedert. Auf der nächsten Seite stellst du den **Ton-Regler** ein: Wie klingt derselbe Inhalt in einem Chat und wie in einer Nachricht an Mr Hill?"

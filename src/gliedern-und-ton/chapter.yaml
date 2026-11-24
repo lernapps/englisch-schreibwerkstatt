@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Gliedern und den Ton treffen
+summary: Die Schülerzeitung der Millbrook School braucht Texte. Du lernst, einen Text in Einleitung, Hauptteil und Schluss zu gliedern, den Ton zu wählen, einen Vortrag zu halten und einen Blogbeitrag zu schreiben.
+pages: [text-gliedern]

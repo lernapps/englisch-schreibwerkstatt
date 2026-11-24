@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: plan
+phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -38,6 +38,7 @@ Die Lernenden schreiben Sachtexte nach einem Bauplan (Einleitung, Hauptteil, Sch
 - Wiederholungsseiten (`recap`) je Kapitel für Bausteine anderer Explainer; zwei Lücken der Karte (`perspektive-wechseln`, `schule-usa`) sind in keiner App geübt: ein kurzer Absatz im Sammel-Recap (guess, im Checkpoint gemeldet).
 - Hörtexte `bf_emma`: Diktat und Nachsprechen je Seite, Lesestücke nur in kurzen Abschnitten; Hörurteile bestätigt der Orchestrator.
 - Look and feel: fixed by the archetype (Look der Laufzeit, ruhig wie ein Arbeitsblatt, Dunkelmodus folgt dem Gerät).
+- `scope`: ja, in `app.yaml` und auf jeder Seite (die App hat `open-task`; der Tutor beurteilt offene Antworten nach dem Scope).
 - Sprachen: nur Deutsch (Erklärtexte), englische Beispiele und Lesestücke (Einheiten-Apps der Reihe, `languages: [de]`).
 
 ## Notes
@@ -167,8 +168,9 @@ Quelle der Antworten: der Auftrag der Orchestrator-Session (Issue lernapps/apps#
       learners see after each. Keep the files in `.vibe/sketches/`.
 - [x] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
-- [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
+- [x] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
+      Creator: Ja, bestätigt. Baue die Musterseite gliedern-und-ton/text-gliedern, Lerner-Check, dann Checkpoint Musterseite. Danach Kapitel 2-4 mit Sub-Agenten nach dem Muster. Gemeinsame Dateien bleiben bei mir.
 
 ### Content method
 
@@ -226,16 +228,16 @@ page, which a link. -->
 
 ### Tasks
 
-- [ ] Load skill `lernapps-cli`. Create the app as its section "Create" says:
+- [x] Load skill `lernapps-cli`. Create the app as its section "Create" says:
       `npx --no -- lernapps create --archetype explainer`.
-- [ ] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
+- [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
-- [ ] Load skill `lernapps-explainer`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer`.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [ ] Musterseite Kapitel 1: gliedern-und-ton/text-gliedern komplett (Lesestück als Chat, Randglossar, Bauplan-Figur, mindestens 5 Übungen, Diktat und Nachsprechen, offene Aufgabe), dazu app.yaml, chapter.yaml und das Prüfskript
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
