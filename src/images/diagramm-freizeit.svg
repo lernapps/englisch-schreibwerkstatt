@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 388" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 428" role="img" aria-labelledby="t d">
 <title id="t">Freizeit von Jugendlichen in Brindley</title>
 <desc id="d">Balkendiagramm mit fünf waagerechten Balken. Skala von null bis achtzig Prozent. Zu jedem Balken steht der Wert.</desc>
-<rect width="480" height="388" fill="#f4efe2"/>
+<rect width="480" height="428" fill="#f4efe2"/>
 <text x="20" y="28" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222">Free time of young people in Brindley</text>
 <g stroke="#cfc7b0" stroke-width="1">
 <line x1="180" y1="44" x2="180" y2="282"/>
