@@ -9,7 +9,7 @@ blocks:
     title: Worum es geht
     blocks:
       - type: text
-        text: "Mr Hill gründet die Schülerzeitung und bittet das Team um den ersten Text. Du hilfst dabei. Danach kannst du einen Text in **Einleitung**, **Hauptteil** und **Schluss** gliedern und Absätze bilden."
+        text: "Mr Hill gründet die Schülerzeitung und bittet das Team um den ersten Text. Du hilfst dabei. Ein **Absatz** ist ein Stück Text mit eigenem Anfang in einer neuen Zeile. Danach kannst du einen Text in **Einleitung**, **Hauptteil** und **Schluss** gliedern und Absätze bilden."
       - type: single-choice
         id: gliedern-start
         text: "Du hast einen langen englischen Text vor dir, ohne eine einzige Leerzeile. Was hilft den Lesern am meisten?"
@@ -115,16 +115,16 @@ blocks:
       - type: figure
         image: images/bauplan-text-gliedern.svg
         alt: "Drei Kästen untereinander. Oben die Einleitung, in der Mitte der Hauptteil mit drei Absätzen, unten der Schluss."
-        caption: "Der Bauplan mit Einleitung, Hauptteil (ein Absatz je Idee) und Schluss."
+        caption: "Der Bauplan von oben nach unten gelesen: so ist auch Ellies Text gebaut. Die drei Absätze sind ein Beispiel."
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "Die **Einleitung** sagt in ein bis zwei Sätzen, worum es geht. Im **Hauptteil** hat jede Idee einen eigenen Absatz, und ein Signalwort am Anfang hilft dem Leser. Der **Schluss** fasst kurz zusammen."
+        text: "Der **Bauplan** ist die Schablone eines Textes: feste Teile in fester Reihenfolge. Jeder Teil hat seine Farbe, damit du ihn wiederfindest. Die **Einleitung** sagt in ein bis zwei Sätzen, worum es geht. Im **Hauptteil** hat jede Idee einen eigenen Absatz; wie viele Ideen es sind, hängt vom Thema ab. Ein **Signalwort** am Anfang eines Absatzes zeigt, wie es weitergeht. Der **Schluss** fasst kurz zusammen."
       - type: note
         title: Merke
         blocks:
           - type: text
-            text: "Eine Idee gehört in einen Absatz. Im Schluss steht keine neue Idee mehr. Hat ein Absatz zwei Ideen, teile ihn."
+            text: "Ein Absatz, eine Idee. Der Schluss wiederholt, was schon da ist."
   - type: section
     id: uebung
     title: Übung
@@ -138,6 +138,7 @@ blocks:
           - Second, a quiet room in school has books and computers.
           - Third, students can ask a teacher for help there.
           - In short, a homework room helps students learn better.
+        hint: "Die Einleitung kommt zuerst und der Schluss zuletzt. Achte dazwischen auf die Signalwörter."
         explanation: Die Einleitung kommt zuerst, dann die drei Ideen mit first, second und third, zuletzt der Schluss mit In short.
       - type: matching
         id: gliedern-zuordnen
@@ -146,7 +147,6 @@ blocks:
           - { left: "In this text I want to tell you about our school bus.", right: Einleitung }
           - { left: "Second, the bus is safe because the driver knows every child.", right: Hauptteil }
           - { left: "In short, a school bus helps everyone.", right: Schluss }
-        distractors: [Titel]
         explanation: Die Einleitung nennt das Thema, der Hauptteil bringt eine Idee mit Grund, der Schluss fasst zusammen.
       - type: single-choice
         id: gliedern-absatz
@@ -167,17 +167,21 @@ blocks:
         languages: { source: de, target: en }
         mode: gap
         form: { case: ok, punctuation: ok }
-        task: "Setze das Signalwort ein."
+        task: "Setze das Signalwort ein. Du kennst die Wörter aus Ellies Text."
+        hint: "Die Wörter stehen in Ellies Text, am Anfang der Absätze."
         items:
           - source: "Erstens ist ein Fahrrad billig."
-            target: "[First], a bike is cheap."
+            target: "[First|Firstly], a bike is cheap."
             mistakes:
               - answer: "At first"
                 message: "At first heißt zuerst, in einer Geschichte. Für eine Liste von Ideen schreibst du first."
           - source: "Zweitens ist ein Fahrrad gut für dich."
-            target: "[Second], a bike is good for you."
+            target: "[Second|Secondly], a bike is good for you."
           - source: "Kurz gesagt ist ein Fahrrad eine gute Idee."
             target: "[In short|To sum up], a bike is a good idea."
+            mistakes:
+              - answer: "In the end"
+                message: "In the end heißt am Ende einer Geschichte. Für den Schluss eines Textes schreibst du In short oder To sum up."
         explanation: Signalwörter zeigen den Beginn eines Absatzes. Den Schluss leitest du mit In short oder To sum up ein.
       - type: language-task
         id: gliedern-hoeren

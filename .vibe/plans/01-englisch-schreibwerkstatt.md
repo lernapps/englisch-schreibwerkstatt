@@ -239,7 +239,7 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite Kapitel 1: gliedern-und-ton/text-gliedern komplett (Lesestück als Chat, Randglossar, Bauplan-Figur, mindestens 5 Übungen, Diktat und Nachsprechen, offene Aufgabe), dazu app.yaml, chapter.yaml und das Prüfskript
+- [x] Musterseite Kapitel 1: gliedern-und-ton/text-gliedern komplett (Lesestück als Chat, Randglossar, Bauplan-Figur, mindestens 5 Übungen, Diktat und Nachsprechen, offene Aufgabe), dazu app.yaml, chapter.yaml und das Prüfskript
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
