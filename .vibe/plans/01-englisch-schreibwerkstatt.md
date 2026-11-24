@@ -241,9 +241,10 @@ page, which a link. -->
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Musterseite Kapitel 1: gliedern-und-ton/text-gliedern komplett (Lesestück als Chat, Randglossar, Bauplan-Figur, mindestens 5 Übungen, Diktat und Nachsprechen, offene Aufgabe), dazu app.yaml, chapter.yaml und das Prüfskript
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
+      Creator: Ja, Kapitel 1 Rest und danach 2-4 mit Sub-Agenten nach diesem Muster. Hörurteil für die drei Sätze bestätigt. Vorschau-PR erst nach Gesamtcheck und Sprachprüfung mit Sub-Agenten, Push nur auf work.
 - [ ] Kapitel 1 fertig: formell-informell (Ton-Regler-Figur), praesentation, blog-post und die Wiederholungsseite das-brauchst-du (kurzformen); Regler und Bauplan wie die Musterseite
 - [ ] Kapitel 2: das-brauchst-du (simple-past, fragewoerter, alltagstexte, figuren-ort-handlung), bericht-artikel, interview
 - [ ] Kapitel 2 Rest: sachtext-fiktion und textsorte-umwandeln (Geschichte aus #479 als Vorlage, eigener Text)
