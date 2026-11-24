@@ -245,12 +245,12 @@ page, which a link. -->
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
       Creator: Ja, Kapitel 1 Rest und danach 2-4 mit Sub-Agenten nach diesem Muster. Hörurteil für die drei Sätze bestätigt. Vorschau-PR erst nach Gesamtcheck und Sprachprüfung mit Sub-Agenten, Push nur auf work.
-- [ ] Kapitel 1 fertig: formell-informell (Ton-Regler-Figur), praesentation, blog-post und die Wiederholungsseite das-brauchst-du (kurzformen); Regler und Bauplan wie die Musterseite
-- [ ] Kapitel 2: das-brauchst-du (simple-past, fragewoerter, alltagstexte, figuren-ort-handlung), bericht-artikel, interview
-- [ ] Kapitel 2 Rest: sachtext-fiktion und textsorte-umwandeln (Geschichte aus #479 als Vorlage, eigener Text)
-- [ ] Kapitel 3: das-brauchst-du (vergleiche, zahlen), zeitungsartikel, information-meinung, diagramm-beschreiben mit Diagramm-SVG
-- [ ] Kapitel 4 Teil 1: das-brauchst-du (email-postkarte, datum), berufswelt, bildungssystem, formelle-email
-- [ ] Kapitel 4 Teil 2: lebenslauf, bewerbung, vorstellungsgespraech (Sprechauftrag) und Kapitelrückblick
+- [x] Kapitel 1 fertig: formell-informell (Ton-Regler-Figur), praesentation, blog-post und die Wiederholungsseite das-brauchst-du (kurzformen); Regler und Bauplan wie die Musterseite
+- [x] Kapitel 2: das-brauchst-du (simple-past, fragewoerter, alltagstexte, figuren-ort-handlung), bericht-artikel, interview
+- [x] Kapitel 2 Rest: sachtext-fiktion und textsorte-umwandeln (Geschichte aus #479 als Vorlage, eigener Text)
+- [x] Kapitel 3: das-brauchst-du (vergleiche, zahlen), zeitungsartikel, information-meinung, diagramm-beschreiben mit Diagramm-SVG
+- [x] Kapitel 4 Teil 1: das-brauchst-du (email-postkarte, datum), berufswelt, bildungssystem, formelle-email
+- [x] Kapitel 4 Teil 2: lebenslauf, bewerbung, vorstellungsgespraech (Sprechauftrag) und Kapitelrückblick
 - [ ] Audio: alle Hörsätze mit regen_audio.py erzeugen, Hörliste im Inhaltsführer, Fuzzy-Prüfskript über alle Seiten
 - [ ] Startseite (intro nennt nur Namen und Rollen, scope), Selbsteinschätzung je Kapitel, Medien und Quellen im Inhaltsführer
 <!-- tasks: pages (8 added): the other pages or screens, after the pattern -->
