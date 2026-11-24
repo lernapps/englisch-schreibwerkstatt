@@ -1,0 +1,241 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Einen Vortrag halten
+description: "Einen kurzen Vortrag gliedern und mit Redemitteln einleiten, überleiten und abschließen: Sophie stellt der Klasse die Schülerzeitung vor."
+competencies: [praesentation]
+scope: Die Seite zeigt, wie ein kurzer Vortrag nach dem Bauplan Einleitung, Hauptteil und Schluss gebaut wird und welche Redemittel dazugehören. Lesestück ist Sophies Vortrag vor der Klasse im neutralen Ton über das erste Treffen des Zeitungsteams und die Pläne (Einleitung mit Begrüßung und Thema in den Zeilen 1 und 2, Hauptteil mit Übergängen wie Now let me turn to und Next in den Zeilen 3 bis 5, Schluss mit Finally, To sum up und Thank you for listening in den Zeilen 6 und 7). Redemittel zum Einleiten sind Good morning und Today I want to tell you about, zum Überleiten Now let me turn to, Next und Finally, zum Abschließen To sum up und Thank you for listening. Der Vortrag spricht zu den Zuhörern, im neutralen Ton, ohne Kurzformen und Slang. Der gleiche Inhalt steht auf der nächsten Seite als Blogbeitrag. Geübt werden Sätze in die Reihenfolge eines Vortrags bringen, Redemittel den Teilen zuordnen, Redemittel einsetzen, Hören und Nachsprechen und zwei offene Aufgaben (Meinung zu einem Redemittel, kurzer Vortrag über die eigene Klasse). Nicht hier sind der Blogbeitrag und der Ton-Regler.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Sophie soll der Klasse die Schülerzeitung vorstellen. Ein Vortrag hat denselben Bauplan wie ein Text, aber du sprichst zu Zuhörern. Danach kannst du einen kurzen Vortrag gliedern und mit passenden **Redemitteln** einleiten, überleiten und abschließen."
+      - type: single-choice
+        id: praes-start
+        text: "Du hältst einen kurzen Vortrag vor deiner Klasse. Wie fängst du an?"
+        options:
+          - text: Ich beginne sofort mit dem ersten Punkt
+            correct: false
+            info: "Ohne Begrüßung und Thema wissen die Zuhörer nicht, worum es geht."
+          - text: Ich begrüße die Klasse und nenne mein Thema
+            correct: true
+            info: "So fängt eine Einleitung an: Die Zuhörer wissen sofort, was kommt."
+          - text: Ich fange mit dem Dank an
+            correct: false
+            info: "Der Dank gehört an den Schluss. Am Anfang würde er verwirren."
+        explanation: Die Einleitung begrüßt die Zuhörer und nennt das Thema.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Sophies Vortrag
+    blocks:
+      - type: text
+        text: "Lies Sophies Vortrag in drei Abschnitten. Sie spricht im neutralen Ton. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: issue
+            source: die Ausgabe
+          - target: puzzle
+            source: das Rätsel
+          - target: publish
+            source: veröffentlichen
+          - target: interview
+            source: das Interview, interviewen
+          - target: turn to
+            source: zu etwas kommen
+          - target: to sum up
+            source: zusammengefasst
+          - target: audience
+            source: die Zuhörer, das Publikum
+          - target: presentation
+            source: der Vortrag
+      - type: text
+        text: |
+          1. Good morning, everybody. My name is Sophie, and today I want to tell you about our new school newspaper, The Millbrook Messenger.
+          2. I will talk about three things: our team, our plans and how you can help.
+      - type: single-choice
+        id: praes-verstehen
+        text: "Worüber will Sophie in ihrem Vortrag sprechen (Zeilen 1 und 2)?"
+        options:
+          - text: Über Team, Pläne und Hilfe der Zuhörer
+            correct: true
+            info: "Richtig: Zeile 2 nennt diese drei Dinge."
+          - text: Über die Geschichte der Zeitungen in England
+            correct: false
+            info: "Davon steht nichts in den Zeilen 1 und 2. Sophie spricht nur über die neue Schülerzeitung."
+          - text: Über Ellies Text zum Schulgarten
+            correct: false
+            info: "Ellie kommt erst später vor, als ein Beispiel für die Pläne."
+        explanation: Zeile 2 sagt den Zuhörern, welche drei Punkte kommen.
+      - type: text
+        text: |
+          3. First, our team. There are four of us, and Mr Hill helps us. We met for the first time last Thursday, and we had a lot of ideas.
+          4. Now let me turn to our plans. Every issue will have a news page, an interview with a teacher and a page with puzzles. Ellie will write about a school garden, Amir will interview a teacher and Peter will draw the puzzles.
+          5. Next, when the newspaper will come out. The first issue will be ready in four weeks. After that, we will publish a new issue every month.
+      - type: multiple-choice
+        id: praes-uebergang
+        text: "Welche Zeilen beginnen mit einem Übergang zum nächsten Punkt? Wähle alle passenden Zeilen."
+        options:
+          - text: Zeile 4 beginnt mit Now let me turn to
+            correct: true
+            info: "Richtig: So kommt Sophie zum zweiten Punkt, den Plänen."
+          - text: Zeile 5 beginnt mit Next
+            correct: true
+            info: "Richtig: Next führt zum dritten Punkt, dem Erscheinen der Zeitung."
+          - text: Zeile 1 beginnt mit Good morning
+            correct: false
+            info: "Good morning ist die Begrüßung am Anfang der Einleitung, kein Übergang."
+        explanation: In den Zeilen 4 und 5 sagt Sophie, dass ein neuer Punkt beginnt.
+      - type: text
+        text: |
+          6. Finally, here is how you can help. Please put your ideas in the box next to the library door. We will read every note.
+          7. To sum up, we have a team, a plan and a date for the first issue. Thank you for listening. Are there any questions?
+      - type: single-choice
+        id: praes-schluss
+        text: "In welcher Zeile bedankt sich Sophie bei den Zuhörern?"
+        options:
+          - text: Zeile 1
+            correct: false
+            info: "In Zeile 1 begrüßt Sophie die Klasse. Ein Dank steht dort nicht."
+          - text: Zeile 6
+            correct: false
+            info: "In Zeile 6 bittet Sophie um Ideen. Das Wort Please ist eine Bitte, kein Dank."
+          - text: Zeile 7
+            correct: true
+            info: "Richtig: Thank you for listening steht im Schluss."
+        explanation: Der Dank steht im Schluss, in Zeile 7.
+  - type: section
+    id: bauplan
+    title: Der Bauplan eines Vortrags
+    blocks:
+      - type: figure
+        image: images/bauplan-praesentation.svg
+        alt: "Drei Kästen untereinander: Einleitung, Hauptteil und Schluss. In jedem steht, was der Teil leistet, und ein Satzanfang zum Nachsprechen."
+        caption: "Der Bauplan eines Vortrags von oben nach unten: Jeder Teil hat seine Redemittel. Die Beispiele sind nur eine Auswahl."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: |
+          Ein Vortrag hat denselben **Bauplan** wie ein Sachtext: Einleitung, Hauptteil, Schluss. Neu sind die **Redemittel**. Sie sagen deinen Zuhörern, wo du gerade bist.
+
+          - **Einleiten:** Du begrüßt die Zuhörer und nennst das Thema. Sophie macht das in Zeile 1.
+          - **Überleiten:** Du kündigst den nächsten Punkt an. Sophie macht das in den Zeilen 4 bis 6.
+          - **Abschließen:** Du fasst zusammen und dankst. Sophie macht das in Zeile 7.
+
+          Sprich im neutralen Ton: ganze Sätze, kein Slang. Sieh deine Zuhörer an, nicht deinen Zettel.
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Erst sagst du, was kommt. Dann kommt es. Am Ende sagst du, was war. Redemittel führen deine Zuhörer dabei."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: ordering
+        id: praes-ordnen
+        text: "Ein kurzer Vortrag über einen Klassenausflug ist durcheinander. Bringe die Sätze in die Reihenfolge eines Vortrags."
+        items:
+          - Good afternoon, everyone. Today I will talk about our class trip.
+          - First, I will tell you where we went.
+          - Next, I would like to show you our photos.
+          - Finally, here is what I learned.
+          - To sum up, it was a great day. Thank you for listening.
+        hint: "Die Begrüßung kommt zuerst und der Dank zuletzt. Die Wörter First, Next und Finally zeigen dir die Reihenfolge der Punkte."
+        explanation: Einleitung mit Begrüßung und Thema, dann die Punkte mit First, Next und Finally, zuletzt der Schluss mit Zusammenfassung und Dank.
+      - type: matching
+        id: praes-zuordnen
+        text: "Zu welchem Teil des Vortrags gehört das Redemittel?"
+        pairs:
+          - { left: "I would like to talk about our library.", right: Einleiten }
+          - { left: "Let us look at the next point.", right: Überleiten }
+          - { left: "That brings me to the end.", right: Abschließen }
+        explanation: Wer ein Thema nennt, leitet ein. Wer den nächsten Punkt ankündigt, leitet über. Wer das Ende nennt, schließt ab.
+      - type: language-task
+        id: praes-luecke
+        languages: { source: de, target: en }
+        mode: gap
+        form: { case: ok, punctuation: ok }
+        task: "Setze das Redemittel ein. Du kennst die Wörter aus Sophies Vortrag."
+        hint: "Die Redemittel stehen in Sophies Vortrag: am Anfang, in der Mitte und am Ende."
+        items:
+          - source: "Heute möchte ich euch etwas über unsere Bibliothek erzählen."
+            target: "[Today] I want to tell you about our library."
+            mistakes:
+              - answer: "Now"
+                message: "Now heißt jetzt. Es steht in der Mitte, beim Überleiten, nicht am Anfang."
+          - source: "Jetzt komme ich zu den Öffnungszeiten."
+            target: "[Now] let me turn to the opening times."
+            mistakes:
+              - answer: "Today"
+                message: "Today steht am Anfang des Vortrags. Hier geht der Vortrag schon weiter."
+          - source: "Zusammengefasst: Die Bibliothek hilft uns allen."
+            target: "[To sum up|In short], the library helps us all."
+            mistakes:
+              - answer: "First"
+                message: "First beginnt den ersten Punkt. Ein Schluss fasst zusammen."
+        explanation: Today leitet ein, Now let me turn to leitet über, To sum up schließt ab.
+      - type: language-task
+        id: praes-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: a-good-talk-has-a-clear-beginning.mp3
+            target: A good talk has a clear beginning.
+          - audio: look-at-your-audience-and-speak-slowly.mp3
+            target: Look at your audience and speak slowly.
+          - audio: the-last-part-says-thank-you-and-asks-for-questions.mp3
+            target: The last part says thank you and asks for questions.
+        explanation: Die Sätze geben Tipps für einen guten Vortrag.
+  - type: section
+    id: anwenden
+    title: Selbst sprechen
+    blocks:
+      - type: speaking-task
+        id: praes-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So kannst du einen Vortrag einleiten, überleiten und beenden."
+        items:
+          - audio: welcome-everyone-to-my-presentation.mp3
+            text: Welcome, everyone, to my presentation.
+          - audio: my-next-subject-is-the-school-library.mp3
+            text: My next subject is the school library.
+          - audio: i-am-happy-to-answer-your-questions.mp3
+            text: I am happy to answer your questions.
+      - type: open-task
+        id: praes-meinung
+        task: "Welches Redemittel in Sophies Vortrag findest du am nützlichsten? Nenne die Zeile und schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst ein Redemittel und seine Zeile.
+            source: /gliedern-und-ton/praesentation/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I think Finally in line 6 is useful because it tells the listeners that the last point is coming. Then everybody can listen again.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+      - type: open-task
+        id: praes-schreiben
+        task: "Du stellst der Klasse deine eigene Klasse vor. Schreibe einen kurzen Vortrag mit drei bis fünf Sätzen: Begrüßung und Thema, ein Übergang, ein Punkt, Schluss mit Dank."
+        points:
+          - text: Die Einleitung begrüßt die Zuhörer und nennt das Thema.
+            source: /gliedern-und-ton/praesentation/#bauplan
+          - text: Du leitest mit einem Redemittel zum nächsten Punkt über.
+            source: /gliedern-und-ton/praesentation/#lesestueck
+          - text: Der Schluss fasst kurz zusammen und dankt den Zuhörern.
+            source: /gliedern-und-ton/praesentation/#bauplan
+          - text: Du sprichst im neutralen Ton, ohne Kurzformen und Slang.
+            kind: form
+        solution: |
+          Good afternoon, everybody. Today I want to tell you about our class. First, we are a friendly group and we help each other. Now let me turn to our projects. Last month we made a bird house for the school garden. To sum up, our class is small, but it is very busy. Thank you for listening.
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Dein Vortrag ist gebaut. Auf der nächsten Seite schreibst du denselben Inhalt als Blogbeitrag: Hör genau hin, welche Wörter sich ändern."
