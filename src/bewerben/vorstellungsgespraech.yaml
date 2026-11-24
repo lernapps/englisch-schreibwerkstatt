@@ -1,0 +1,263 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das Vorstellungsgespräch
+description: "Sich auf ein Vorstellungsgespräch vorbereiten und typische Fragen in drei Schritten beantworten: mit einem Gespräch in der Stadtbücherei."
+competencies: [vorstellungsgespraech]
+scope: "Die Seite zeigt, wie man sich auf ein Vorstellungsgespräch (job interview) vorbereitet und typische Fragen beantwortet. Lesestück ist ein Gespräch zwischen Sophie und Mr Anderson in der Millbrook Library in drei Abschnitten (Begrüßung, Tell me about yourself und Why do you want this job in den Zeilen 1 bis 6; Tell me about a time when you helped someone und What are your strengths in den Zeilen 7 bis 10; Arbeitszeit, Do you have any questions for us und Abschied in den Zeilen 11 bis 16). Das Vorstellungsgespräch ist ein Gespräch, in dem der Arbeitgeber herausfindet, ob die Person für die Stelle passt; die Fragen betreffen Erfahrung, Ausbildung und Fähigkeiten, und Üben mit Rückmeldung hilft. Eine Antwort hat drei Schritte: Behauptung, Beispiel, Bezug zur Stelle. Zum Schluss stellt man selbst eine Rückfrage. Typische Fehler sind Ein-Wort-Antworten, Slang und keine Rückfrage am Ende. Geübt werden Frage und Antwort zuordnen, die bessere Antwort wählen, Antwortsätze schreiben, Hören und Nachsprechen, ein Rollenspiel zum Nachsprechen und zwei offene Aufgaben (Meinung zum Gespräch, Antworten auf drei Fragen). Am Ende steht ein kurzer Rückblick auf das Kapitel. Nicht hier sind der Lebenslauf und die Bewerbung."
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Vielleicht hast du schon eine Bewerbung geschrieben. Mr Anderson lädt Sophie zum **Vorstellungsgespräch** (job interview) in die Bücherei ein. Danach kannst du dich auf ein Vorstellungsgespräch vorbereiten und typische Fragen beantworten."
+      - type: single-choice
+        id: vorstellungsgespraech-start
+        text: "Du bist zu einem Vorstellungsgespräch eingeladen. Was hilft dir bei der Vorbereitung am meisten?"
+        options:
+          - text: Ich lerne den Text meines Lebenslaufs auswendig, damit ich ihn aufsagen kann
+            correct: false
+            info: "Der Arbeitgeber kennt deinen Lebenslauf schon. Im Gespräch will er mehr von dir hören als die Liste."
+          - text: Ich überlege vorher, wie ich auf typische Fragen antworte
+            correct: true
+            info: "Typische Fragen kommen fast immer. Wer vorher überlegt, antwortet ruhiger und genauer."
+          - text: Ich warte ab, was gefragt wird, und antworte dann so kurz wie möglich
+            correct: false
+            info: "Sehr kurze Antworten sagen nichts über dich. Der Arbeitgeber möchte dich kennenlernen."
+        explanation: Eine gute Vorbereitung heißt, typische Fragen vorher zu durchdenken und Antworten zu üben.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Sophie und Mr Anderson
+    blocks:
+      - type: text
+        text: "Lies das Gespräch in drei Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: strength
+            source: die Stärke
+          - target: to improve
+            source: verbessern
+          - target: deadline
+            source: der Abgabetermin
+          - target: proud
+            source: stolz
+          - target: reliable
+            source: zuverlässig
+          - target: librarian
+            source: der Bibliothekar, die Bibliothekarin
+          - target: shelves
+            source: die Regale
+          - target: patient
+            source: geduldig
+      - type: text
+        text: |
+          1. **Mr Anderson:** Good morning, Sophie. Please sit down, and thank you for coming.
+          2. **Sophie:** Good morning, Mr Anderson. Thank you for seeing me.
+          3. **Mr Anderson:** Let us start with an easy question. Can you tell me about yourself?
+          4. **Sophie:** Of course. I come from Germany, and I am spending a school year at Millbrook School. I write for the school newspaper and I help in the school library. In my free time I enjoy reading and swimming.
+          5. **Mr Anderson:** Thank you. And why do you want this job?
+          6. **Sophie:** I love books, and I would like to help visitors to find books they enjoy. I also want to improve my English, and a library is a good place for that.
+      - type: single-choice
+        id: vorstellungsgespraech-selbst
+        text: "Wie antwortet Sophie auf „Can you tell me about yourself?“ (Zeile 4)?"
+        options:
+          - text: Sie sagt nur „Yes“
+            correct: false
+            info: "In Zeile 4 antwortet Sophie in mehreren Sätzen."
+          - text: Sie liest ihren Lebenslauf Zeile für Zeile vor
+            correct: false
+            info: "Sophie zählt nicht alles auf. Sie wählt aus: Schule, Erfahrung, Hobbys."
+          - text: Sie nennt ihre Schule, ihre Erfahrung und ihre Hobbys
+            correct: true
+            info: "Das steht in Zeile 4: Millbrook School, Zeitung und Bibliothek, Lesen und Schwimmen."
+        explanation: Auf diese Frage gibst du einen kurzen Überblick, keine lange Liste.
+      - type: text
+        text: |
+          7. **Mr Anderson:** Can you tell me about a time when you helped someone?
+          8. **Sophie:** Yes. Last month a teacher needed books for a lesson about the history of Millbrook. I asked what the lesson was about, and then I found five books for her. She was very pleased, and I felt proud.
+          9. **Mr Anderson:** What are your strengths?
+          10. **Sophie:** I think I am reliable. For example, I have never missed a deadline at the school newspaper, and I always arrive on time. This is important in a library, because visitors need help at the right moment.
+      - type: single-choice
+        id: vorstellungsgespraech-zeile
+        text: "In welcher Zeile erzählt Sophie, wie sie jemandem geholfen hat?"
+        options:
+          - text: Zeile 8
+            correct: true
+            info: "In Zeile 8 sucht Sophie Bücher für eine Lehrerin."
+          - text: Zeile 10
+            correct: false
+            info: "Zeile 10 nennt ein Beispiel für Zuverlässigkeit, den Abgabetermin der Zeitung. Von Hilfe für eine Person steht dort nichts."
+          - text: Zeile 6
+            correct: false
+            info: "Zeile 6 nennt den Grund, warum Sophie die Stelle will. Eine Geschichte erzählt sie dort nicht."
+        explanation: Auf „a time when“ antwortest du mit einer kleinen Geschichte, die schon vorbei ist.
+      - type: text
+        text: |
+          11. **Mr Anderson:** The job is four hours a day on three days a week. Is that all right for you?
+          12. **Sophie:** Yes, that is perfect. I have no other plans for the summer holidays, and I would like to work with the reading groups.
+          13. **Mr Anderson:** Good. Do you have any questions for us?
+          14. **Sophie:** Yes, I do. What would a normal day in the library look like, and who would I work with?
+          15. **Mr Anderson:** You would start by putting books back on the shelves, and you would work with our team of librarians. Thank you, Sophie. We will send you an email next week.
+          16. **Sophie:** Thank you very much for your time. Goodbye, Mr Anderson.
+      - type: multiple-choice
+        id: vorstellungsgespraech-schluss
+        text: "Welche Zeilen zeigen, dass Sophie gut vorbereitet ist? Wähle alle passenden Zeilen."
+        options:
+          - text: Zeile 14 zeigt, dass sie am Ende selbst Fragen stellt
+            correct: true
+            info: "Richtig: Mit eigenen Fragen zeigt sie Interesse an der Arbeit."
+          - text: Zeile 16 zeigt, dass sie sich am Ende für die Zeit bedankt
+            correct: true
+            info: "Richtig: Ein höflicher Schluss gehört zum Gespräch."
+          - text: Zeile 12 zeigt, dass sie lieber nur zwei Tage arbeiten möchte
+            correct: false
+            info: "In Zeile 12 sagt Sophie, dass die Arbeitszeit für sie passt."
+        explanation: Sophie fragt selbst nach (Zeile 14) und bedankt sich (Zeile 16).
+      - type: open-task
+        id: vorstellungsgespraech-meinung
+        task: "Welche Antwort von Sophie findest du am besten, und warum? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst eine Antwort oder eine Zeile aus dem Gespräch.
+            source: /bewerben/vorstellungsgespraech/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I like the answer in line 8 best because Sophie tells a real story. Then Mr Anderson can see how she works with visitors.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: bauplan
+    title: Der Bauplan einer Antwort
+    blocks:
+      - type: figure
+        image: images/bauplan-antwort.svg
+        alt: "Drei Kästen untereinander, verbunden durch Pfeile nach unten. Jeder Kasten hat eine Zahl, eine Überschrift und einen kurzen Satz."
+        caption: "Der Bauplan einer Antwort von oben nach unten gelesen: so hat Sophie in Zeile 10 geantwortet."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Im Vorstellungsgespräch findet der Arbeitgeber heraus, ob du für die Stelle passt. Die Fragen drehen sich um Erfahrung, Ausbildung und Fähigkeiten. Eine gute Antwort hat drei Schritte: eine **Behauptung** (claim), ein **Beispiel** (example) und den **Bezug zur Stelle**. Auch wie du sprichst, zählt: klar, mit kleinen Pausen und freundlich. Kurzformen wie *I'm* sind im Gespräch normal. Slang wie *gonna* klingt zu locker. Am Ende stellst du eine eigene Rückfrage. Am besten übst du mit einem Probegespräch und bittest danach um Rückmeldung."
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Behauptung, Beispiel, Bezug: So wird aus einem Wort eine Antwort. Am Ende fragst du selbst etwas."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: vorstellungsgespraech-zuordnen
+        text: "Welche Antwort passt zu welcher Frage?"
+        pairs:
+          - { left: "Why do you want this job?", right: "Because I enjoy sport and I like helping visitors" }
+          - {
+              left: "Tell me about a time when you worked in a team.",
+              right: "Last year my class made a poster together",
+            }
+          - { left: "What are your strengths?", right: "I am patient, and I stay calm when it is busy" }
+          - { left: "Do you have any questions for us?", right: "Yes, will I have a break during the day" }
+        distractors: ["Yes"]
+        explanation: Jede Antwort sagt mehr als ein Wort und passt zur Frage. Das einzelne „Yes“ passt zu keiner dieser Fragen, weil es nichts über dich sagt.
+      - type: single-choice
+        id: vorstellungsgespraech-antwort
+        text: "Mr Anderson fragt: „Do you work well in a team?“ Welche Antwort ist am besten?"
+        options:
+          - text: Yes, I am the best team player you will ever meet, and I never have problems with other people
+            correct: false
+            info: "Das ist nur eine Behauptung. Es fehlt ein Beispiel, das sie zeigt."
+          - text: Yes, I do. Last year I helped to plan a sports day, and teamwork is important in a busy library
+            correct: true
+            info: "Behauptung, Beispiel und Bezug zur Stelle: alle drei Schritte sind da."
+          - text: Yeah, sure, I get on with everybody in my class, no problem at all
+            correct: false
+            info: "Yeah und no problem klingen zu locker, und ein Beispiel fehlt."
+          - text: "Yes"
+            correct: false
+            info: "Eine Ein-Wort-Antwort sagt nichts über dich. Der Arbeitgeber möchte ein Beispiel hören."
+        explanation: Eine gute Antwort hat drei Schritte und klingt freundlich, ohne Slang.
+      - type: language-task
+        id: vorstellungsgespraech-antworten
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Schreibe den Satz für eine Antwort. Der Hinweis ist auf Englisch und zeigt, was du brauchst."
+        hint: "Das Beispiel ist schon vorbei: Nimm die Vergangenheit."
+        items:
+          - cue: "For example, I once (plan) a book sale."
+            target: "For example, I once planned a book sale."
+            mistakes:
+              - answer: "For example, I once plan a book sale."
+                message: "Das Beispiel liegt in der Vergangenheit. Schreibe planned."
+          - cue: "important · this job · because · visitors · need · help"
+            target: "(This|That) is important (for|in) this job because visitors need help."
+            mistakes:
+              - answer: "This is important for this job because visitors needs help."
+                message: "Visitors steht in der Mehrzahl, darum heißt es need ohne s."
+          - cue: "a question for the end: time · work · start · morning"
+            target: "(What time|When) does (the |)work start in the morning?"
+            mistakes:
+              - answer: "When starts the work in the morning?"
+                message: "In der Frage brauchst du does und das Verb ohne s: does the work start."
+              - answer: "What time start the work in the morning?"
+                message: "In der Frage brauchst du does: What time does the work start."
+        explanation: Das Beispiel steht in der Vergangenheit, der Bezug zur Stelle erklärt, warum es wichtig ist, und am Ende stellst du eine Frage mit does.
+      - type: language-task
+        id: vorstellungsgespraech-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: speak-slowly-and-clearly.mp3
+            target: Speak slowly and clearly.
+          - audio: prepare-an-example-for-each-answer.mp3
+            target: Prepare an example for each answer.
+          - audio: finish-by-asking-a-friendly-question.mp3
+            target: Finish by asking a friendly question.
+        explanation: Die Sätze geben Tipps für ein Vorstellungsgespräch.
+  - type: section
+    id: anwenden
+    title: Selbst sprechen und schreiben
+    blocks:
+      - type: speaking-task
+        id: vorstellungsgespraech-nachsprechen
+        language: en
+        task: "Spiele das Gespräch. Mr Anderson fragt: „Can you tell me about a time when you were patient?“ Höre die drei Sätze einer Antwort (Behauptung, Beispiel, Bezug) und sprich sie nach."
+        items:
+          - audio: i-think-i-am-a-patient-person.mp3
+            text: I think I am a patient person.
+          - audio: for-example-i-once-helped-a-nervous-visitor.mp3
+            text: For example, I once helped a nervous visitor.
+          - audio: that-helps-me-to-stay-calm-when-the-place-is-busy.mp3
+            text: That helps me to stay calm when the place is busy.
+      - type: open-task
+        id: vorstellungsgespraech-schreiben
+        task: "Du bewirbst dich um einen Ferienjob als Helfer im Riverside Sports Centre (erfunden). Schreibe auf Englisch deine Antworten auf drei Fragen: „Tell me about yourself.“, „Why do you want this job?“ und „Tell me about a time when you worked in a team.“ Schreibe zu jeder Frage zwei bis drei Sätze und zum Schluss eine eigene Rückfrage. Nimm keine echten Daten."
+        points:
+          - text: Jede Antwort hat eine Behauptung, ein Beispiel und einen Bezug zur Stelle.
+            source: /bewerben/vorstellungsgespraech/#bauplan
+          - text: Bei „Tell me about yourself“ nennst du Schule, Erfahrung und Hobbys.
+            source: /bewerben/vorstellungsgespraech/#lesestueck
+          - text: Das Beispiel bei „a time when“ steht in der Vergangenheit.
+            kind: form
+          - text: Du schreibst ganze Sätze ohne Slang, nicht nur ein Wort.
+            kind: form
+          - text: Du endest mit einer eigenen Rückfrage.
+            source: /bewerben/vorstellungsgespraech/#bauplan
+        solution: |
+          Tell me about yourself: I am a student and I like sport. At school I help to put out the equipment before lessons, and in my free time I play football and swim.
+
+          Why do you want this job: I enjoy sport, and I would like to help visitors to enjoy it too. A sports centre is a good place to learn how to work with different people.
+
+          Tell me about a time when you worked in a team: Last year my class made a poster for the school sports day. I drew the pictures, and my friends wrote the text. This helps me in a busy centre, because everybody has to share the work.
+
+          My question: Who would I work with on my first day?
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Rückblick auf das Kapitel
+    blocks:
+      - type: text
+        text: "Du hast das Kapitel geschafft. Der **Bauplan** gab dir bei jedem Text die Teile vor: Anrede, Anliegen und Gruß in der formellen E-Mail, Personal details bis Interests im CV, sechs Teile in der Bewerbung und drei Schritte in der Antwort. Der **Ton-Regler** stand dabei nahe bei formal: höflich in E-Mail und Bewerbung, knapp in den Stichpunkten des CV, im Gespräch freundlich und ohne Slang. Mit beidem kannst du dich auch um ein Praktikum bewerben."

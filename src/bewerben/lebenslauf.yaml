@@ -1,0 +1,287 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Der Lebenslauf (CV)
+description: "Einen englischen Lebenslauf in Stichpunkten schreiben: mit Sophies CV für einen Ferienjob in der Bücherei."
+competencies: [lebenslauf]
+scope: "Die Seite zeigt, wie ein englischer Lebenslauf (CV) gebaut ist. Lesestück ist Sophies CV für die Stelle Summer Library Assistant der Millbrook Library (Zeilen 1 bis 14) und eine Nachricht von Mr Anderson mit zwei Rückfragen und Sophies Antwort (Zeilen 15 bis 20). Der CV hat feste Teile in fester Reihenfolge: Personal details, Education, Experience, Skills, Interests. Er besteht aus Stichpunkten, das Neueste steht zuerst, Zeiträume haben einen Strich („2023 – present“), Monate werden ausgeschrieben. Im Vereinigten Königreich und in den USA stehen im CV kein Foto, kein Geschlecht und kein Familienstand; ein CV ist meist ein bis zwei Seiten lang. Typische Fehler sind Foto, Alter und Familienstand, Fließtext statt Stichpunkten und ein Datum wie 01.02.2023. Geübt werden Angaben den Teilen zuordnen, Fehler in einem Entwurf finden, Zeilen mit Zeitraum schreiben, Hören und Nachsprechen und zwei offene Aufgaben (Meinung zum CV, eigener CV einer erfundenen Person). Nicht hier sind die Bewerbung (Anschreiben) und das Vorstellungsgespräch."
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Vielleicht kennst du schon Berufe und die Art, ein Datum auf Englisch zu schreiben. Jetzt sucht Sophie einen Ferienjob in der Stadtbücherei von Millbrook. Dafür braucht sie einen **CV** (curriculum vitae), das ist der Lebenslauf. Danach kannst du einen englischen CV schreiben."
+      - type: single-choice
+        id: lebenslauf-start
+        text: "Du bewirbst dich um einen Ferienjob. Was soll dein Lebenslauf vor allem zeigen?"
+        options:
+          - text: Mein ganzes Leben mit allen Einzelheiten, von der Grundschule an
+            correct: false
+            info: "So ein Lebenslauf wird zu lang. Er nennt nur, was für die Stelle wichtig ist, meist auf ein bis zwei Seiten."
+          - text: Kurz, was ich gelernt habe, schon getan habe und kann
+            correct: true
+            info: "Ein Lebenslauf zählt Ausbildung, Erfahrung und Fähigkeiten kurz auf."
+          - text: Warum ich gerade diese Stelle haben möchte, mit meinen Gründen
+            correct: false
+            info: "Das schreibst du in der Bewerbung. Der Lebenslauf zählt nur auf. Die Bewerbung kommt auf der nächsten Seite."
+        explanation: Ein Lebenslauf ist eine kurze Liste von Fakten. Gründe und Wünsche gehören in die Bewerbung.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Sophies CV und eine Nachricht
+    blocks:
+      - type: text
+        text: "Lies zuerst Sophies CV in zwei Abschnitten, dann die Nachrichten von Mr Anderson und Sophie. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: curriculum vitae
+            source: der Lebenslauf
+          - target: exchange year
+            source: das Austauschjahr
+          - target: experience
+            source: die Erfahrung
+          - target: skills
+            source: die Fähigkeiten
+          - target: reliable
+            source: zuverlässig
+          - target: shelves
+            source: die Regale
+          - target: application
+            source: die Bewerbung
+          - target: details
+            source: die Angaben
+      - type: text
+        text: |
+          1. **Sophie Weber** · *Curriculum vitae*
+          2. **Personal details**
+          3. Living in Millbrook for one school year. Email: sophie.weber\@example.org
+          4. **Education**
+          5. 2023 – present: Millbrook School, exchange year (main subjects: English, History, Art)
+          6. 2019 – 2023: Gymnasium, Germany
+      - type: single-choice
+        id: lebenslauf-present
+        text: "Was bedeutet „2023 – present“ in Zeile 5?"
+        options:
+          - text: Von 2023 bis zum Geschenk
+            correct: false
+            info: "Present kann „Geschenk“ heißen, aber in einem Zeitraum meint es etwas anderes."
+          - text: Von 2023 bis heute
+            correct: true
+            info: "Richtig: Sophie besucht die Millbrook School noch jetzt."
+          - text: Nur im Jahr 2023
+            correct: false
+            info: "Der Strich zeigt einen Zeitraum, nicht nur ein Jahr."
+        explanation: Present am Ende eines Zeitraums heißt, dass etwas noch andauert.
+      - type: text
+        text: |
+          7. **Experience**
+          8. 2023 – present: Writer for the school newspaper. Writes short reports and interviews every month
+          9. 2023 – present: Helper in the school library. Puts books back on the shelves and helps students to find books
+          10. **Skills**
+          11. Languages: German (first language), English (good)
+          12. Reliable, friendly, good with computers and good at working in a team
+          13. **Interests**
+          14. Reading (novels and short stories) and swimming
+      - type: single-choice
+        id: lebenslauf-zeile
+        text: "In welcher Zeile steht, was Sophie in der Schulbibliothek tut?"
+        options:
+          - text: Zeile 9
+            correct: true
+            info: "Zeile 9 sagt, dass sie Bücher ins Regal stellt und Schülern beim Suchen hilft."
+          - text: Zeile 8
+            correct: false
+            info: "Zeile 8 gehört zur Schülerzeitung, nicht zur Bibliothek."
+          - text: Zeile 12
+            correct: false
+            info: "Zeile 12 nennt Eigenschaften, nicht Aufgaben in der Bibliothek."
+        explanation: Unter Experience steht je Aufgabe ein Zeitraum und was Sophie dort tut.
+      - type: text
+        text: |
+          15. **Mr Anderson:** Dear Sophie, thank you for sending your CV. It is clear and easy to read, the parts are in a good order, and I am glad that you already help in a library.
+          16. I have two questions. First, what exactly do you do in your school library, and do you work with readers of different ages?
+          17. Second, which three days a week can you work in the summer holidays? Please write to me at library\@example.org.
+          18. **Sophie:** Dear Mr Anderson, thank you for your message. At school I put books back on the shelves, answer questions from students and teachers and help them to find the right book. I can work on Monday, Wednesday and Friday. In the summer I would also like to join your reading groups.
+          19. **Mr Anderson:** Thank you, Sophie. That is very helpful. We will read all the applications this week, and then I will send you an email about the next step.
+          20. **Sophie:** Thank you very much. I am looking forward to your email.
+      - type: multiple-choice
+        id: lebenslauf-fragen
+        text: "Welche Zeilen zeigen, was Mr Anderson noch wissen will? Wähle alle passenden Zeilen."
+        options:
+          - text: Zeile 16 fragt, was Sophie in der Schulbibliothek tut
+            correct: true
+            info: "Richtig: Das ist die erste Frage in Zeile 16."
+          - text: Zeile 17 fragt, an welchen Tagen Sophie arbeiten kann
+            correct: true
+            info: "Richtig: Das ist die zweite Frage."
+          - text: Zeile 15 fragt, wie alt Sophie ist
+            correct: false
+            info: "Zeile 15 lobt den CV. Nach dem Alter fragt Mr Anderson nicht."
+        explanation: Die Fragen stehen in den Zeilen 16 und 17. Sophie antwortet in Zeile 18.
+      - type: open-task
+        id: lebenslauf-meinung
+        task: "Welche Angabe in Sophies CV ist für eine Bücherei am wichtigsten, und warum? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst eine Angabe aus dem CV, zum Beispiel eine Aufgabe unter Experience.
+            source: /bewerben/lebenslauf/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I think the line about the school library is the most important one because Sophie already does similar work. A library needs people who like books.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: bauplan
+    title: Der Bauplan eines Lebenslaufs
+    blocks:
+      - type: figure
+        image: images/bauplan-lebenslauf.svg
+        alt: "Drei Gruppen untereinander. Oben die persönlichen Angaben, in der Mitte drei Zeilen mit den Hauptteilen, unten die Interessen."
+        caption: "Der Bauplan von oben nach unten gelesen: so ist auch Sophies CV gebaut."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Der **Bauplan** des CV hat feste Teile: *Personal details* als Kopf, dann *Education*, *Experience* und *Skills* als Hauptteil, zuletzt *Interests*. Jeder Teil besteht aus **Stichpunkten**, nicht aus langen Sätzen, und das Neueste steht zuerst. Einen Zeitraum schreibst du mit Strich, zum Beispiel „2014 – 2016“; was noch andauert, endet mit *present*. Monate schreibst du aus („June 2021“), nicht als „06.2021“. Im Vereinigten Königreich und in den USA stehen im CV kein Foto, kein Geschlecht und kein Familienstand (*marital status*). Ein CV ist meist ein bis zwei Seiten lang."
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Ein CV zählt auf, er erzählt nicht: Stichpunkte, neueste Angabe zuerst, Zeitraum mit Strich, Monat ausgeschrieben."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: lebenslauf-teile
+        text: "In welchen Teil eines CV gehört die Angabe?"
+        pairs:
+          - { left: "Email: j.clark@example.org", right: Personal details }
+          - { left: "2018 – 2022: Greenfield School", right: Education }
+          - { left: "2022 – present: Shop assistant in a clothes shop", right: Experience }
+          - { left: "Languages: English (first language), Spanish (a little)", right: Skills }
+          - { left: "Football, cooking and chess", right: Interests }
+        distractors: [Photo]
+        explanation: "Persönliche Angaben und Kontakt stehen oben. Schulen gehören zu Education, Arbeit zu Experience, Sprachen zu Skills und Hobbys zu Interests. Einen Teil „Photo“ gibt es im britischen CV nicht."
+      - type: multiple-choice
+        id: lebenslauf-fehler
+        text: "Alex schreibt einen CV für einen Job in einem Café in Millbrook. Welche Zeilen des Entwurfs passen nicht in einen englischen CV? Wähle alle."
+        material:
+          - type: text
+            text: |
+              1. **Alex Green**
+              2. Age: 24
+              3. Marital status: married
+              4. Photo: on the right of this page
+              5. 2016 – 2019: Greenfield School
+              6. I worked for two years in a shop, and then I started in a café, where I serve the customers and make the coffee.
+              7. Course finished on 01.02.2023
+              8. Languages: English (first language), Spanish (good)
+        options:
+          - text: "Zeile 2, das Alter"
+            correct: true
+            info: "Das Alter gehört im Vereinigten Königreich nicht in den CV."
+          - text: "Zeile 3, der Familienstand"
+            correct: true
+            info: "Der Familienstand wird im britischen CV nicht genannt."
+          - text: "Zeile 4, das Foto"
+            correct: true
+            info: "Im Vereinigten Königreich und in den USA steht im CV kein Foto."
+          - text: "Zeile 6, der lange Satz über die Arbeit"
+            correct: true
+            info: "Ein CV besteht aus Stichpunkten. Der Satz muss kurz werden, zum Beispiel „Serves customers and makes coffee“."
+          - text: "Zeile 7, das Datum mit Punkten"
+            correct: true
+            info: "Zahlen mit Punkten sind die deutsche Schreibweise. Schreibe den Monat aus, zum Beispiel „February 2023“."
+          - text: "Zeile 5, der Zeitraum mit der Schule"
+            correct: false
+            info: "Zeile 5 ist richtig: Zeitraum mit Strich, dann der Name der Schule."
+          - text: "Zeile 8, die Sprachen"
+            correct: false
+            info: "Zeile 8 ist richtig: Sprachen stehen unter Skills."
+        explanation: Die Zeilen 2, 3 und 4 sind persönliche Angaben, die im CV fehlen. Zeile 6 ist ein Satz statt Stichpunkten, Zeile 7 hat ein deutsches Datum.
+      - type: language-task
+        id: lebenslauf-zeilen
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Schreibe die Zeile für den CV: erst der Zeitraum, dann die Angabe. Der Hinweis ist auf Englisch."
+        hint: "Zuerst der Zeitraum, dann ein Doppelpunkt und die Angabe. Einen Monat schreibst du aus."
+        items:
+          - cue: "Experience: helper in the sports club, from 2021 until now"
+            target: "2021 (–|-) present: helper in the sports club"
+            mistakes:
+              - answer: "2021 – now: helper in the sports club"
+                message: "Im CV steht present für „bis heute“, nicht now."
+              - answer: "2021 – today: helper in the sports club"
+                message: "Im CV steht present für „bis heute“, nicht today."
+          - cue: "Education: Greenfield School, 2018 to 2022"
+            target: "2018 (–|-|to) 2022: Greenfield School"
+          - cue: "Skills: swimming test, month 2, year 2023"
+            target: "February 2023: swimming test"
+            mistakes:
+              - answer: "02.2023: swimming test"
+                message: "Zahlen mit Punkten sind die deutsche Schreibweise. Schreibe den Monat aus."
+              - answer: "01.02.2023: swimming test"
+                message: "Das ist ein deutsches Datum. Schreibe den Monat aus, ohne Tag und Punkte."
+        explanation: In jeder Zeile steht zuerst der Zeitraum, dann die Angabe. Noch laufende Zeiträume enden mit present, Monate stehen ausgeschrieben.
+      - type: language-task
+        id: lebenslauf-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: always-start-with-your-newest-experience.mp3
+            target: Always start with your newest experience.
+          - audio: please-do-not-add-a-photograph.mp3
+            target: Please do not add a photograph.
+          - audio: keep-every-line-clear-and-simple.mp3
+            target: Keep every line clear and simple.
+        explanation: Die Sätze sagen, wie ein CV aufgebaut wird.
+  - type: section
+    id: anwenden
+    title: Selbst schreiben und sprechen
+    blocks:
+      - type: speaking-task
+        id: lebenslauf-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So kannst du Fragen zu deinem CV beantworten."
+        items:
+          - audio: i-am-looking-for-work-during-the-holidays.mp3
+            text: I am looking for work during the holidays.
+          - audio: i-can-send-you-more-information-tomorrow.mp3
+            text: I can send you more information tomorrow.
+          - audio: thank-you-for-your-quick-answer.mp3
+            text: Thank you for your quick answer.
+      - type: open-task
+        id: lebenslauf-schreiben
+        task: "Schreibe die Stichpunkte für den CV einer erfundenen Person, die einen Ferienjob in einem Café sucht. Nimm keine echten Daten. Schreibe alle fünf Teile."
+        points:
+          - text: Die Teile stehen in der Reihenfolge des Bauplans, vom Kopf bis zu den Interests.
+            source: /bewerben/lebenslauf/#bauplan
+          - text: Foto, Alter und Familienstand fehlen.
+            source: /bewerben/lebenslauf/#bauplan
+          - text: Jeder Teil besteht aus Stichpunkten mit Zeitraum, das Neueste steht zuerst.
+            kind: form
+          - text: Zeiträume haben einen Strich, ein laufender Zeitraum endet mit present, Monate sind ausgeschrieben.
+            kind: form
+        solution: |
+          Jordan Lee
+          Personal details
+          Email: jordan.lee\@example.org
+          Education
+          2021 – present: Hillside School
+          2017 – 2021: Riverside School
+          Experience
+          2023 – present: Helper at a school cake sale, serves tea and coffee
+          Skills
+          Languages: English (first language), French (a little)
+          Friendly and good with numbers
+          Interests
+          Football and drawing
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Der CV zählt die Fakten auf. Auf der nächsten Seite schreibst du die **Bewerbung** dazu: Dort erklärst du in ganzen Sätzen, warum du für die Stelle passt."

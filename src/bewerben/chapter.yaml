@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Bewerben
+summary: Sophie sucht einen Ferienjob in der Stadtbücherei von Millbrook. Du lernst, einen englischen Lebenslauf und eine Bewerbung zu schreiben und dich auf ein Vorstellungsgespräch vorzubereiten.
+pages: [lebenslauf, bewerbung, vorstellungsgespraech]
