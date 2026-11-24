@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" role="img" aria-label="Skizze Ton-Regler von informal über neutral zu formal">
+<rect width="480" height="160" fill="#f4efe2"/>
+<defs><linearGradient id="g"><stop offset="0" stop-color="#d9822b"/><stop offset=".5" stop-color="#7f8c8d"/><stop offset="1" stop-color="#2c3e75"/></linearGradient></defs>
+<rect x="40" y="70" width="400" height="16" rx="8" fill="url(#g)"/><circle cx="240" cy="78" r="16" fill="#fff" stroke="#333" stroke-width="3"/>
+<text x="40" y="50" font-size="18" fill="#333">informal</text><text x="205" y="50" font-size="18" fill="#333">neutral</text><text x="380" y="50" font-size="18" fill="#333">formal</text>
+<text x="40" y="130" font-size="16" fill="#333">Hi! Can't wait to tell you…</text>
+</svg>

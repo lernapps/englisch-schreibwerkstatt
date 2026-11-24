@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: plan
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -124,9 +124,10 @@ Insgesamt 17 Übungsseiten und 4 Wiederholungsseiten. Außerhalb liegende Voraus
       off), and which misconception the feedback catches.
 - [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
       elements", never a silent "1–20"), the languages.
-- [ ] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
+- [x] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
       approach, the scope, every "(guess)", the sources and what is unchecked, the archetype and its reason. Stop and
       wait. Changes: change them, then ask again.
+      Creator: Zuschnitt passt. 1 ja. 2 Recap nur für Bausteine, die eine App übt; perspektive-wechseln und schule-usa weglassen, wenn die Seite sie nicht braucht, sonst kurzer eigener Absatz ohne Übung, kein ahead. 3 Rote Fäden ok; Kapitel 4 keine erfundenen Kinder, nur Sophie als Stimme (library assistant), Amir als bakery helper streichen; Millbrook Messenger nur Kapitel 1-2. Du-Anrede auch 9-10 ok. 4 Inverted pyramid später erneut öffnen oder weglassen.
 
 ### Answers
 
@@ -154,15 +155,15 @@ Quelle der Antworten: der Auftrag der Orchestrator-Session (Issue lernapps/apps#
 
 ### Tasks
 
-- [ ] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
+- [x] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
       "Content method".
-- [ ] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
-- [ ] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
+- [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
+- [x] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
       opening task, the change of activity, the reward, the story.
-- [ ] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
+- [x] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
       `npx --no -- lernapps plan add --at pages "<task>"`. Each task says what it builds and what it shows.
-- [ ] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
+- [x] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
       learners see after each. Keep the files in `.vibe/sketches/`.
 - [ ] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
@@ -176,6 +177,42 @@ checks and what it cannot; how a later agent adds a chapter. It becomes the cont
 <!-- An explainer: per figure, model and component its learning action in two to four sentences
 (`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
 page, which a link. -->
+
+**Zuschnitt (Map the content):** Einheiten-App `subject: englisch`; Kapitel und Seiten wie unter „Notes“. Jede Seite trägt genau einen Baustein (`competencies: [<id>]`, Id = Karten-Id), keine `ahead`. Wiederholungsseiten `das-brauchst-du` je Kapitel mit `recap: [englisch/<id>, …]` nur für Bausteine, die eine App übt (Kapitel 1: kurzformen; 2: simple-past, fragewoerter, alltagstexte, figuren-ort-handlung; 3: vergleiche, zahlen; 4: email-postkarte, datum). `perspektive-wechseln` (Kap. 2) und `schule-usa` (Kap. 4) sind in keiner App geübt: nicht im `recap`, bei Bedarf ein kurzer Absatz im Seitentext ohne Übung (Antwort der Orchestrator-Session). Keine Datendateien, keine Komponenten. Die Statistik in Kapitel 3 ist eine kleine `table` und ein Diagramm als eigene SVG.
+
+**Seitenaufbau** (gleiche Abschnitts-IDs, `explainer-honest-headings`): `einstieg` (Vorwissen-Frage als erste Aufgabe, „Das kannst du danach“, Anschluss an die Seite davor) · `lesestueck` (Randglossar als `vocabulary` zuerst, dann der Text in 2 bis 3 Abschnitten mit nummerierten Zeilen, nach jedem Abschnitt eine Verstehensfrage) · `bauplan` (Merke und Bauplan- oder Regler-Figur; erklärt, was das Lesestück gezeigt hat) · `uebung` (4 bis 6 Aufgaben leicht → schwer: Belegen mit Zeile, Schablone füllen, Ton einordnen, schreiben mit Cue, Diktat) · `anwenden` (`open-task` mit `points` und Musterlösung, `speaking-task` wo Vortrag oder Gespräch dran ist; Meinung als freie Aufgabe) · `weiter`. Erklärtext ohne Lesestück höchstens etwa 350 Wörter, höchstens 4 Textblöcke hintereinander, Bild oder Übung in den ersten vier Blöcken, höchstens etwa 25 Items.
+
+**Lesestück:** eigener Text, kein fremder Satz. Sorten: Chat, Nachricht, Blogeintrag, Redetext, Bericht, Interview, Artikel, Diagrammtext, E-Mail, CV, Brief, Dialog. Als `text`-Blöcke, Zeilen als nummerierte Liste (Zeile = Belegstelle). Kapitel 1-2: Chats und Nachrichten der Figuren, kein Bild, wo es nichts zeigt. Kapitel 3: erfundene Zeitungs- und Statistiktexte über erfundene Orte und Einrichtungen, keine erfundenen Kinder. Kapitel 4: Dokumente der Stimme „Sophie“ (library assistant) und erfundener Firmen, keine weitere erfundene Kinderfigur. Namen von Firmen, Orten und Personen erfunden (`no-learner-data-in-texts`).
+
+**Figuren (SVG, eigene Zeichnungen, CC-BY-4.0):** Familie `bauplan-<textsorte>.svg` (feste Teile in fester Reihenfolge; Farben: Einleitung, headline, Anrede #6a4c93; Hauptteil, body, Anliegen #1b7f8a; Schluss, Gruß #b5651d; die Farben bedeuten nur das) und `ton-regler-<seite>.svg` (informal #d9822b, neutral #7f8c8d, formal #2c3e75; der Knopf steht je Seite anders). Hintergrund #f4efe2, Schrift mindestens 16 im 480er viewBox, Beschriftung im viewBox, `alt` nennt, was die Figur zeigt, nie die Lösung, Bildunterschrift sagt, worauf man schaut. Kapitel 3: `diagramm-<thema>.svg` (Balken oder Linie mit Achsen und Skala). Kein Foto, keine Figuren aus Büchern oder Filmen. Skizzen in `.vibe/sketches/`.
+
+**Muster (Details im Inhaltsführer):** (1) Schablone füllen: `ordering` Teile, `matching` Satz ↔ Teil. (2) Ton einordnen: `single-choice` mit `info` je Option, `matching` informal ↔ formal. (3) Belegen mit Zeile: `single-choice`, `multiple-choice`, Zeilenangabe in der Aufgabe. (4) Schreiben mit Cue und Lücke: `language-task` (`write`, `gap`, `choice`), `form: { punctuation: ok }`, gleichwertige Antworten `(a|b)`. (5) Hören und Nachsprechen: `language-task` mit `audio`, `speaking-task`; ganze Sätze, `bf_emma`, Lesestücke nur in kurzen Abschnitten. (6) Anwenden: `open-task` mit `points`, `kind: form`, Musterlösung; die App bewertet nichts. (7) Diagramme: `single-choice` und `language-task` mit Diagramm im `material`. (8) Information und Meinung: `multiple-choice` „Welche Sätze sind Information?“ (der Farbstift als Auswahl). Nicht ausdrückbar und darum nicht gebaut: ein echter Farbstift im Text, Bewertung freier Texte, Aussprache; steht in `scope`.
+
+**Typische Fehler (je eine Meldung):** Kurzformen und Slang in formellen Texten; „Dear Sir“ mit „Hi“ gemischt; Schluss mit neuem Argument; mehr als eine Idee je Absatz; present statt past im Bericht; Meinung im Bericht und im lead; Ja-Nein-Fragen im Interview; Zahlen vorlesen statt Entwicklung benennen, falsche Präposition (increase to/by); Foto, Alter und Familienstand im CV; Bewerbung wiederholt den Lebenslauf; Ein-Wort-Antworten im Gespräch; college mit Hochschule gleichsetzen.
+
+**Wörter:** Quelle ist der Grundwortschatz Englisch (A1/A2) unter `https://lernapps.net/apps/map/englisch/grundwortschatz/`. Stufe 7-8 und 9-10 brauchen mehr; jedes Wort außerhalb steht im Randglossar (`vocabulary`, Nomen mit Artikel) und im Inhaltsführer unter „Sources“.
+
+**Bauen und Erweitern:** Eine Seite = `src/<kapitel>/<seite>.yaml` + Eintrag in `chapter.yaml`; Hörsätze in `src/audio/` und `scripts/audio-texte.json`; ein Prüfskript im Repository prüft Hörsätze gegen den Text derselben Seite und Wörter gegen die Liste. Ein späteres Inkrement übernimmt Bauplan und Regler.
+
+**Engagement je Seite** (Opening · Change · Reward · Story · Repeat):
+- `text-gliedern`: Frage „Wo würdest du den Text trennen?“ · Lesen, Teile zuordnen, Schablone füllen · der eigene Text bekommt drei Teile · Ellie schickt einen langen Text ohne Absätze, Mr Hill bittet um Gliederung · die Schablone kehrt auf jeder Seite in anderer Form wieder.
+- `formell-informell`: Regler auf zwei Sätzen schieben · Chat mit Mr Hill und Mitschüler:innen vergleichen · Sätze einordnen · Anfrage an Mr Hill zum Aushang · der Regler wird hier eingeführt und danach benutzt.
+- `praesentation`: Redemittel den drei Teilen zuordnen · Redetext in Abschnitten lesen · eigener Einstieg und Übergang · Sophie bereitet den Vortrag über die Schülerzeitung vor · derselbe Inhalt wie im Blog, neutral statt informal.
+- `blog-post`: Titel wählen · Blog lesen, Kommentar schreiben · eigener Blogeintrag und Forenkommentar · derselbe Inhalt wie der Vortrag, jetzt informal · Regler auf informal.
+- `bericht-artikel`: W-Fragen finden · Bericht lesen und belegen · eigener Bericht · ein Ereignis der Schule · Schablone mit W-Fragen.
+- `interview`: Frage vorbereiten · Interview lesen, Fragen umformen · eigenes Interview · Amir interviewt Mr Hill · Fragewörter aus der Wiederholung.
+- `sachtext-fiktion`: zwei Texte vergleichen · Merkmale zuordnen · Merkmalsliste · Peter findet zwei Texte im Archiv der Zeitung · Merkmale in beiden Texten.
+- `textsorte-umwandeln`: Geschichte neben der Schablone · Zeile für Zeile übertragen · eigener Bericht aus einer Geschichte · die Zeitung druckt die Geschichte als Bericht · Berichtsschablone erneut.
+- `zeitungsartikel`: Artikel mit Teilen markieren · lesen, Teile bestimmen · Bericht von Kommentar trennen · erfundener Artikel über eine Stadtbücherei · die Schablone wird gedreht (finden statt schreiben).
+- `information-meinung`: Sätze mit dem Farbstift wählen · zwei Texte zum selben Anlass vergleichen · seriöse Nachricht prüfen · erfundene Meldungen über einen Skatepark · Information und Meinung in zwei Fassungen.
+- `diagramm-beschreiben`: Diagramm lesen · Aussagen zuordnen · Beschreibung schreiben · erfundene Umfrage zur Freizeit · Vergleiche aus der Wiederholung.
+- `berufswelt`: Berufe zuordnen · Anzeige und Interview lesen · eigener Berufswunsch · Sophie findet die Ferienjob-Anzeige · Wörter aus der Anzeige.
+- `bildungssystem`: Altersstufen vergleichen · Text über Schulsysteme lesen · eigenen Abschluss erklären · Sophie braucht Angaben für den Lebenslauf · Year- und Grade-Tabelle.
+- `formelle-email`: Anrede und Gruß wählen · E-Mail an die Bibliothek lesen · eigene Anfrage · Sophie fragt nach dem Ferienjob · Regler auf formal.
+- `lebenslauf`: Angaben in die CV-Schablone ordnen · CV lesen, Fehler finden · eigener CV · Sophies CV · Bauplan CV.
+- `bewerbung`: Teile ordnen · Bewerbung lesen und belegen · eigene Bewerbung · Sophies Bewerbung als library assistant · Bauplan Bewerbung.
+- `vorstellungsgespraech`: Frage und Antwort zuordnen · Gesprächstext lesen · Rollenspiel (Sprechauftrag) · Gespräch in der Bibliothek, Ausgang offen · Fragen aus der Bewerbung.
+
 
 ## Code
 
@@ -200,11 +237,20 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: pattern: the one page or screen that is the pattern for the others -->
+- [ ] Musterseite Kapitel 1: gliedern-und-ton/text-gliedern komplett (Lesestück als Chat, Randglossar, Bauplan-Figur, mindestens 5 Übungen, Diktat und Nachsprechen, offene Aufgabe), dazu app.yaml, chapter.yaml und das Prüfskript
+<!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-<!-- tasks: pages: the other pages or screens, after the pattern -->
+- [ ] Kapitel 1 fertig: formell-informell (Ton-Regler-Figur), praesentation, blog-post und die Wiederholungsseite das-brauchst-du (kurzformen); Regler und Bauplan wie die Musterseite
+- [ ] Kapitel 2: das-brauchst-du (simple-past, fragewoerter, alltagstexte, figuren-ort-handlung), bericht-artikel, interview
+- [ ] Kapitel 2 Rest: sachtext-fiktion und textsorte-umwandeln (Geschichte aus #479 als Vorlage, eigener Text)
+- [ ] Kapitel 3: das-brauchst-du (vergleiche, zahlen), zeitungsartikel, information-meinung, diagramm-beschreiben mit Diagramm-SVG
+- [ ] Kapitel 4 Teil 1: das-brauchst-du (email-postkarte, datum), berufswelt, bildungssystem, formelle-email
+- [ ] Kapitel 4 Teil 2: lebenslauf, bewerbung, vorstellungsgespraech (Sprechauftrag) und Kapitelrückblick
+- [ ] Audio: alle Hörsätze mit regen_audio.py erzeugen, Hörliste im Inhaltsführer, Fuzzy-Prüfskript über alle Seiten
+- [ ] Startseite (intro nennt nur Namen und Rollen, scope), Selbsteinschätzung je Kapitel, Medien und Quellen im Inhaltsführer
+<!-- tasks: pages (8 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
