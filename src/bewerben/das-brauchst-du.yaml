@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+description: "Kurze Wiederholung vor dem Kapitel Bewerben: persönliche E-Mail und Datum auf Englisch."
+recap: [englisch/email-postkarte, englisch/datum]
+scope: Die Seite wiederholt zwei Bausteine, die das Kapitel Bewerben voraussetzt. Persönliche E-Mail, Brief und Postkarte mit passender Anrede (Hi) und passendem Schluss (Best wishes) sowie Wochentage, Monate und Datum auf Englisch in britischer Schreibweise (Ordnungszahlen wie the third of May, 2 June). Eine kurze Übung zum Sprechen eines Datums. Neu ist hier nichts. Nicht hier sind formelle E-Mail, Lebenslauf und Bewerbung; sie kommen auf den nächsten Seiten.
+blocks:
+  - type: section
+    id: wiederholung
+    title: Das solltest du schon können
+    blocks:
+      - type: text
+        text: "Sophie sucht einen Ferienjob. In diesem Kapitel schreibst du wie sie eine E-Mail an eine Bücherei, einen Lebenslauf und eine Bewerbung. Zwei Dinge solltest du schon können."
+      - type: text
+        text: "**Persönliche E-Mail.** Ich kann eine persönliche E-Mail, einen Brief oder eine Postkarte mit passender Anrede und passendem Schluss schreiben. An Freunde schreibst du *Hi* und am Ende *Best wishes* oder *See you soon*. Für die Bücherei brauchst du bald einen anderen Ton.\n\n**Datum.** Ich kann Wochentage, Monate, Datum und Jahreszahlen sagen und schreiben. Britisch schreibst du zuerst den Tag, dann den Monat: *2 June* oder *2nd June*. Du sagst die Ordnungszahl: *the first*, *the second*, *the third*, *the twenty-first*. Im Lebenslauf stehen später Zeiträume wie *2022 – 2023*."
+      - type: vocabulary
+        caption: Zum Auffrischen
+        languages: { source: de, target: en }
+        entries:
+          - target: Hi, Sophie,
+            source: Anrede in einer persönlichen E-Mail
+          - target: Best wishes,
+            source: Gruß am Ende einer persönlichen E-Mail
+          - target: the second of June
+            source: so sagst du den zweiten Juni
+      - type: single-choice
+        id: brauchst-datum
+        text: "Wie sagst du das Datum 22 June auf Englisch?"
+        options:
+          - text: the twenty-second of June
+            correct: true
+            info: "Richtig: Du nimmst die Ordnungszahl, wie bei the second."
+          - text: the twenty-two of June
+            correct: false
+            info: "Nach the steht die Ordnungszahl: the twenty-second, nicht die Grundzahl."
+          - text: the twenty-twoth of June
+            correct: false
+            info: "Die Endung -th passt nicht zu two. Die Form heißt second, also twenty-second."
+        explanation: Beim Datum sagst du die Ordnungszahl, bei 22 also twenty-second.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Mit Hi und Best wishes schreibst du an Freunde. Auf der nächsten Seite lernst du Wörter für Berufe kennen und liest die Anzeige, die Sophie gefunden hat."
