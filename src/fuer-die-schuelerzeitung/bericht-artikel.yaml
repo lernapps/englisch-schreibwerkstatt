@@ -1,0 +1,258 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Einen Bericht schreiben
+description: "Einen Bericht für die Schülerzeitung über ein Ereignis schreiben: mit den W-Fragen, im simple past und ohne Meinung."
+competencies: [bericht-artikel]
+scope: Die Seite zeigt, wie man für eine Schülerzeitung einen Bericht über ein Ereignis schreibt. Lesestück ist ein Chat mit Amirs Bericht über einen Büchertauschtag der Schule (headline in Zeile 3, Einleitung mit Wer, Was, Wo, Wann und Warum in Zeile 4, Einzelheiten in den Zeilen 5 und 6, Schluss in Zeile 7; Zeile 8 nennt die W-Fragen, Zeile 9 das simple past, Zeile 10 die fehlende Meinung). Der Bauplan Bericht hat headline und Einleitung (die fünf W-Fragen who, what, where, when, why), Hauptteil (Einzelheiten der Reihe nach) und Schluss (wie es endete oder was kommt). Der Bericht steht im simple past, regelmäßige Verben mit -ed, einige unregelmäßig (came, brought). Ein Bericht enthält Fakten und keine Meinung; Wörter wie wonderful oder boring zeigen eine Meinung. Für einen Artikel über ein Ereignis gilt derselbe Bauplan. Geübt werden W-Fragen den Satzteilen zuordnen, Sätze im simple past schreiben, einen Meinungssatz erkennen, Hören und Nachsprechen und zwei offene Aufgaben (eigene Meinung zum Tauschtag, ein Bericht über einen Sporttag aus Stichpunkten). Nicht hier sind Interview, Sachtext und Umwandeln.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Die erste Ausgabe von „The Millbrook Messenger“ braucht einen Text über ein Ereignis in der Schule. Ein **Bericht** sagt sachlich, was passiert ist. Danach kannst du einen Bericht oder einen Artikel für eine Schülerzeitung über ein Ereignis schreiben."
+      - type: single-choice
+        id: bericht-start
+        text: "Du schreibst für die Schülerzeitung über ein Konzert in der Schule. Womit fängt dein Bericht an?"
+        options:
+          - text: Er sagt, was passiert ist
+            correct: true
+            info: "Ein Bericht beginnt mit dem, was passiert ist. Die Leser wollen zuerst die Nachricht wissen."
+          - text: Er beginnt mit meiner Meinung zum Konzert
+            correct: false
+            info: "Eine Meinung gehört nicht in einen Bericht. Der Bericht nennt Tatsachen, die Leser bilden sich selbst eine Meinung."
+          - text: Er erzählt alles in der Gegenwart, als würde es gerade passieren
+            correct: false
+            info: "Das Konzert ist schon vorbei. Ein Bericht erzählt von Vergangenem, also im simple past."
+        explanation: Ein Bericht sagt zuerst, was passiert ist, und nennt nur Tatsachen.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Amirs Bericht
+    blocks:
+      - type: text
+        text: "Lies den Chat und den Bericht in drei Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: report
+            source: der Bericht
+          - target: swap
+            source: der Tausch, tauschen
+          - target: organise
+            source: organisieren
+          - target: hall
+            source: die Halle
+          - target: collect
+            source: einsammeln
+          - target: nearly
+            source: fast
+          - target: opinion
+            source: die Meinung
+          - target: quiz
+            source: das Quiz
+      - type: text
+        text: |
+          1. **Mr Hill:** Amir, please write a report about Book Swap Day for the first newspaper. Write what happened. Keep your own opinion out of it.
+          2. **Amir:** OK. Here is my text.
+      - type: single-choice
+        id: bericht-verstehen
+        text: "Was soll Amir schreiben (Zeile 1)?"
+        options:
+          - text: Einen Bericht darüber, was am Tauschtag passiert ist
+            correct: true
+            info: "So steht es in Zeile 1: Write what happened."
+          - text: Einen Text darüber, was er vom Tauschtag hält
+            correct: false
+            info: "Das Gegenteil steht in Zeile 1: Keep your own opinion out of it."
+          - text: Eine Einladung zum nächsten Tauschtag
+            correct: false
+            info: "Von einer Einladung steht in Zeile 1 nichts. Amir schreibt einen Bericht über den Tag."
+        explanation: Zeile 1 verlangt einen Bericht über das, was passiert ist, ohne Meinung.
+      - type: text
+        text: |
+          3. *Book Swap Day at Millbrook School*
+          4. On Friday afternoon, the students of Year 8 organised a book swap in the school hall. They wanted to give old books a new home.
+          5. Forty students came to the hall. Each student brought a book and put it on a long table. Then everybody looked at the books and chose a new one.
+          6. Mr Hill opened the swap at two o'clock. Ellie and Peter collected the books at the door and counted them.
+          7. At the end of the afternoon, the table was nearly empty. The students swapped thirty-five books. They gave the last five books to the school library. The next swap will be in spring.
+      - type: single-choice
+        id: bericht-zeile
+        text: "In welcher Zeile steht, warum die Klasse den Tauschtag organisierte?"
+        options:
+          - text: Zeile 4
+            correct: true
+            info: "In Zeile 4 steht der Grund: They wanted to give old books a new home."
+          - text: Zeile 5
+            correct: false
+            info: "Zeile 5 sagt, wer kam und was die Schüler taten. Das ist der Ablauf, nicht der Grund."
+          - text: Zeile 7
+            correct: false
+            info: "Zeile 7 ist der Schluss: Sie sagt, wie der Nachmittag endete."
+        explanation: Der Grund steht in der Einleitung. Zeile 4 nennt auch, wer, was, wo und wann.
+      - type: text
+        text: |
+          8. **Mr Hill:** Thank you, Amir. Your report answers who, what, where, when and why.
+          9. **Sophie:** And everything is in the past: organised, came, brought.
+          10. **Ellie:** I loved the day, but your report does not say that. It only says what happened.
+      - type: multiple-choice
+        id: bericht-schluss
+        text: "Welche Zeilen zeigen, wie ein Bericht gebaut ist? Wähle alle passenden Zeilen."
+        options:
+          - text: Zeile 8 nennt die Fragen, die der Bericht beantwortet
+            correct: true
+            info: "Richtig: who, what, where, when and why sind die W-Fragen."
+          - text: Zeile 9 sagt, in welcher Zeit der Bericht steht
+            correct: true
+            info: "Richtig: organised, came und brought stehen im simple past."
+          - text: Zeile 10 sagt, dass der Bericht die Meinung des Schreibers nennt
+            correct: false
+            info: "Zeile 10 sagt das Gegenteil: Der Bericht sagt nur, was passiert ist."
+        explanation: Die Zeilen 8 bis 10 beschreiben den Bauplan und die Zeit von Amirs Bericht.
+      - type: open-task
+        id: bericht-meinung
+        task: "Würdest du zu einem Tauschtag für Bücher gehen? Welches Buch würdest du mitbringen? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du sagst, ob du hingehen würdest.
+            source: /fuer-die-schuelerzeitung/bericht-artikel/#lesestueck
+          - text: Du nennst ein Buch oder eine Art von Buch.
+            source: /fuer-die-schuelerzeitung/bericht-artikel/#lesestueck
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I would go to a book swap because I love reading. I would bring my old adventure book.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: bauplan
+    title: Der Bauplan eines Berichts
+    blocks:
+      - type: figure
+        image: images/bauplan-bericht.svg
+        alt: "Drei Kästen untereinander. Oben die headline und die Einleitung mit fünf Fragewörtern, in der Mitte der Hauptteil, unten der Schluss."
+        caption: "Der Bauplan eines Berichts von oben nach unten gelesen. Achte darauf, wo die Fragewörter stehen."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Ein **Bericht** sagt, was passiert ist: Tatsachen, keine Meinung. Die **headline** ist die kurze Überschrift. Die **Einleitung** beantwortet die W-Fragen *who, what, where, when, why*. Im **Hauptteil** stehen die Einzelheiten der Reihe nach, der **Schluss** sagt, wie es endete oder was kommt. Für einen Artikel über ein Ereignis gilt derselbe Bauplan."
+      - type: text
+        text: "Ein Bericht steht im **simple past**: *The choir sang.* Regelmäßige Verben bekommen -ed, viele wichtige Verben sind unregelmäßig, zum Beispiel *come – came* und *give – gave*. Wörter wie *wonderful* oder *boring* zeigen eine Meinung und bleiben draußen."
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "W-Fragen vorn, Einzelheiten der Reihe nach, simple past, keine Meinung."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: bericht-zuordnen
+        text: "Der Satz lautet: Class 8B sold cakes in the school hall on Monday because the class wanted to pay for a trip. Welche W-Frage beantwortet jeder Teil?"
+        pairs:
+          - { left: "Class 8B", right: "Who?" }
+          - { left: "sold cakes", right: "What?" }
+          - { left: "in the school hall", right: "Where?" }
+          - { left: "on Monday", right: "When?" }
+          - { left: "because the class wanted to pay for a trip", right: "Why?" }
+        distractors: ["How?"]
+        explanation: Wer, was, wo, wann und warum stehen schon in einem einzigen Satz der Einleitung.
+      - type: language-task
+        id: bericht-past
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Schreibe jeden Satz für den Bericht im simple past. Der Cue nennt die Wörter."
+        hint: "Regelmäßige Verben bekommen -ed. Bei bring hilft nur auswendig: Es ist unregelmäßig."
+        items:
+          - cue: "the class / visit / the museum / on Tuesday"
+            target: "The class visited the museum on Tuesday."
+            mistakes:
+              - answer: "The class visits the museum on Tuesday."
+                message: "Das ist das present. Ein Bericht erzählt von Vergangenem: visit plus -ed."
+              - answer: "The class visit the museum on Tuesday."
+                message: "Hier fehlt die Endung -ed für das simple past."
+          - cue: "Class 7A / organise / a quiz / on Wednesday"
+            target: "Class 7A (organised|organized) a quiz on Wednesday."
+            mistakes:
+              - answer: "Class 7A organises a quiz on Wednesday."
+                message: "Das ist das present. Im Bericht steht organise im simple past."
+              - answer: "Class 7A organise a quiz on Wednesday."
+                message: "Hier fehlt die Endung für das simple past: organise plus -d."
+          - cue: "the students / bring / old games / on Monday"
+            target: "The students brought old games on Monday."
+            mistakes:
+              - answer: "The students bringed old games on Monday."
+                message: "Bring ist unregelmäßig. Die Form im simple past ist nicht bringed."
+              - answer: "The students bring old games on Monday."
+                message: "Das ist das present. Das simple past von bring ist unregelmäßig."
+        explanation: Ein Bericht erzählt im simple past. Regelmäßige Verben bekommen -ed, bring wird zu brought.
+      - type: single-choice
+        id: bericht-meinungssatz
+        text: "Welcher Satz gehört nicht in einen Bericht über ein Quiz?"
+        options:
+          - text: Three teams took part in the quiz after school
+            correct: false
+            info: "Das ist eine Tatsache. Man kann die Teams zählen, also gehört der Satz in den Bericht."
+          - text: The quiz was the best event of the year
+            correct: true
+            info: "Best ist eine Meinung. Andere Leser können das anders sehen, also gehört der Satz nicht in den Bericht."
+          - text: Mr Hill asked twenty questions
+            correct: false
+            info: "Das ist eine Tatsache. Man kann die Fragen zählen, also darf der Satz im Bericht stehen."
+        explanation: Ein Bericht nennt, was man prüfen kann. Ein Satz mit best oder great ist eine Meinung.
+      - type: language-task
+        id: bericht-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: the-reporter-wrote-a-short-text-about-the-concert.mp3
+            target: The reporter wrote a short text about the concert.
+          - audio: everybody-enjoyed-the-music-and-the-dancing.mp3
+            target: Everybody enjoyed the music and the dancing.
+          - audio: the-headline-is-short-and-easy-to-understand.mp3
+            target: The headline is short and easy to understand.
+        explanation: Die Sätze zeigen, wie man über einen Bericht und eine Veranstaltung spricht.
+  - type: section
+    id: anwenden
+    title: Selbst schreiben
+    blocks:
+      - type: speaking-task
+        id: bericht-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So sprichst du über einen Bericht."
+        items:
+          - audio: the-reporter-asked-the-students-about-the-afternoon.mp3
+            text: The reporter asked the students about the afternoon.
+          - audio: i-read-the-report-in-the-newspaper-yesterday.mp3
+            text: I read the report in the newspaper yesterday.
+          - audio: please-write-a-report-about-the-school-party.mp3
+            text: Please write a report about the school party.
+      - type: open-task
+        id: bericht-schreiben
+        task: "Schreibe einen Bericht von vier bis sechs Sätzen für die Schülerzeitung. Stichpunkte: Sports Day · Thursday · school field · Year 7 and Year 8 · run races · Class 8A won the cup · wanted money for new balls."
+        points:
+          - text: Der Bericht hat eine kurze headline.
+            source: /fuer-die-schuelerzeitung/bericht-artikel/#bauplan
+          - text: Die Einleitung sagt, wer, was, wo, wann und warum.
+            source: /fuer-die-schuelerzeitung/bericht-artikel/#bauplan
+          - text: Die Verben stehen im simple past.
+            kind: form
+          - text: Es steht keine Meinung im Text.
+            source: /fuer-die-schuelerzeitung/bericht-artikel/#bauplan
+          - text: Der Schluss sagt, wie der Tag endete.
+            source: /fuer-die-schuelerzeitung/bericht-artikel/#bauplan
+        solution: |
+          Sports Day on the School Field
+
+          On Thursday, the students of Year 7 and Year 8 held a Sports Day on the school field. They wanted to raise money for new balls.
+
+          The students ran races in teams. Class 8A won the cup. Mr Hill gave out the prizes.
+
+          At the end of the day, the school had enough money for new balls.
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Der Bericht steht. Auf der nächsten Seite stellst du Fragen: Du bereitest ein **Interview** vor und schreibst es als Text auf."
