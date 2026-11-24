@@ -251,7 +251,7 @@ page, which a link. -->
 - [x] Kapitel 3: das-brauchst-du (vergleiche, zahlen), zeitungsartikel, information-meinung, diagramm-beschreiben mit Diagramm-SVG
 - [x] Kapitel 4 Teil 1: das-brauchst-du (email-postkarte, datum), berufswelt, bildungssystem, formelle-email
 - [x] Kapitel 4 Teil 2: lebenslauf, bewerbung, vorstellungsgespraech (Sprechauftrag) und Kapitelrückblick
-- [ ] Audio: alle Hörsätze mit regen_audio.py erzeugen, Hörliste im Inhaltsführer, Fuzzy-Prüfskript über alle Seiten
+- [x] Audio: alle Hörsätze mit regen_audio.py erzeugen, Hörliste im Inhaltsführer, Fuzzy-Prüfskript über alle Seiten
 - [ ] Startseite (intro nennt nur Namen und Rollen, scope), Selbsteinschätzung je Kapitel, Medien und Quellen im Inhaltsführer
 <!-- tasks: pages (8 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).

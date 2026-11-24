@@ -2,3 +2,14 @@
 title: Zeitung und Statistik lesen
 summary: Zeitungstexte und Statistiken lesen, ohne sich täuschen zu lassen. Du legst den Bauplan auf einen Nachrichtenartikel, trennst Information von Meinung, erkennst seriöse Nachrichten und beschreibst Diagramme mit Vergleichen und Zahlen.
 pages: [das-brauchst-du, zeitungsartikel, information-meinung, diagramm-beschreiben]
+selfAssessment:
+  pages:
+    - exercises:
+        - /zeitung-und-statistik/zeitungsartikel/#zeitung-teile
+        - /zeitung-und-statistik/zeitungsartikel/#zeitung-ordnen
+    - exercises:
+        - /zeitung-und-statistik/information-meinung/#info-farbstift
+        - /zeitung-und-statistik/information-meinung/#info-satzart
+    - exercises:
+        - /zeitung-und-statistik/diagramm-beschreiben/#diagramm-lesen
+        - /zeitung-und-statistik/diagramm-beschreiben/#diagramm-luecke

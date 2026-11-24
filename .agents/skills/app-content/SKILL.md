@@ -125,7 +125,8 @@ Gemeinsame Geschichte Kapitel 4: Sophie bewirbt sich um „Summer Library Assist
 3. Figur im gleichen Stil (`src/images/`, unten frei), `alt` und Bildunterschrift.
 4. Lesestück als eigener Text, Randglossar, Aufgaben in drei Stufen; Übungen aus den Mustern oben, jede mit `mistakes` und `hint`.
 5. Hörsätze: `.agents/skills/app-content/scripts/audio-texte.json` (Datei → Satz, je Seite drei Diktat- und drei Nachsprechsätze); erzeugen mit `~/.cache/lernapps/audio/venv/bin/python .agents/skills/app-content/scripts/regen_audio.py .agents/skills/app-content/scripts/audio-texte.json "<Satz>"` (schneidet das Ausklingen ab); anhören lassen; Hörliste ergänzen.
-6. `python3 -I .agents/skills/app-content/scripts/pruefen.py` (Hörsätze gegen den Text derselben Seite, Wörter gegen die Liste), `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, committen.
+6. 1 bis 3 ihrer Übungen in `selfAssessment` des Kapitels aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt (ohne Bezug auf Zeilen oder Lesestück, ohne Audio und offene Aufgaben; gebaut: je Seite zwei, zum Beispiel Ordnen, Zuordnen, Umschreiben).
+7. `python3 -I .agents/skills/app-content/scripts/pruefen.py` (Hörsätze gegen den Text derselben Seite, Wörter gegen die Liste), `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, committen.
 
 ## Rules learned from mistakes
 

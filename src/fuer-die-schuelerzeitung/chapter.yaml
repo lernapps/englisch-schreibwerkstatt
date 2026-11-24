@@ -2,3 +2,17 @@
 title: Für die Schülerzeitung
 summary: Die erste Ausgabe von „The Millbrook Messenger“ braucht Texte. Du schreibst einen Bericht, bereitest ein Interview vor, unterscheidest Sachtexte von erfundenen Texten und machst aus einer Geschichte einen Zeitungsbericht.
 pages: [das-brauchst-du, bericht-artikel, interview, sachtext-fiktion, textsorte-umwandeln]
+selfAssessment:
+  pages:
+    - exercises:
+        - /fuer-die-schuelerzeitung/bericht-artikel/#bericht-past
+        - /fuer-die-schuelerzeitung/bericht-artikel/#bericht-zuordnen
+    - exercises:
+        - /fuer-die-schuelerzeitung/interview/#interview-offen
+        - /fuer-die-schuelerzeitung/interview/#interview-reihenfolge
+    - exercises:
+        - /fuer-die-schuelerzeitung/sachtext-fiktion/#sachtext-zuordnen
+        - /fuer-die-schuelerzeitung/sachtext-fiktion/#sachtext-merkmale
+    - exercises:
+        - /fuer-die-schuelerzeitung/textsorte-umwandeln/#umwandeln-rede
+        - /fuer-die-schuelerzeitung/textsorte-umwandeln/#umwandeln-ordnen

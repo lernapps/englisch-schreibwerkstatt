@@ -2,3 +2,17 @@
 title: Gliedern und den Ton treffen
 summary: Die Schülerzeitung der Millbrook School braucht Texte. Du lernst, einen Text in Einleitung, Hauptteil und Schluss zu gliedern, den Ton zu wählen, einen Vortrag zu halten und einen Blogbeitrag zu schreiben.
 pages: [das-brauchst-du, text-gliedern, formell-informell, praesentation, blog-post]
+selfAssessment:
+  pages:
+    - exercises:
+        - /gliedern-und-ton/text-gliedern/#gliedern-ordnen
+        - /gliedern-und-ton/text-gliedern/#gliedern-zuordnen
+    - exercises:
+        - /gliedern-und-ton/formell-informell/#ton-start
+        - /gliedern-und-ton/formell-informell/#ton-zuordnen
+    - exercises:
+        - /gliedern-und-ton/praesentation/#praes-ordnen
+        - /gliedern-und-ton/praesentation/#praes-zuordnen
+    - exercises:
+        - /gliedern-und-ton/blog-post/#blog-umschreiben
+        - /gliedern-und-ton/blog-post/#blog-titel
