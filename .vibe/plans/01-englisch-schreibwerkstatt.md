@@ -273,11 +273,11 @@ page, which a link. -->
 
 ### Tasks
 
-- [ ] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
+- [x] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
       decisions" why the app has none. Commit.
-- [ ] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
+- [x] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
       every click only the creator can make, in one message.
-- [ ] Push `work`, open the preview pull request and see its checks to green, as skill `lernapps-github` says.
+- [x] Push `work`, open the preview pull request and see its checks to green, as skill `lernapps-github` says.
 - [ ] **Checkpoint:** publish. Show what the app does and the preview link from the comment "Vorschau der App". Ask
       whether it may go online. Stop and wait for the yes.
 - [ ] Load skill `lernapps-commit`. Publish as skill `lernapps-github` says: `work` into `main` as one squash commit,
@@ -304,12 +304,19 @@ page, which a link. -->
 
 ### Phases reached
 
-<!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
+Commit bis zum Checkpoint „publish“: Explore, Plan und Code abgeschlossen, Checkpoints Recherche, Plan und Inhaltsmethode und Musterseite von der Orchestrator-Session (in der Rolle der Ersteller:in) bestätigt; `work` gepusht, Vorschau-Pull-Request offen und grün, nicht veröffentlicht, nicht zusammengeführt, nicht im Katalog.
 
 ### Creator turns after the plan
 
-<!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
+1 Nachricht der Orchestrator-Session nach der Bestätigung des Plans (Musterseite: ja, Kapitel 2-4 mit Sub-Agenten, Hörurteil für drei Sätze bestätigt). Kein Mensch hat in dieser Session geschrieben außer dem Satz „Weiter“ nach einer Unterbrechung durch das Nutzungslimit.
 
 ### Where I had to guess
 
-<!-- Each gap in plan, skills, messages or answers, and your choice. "None" if none. -->
+- Reihenfolge Kapitel 1: `formell-informell` vor `praesentation` und `blog-post` (bestätigt).
+- Name der Zeitung „The Millbrook Messenger“ nur in Kapitel 1-2 (bestätigt); Stellen „Summer Library Assistant“ und Namen erfundener Orte und Firmen (Brindley, Tarnwick, Marsden …): nicht auf zufällige Echtheit geprüft.
+- Anrede „du“ auch in 9-10 (bestätigt).
+- Abschnitts-IDs `ton` und `merkmale` statt `bauplan` auf zwei Seiten; Lesestücke zählen für den Hinweis `explainer-text-load` mit (bekannt, angenommen).
+- Selbsteinschätzung: zwei Aufgaben je Seite ohne Zeilenbezug (Auswahl nach Lesen der Fragetexte).
+- Sachaussagen ohne geöffnete Quelle: Merkmale von Sachtext und erfundenem Text, Aufbau eines Interviews, indirekte Rede, grade 9 = Year 10.
+- Der Pages-Zustand von `lernapps/englisch-schreibwerkstatt` war über den Proxy nicht lesbar (HTTP 403); `gh-pages` und `main` bestehen.
+- Die Sub-Agenten haben beim Bauen und Prüfen kein Audio gehört; Nutzungslimit unterbrach drei Prüfungen, sie liefen nach dem Zurücksetzen weiter.
