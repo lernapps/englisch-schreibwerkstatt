@@ -278,8 +278,9 @@ page, which a link. -->
 - [x] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
       every click only the creator can make, in one message.
 - [x] Push `work`, open the preview pull request and see its checks to green, as skill `lernapps-github` says.
-- [ ] **Checkpoint:** publish. Show what the app does and the preview link from the comment "Vorschau der App". Ask
+- [x] **Checkpoint:** publish. Show what the app does and the preview link from the comment "Vorschau der App". Ask
       whether it may go online. Stop and wait for the yes.
+      Creator: Nichts weiter zu ändern, stopp hier. Ich merge nach der Durchsicht der Ersteller:in. Hörurteil bestätige ich in Namen der Ersteller:in. Pages klärt die Orchestrator-Session separat.
 - [ ] Load skill `lernapps-commit`. Publish as skill `lernapps-github` says: `work` into `main` as one squash commit,
       the run of `Pages` watched to its end.
 - [ ] Open the address the job `deploy` printed and confirm that the app shows. Never use a derived address.
