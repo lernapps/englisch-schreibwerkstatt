@@ -231,10 +231,10 @@ blocks:
           - text: Es stehen keine Gefühle und keine wörtliche Rede im Bericht, höchstens indirekte Rede mit said that.
             source: /fuer-die-schuelerzeitung/textsorte-umwandeln/#bauplan
         solution: |
-          Geschichte
+          Story
           On Monday morning, Peter walked to school in the rain. “Oh no!” he shouted. “My umbrella is gone!” He was very sad and looked everywhere. At last, a teacher found it in the hall.
 
-          Bericht
+          Report
           Lost Umbrella Found at School
 
           A student lost an umbrella on Monday morning on the way to school. Peter said that his umbrella was gone. A teacher found it in the school hall.

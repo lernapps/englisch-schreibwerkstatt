@@ -97,8 +97,7 @@ Wörter außerhalb des Grundwortschatzes (im Randglossar oder im Text erklärt),
 
 Hörsätze bleiben natürlich: kein Name und kein Wort wird nur wegen des Klangs angehängt. `regen_audio.py` schneidet das Ausklingen ab. Alle 102 Sätze: `.agents/skills/app-content/scripts/audio-texte.json`. Nichts Ungehörtes gilt als geprüft: die Sub-Agenten, die die Seiten gebaut haben, haben kein Audio gehört; Hörurteile bestätigt der Orchestrator in Namen der Ersteller:in (bisher: die drei Nachsprechsätze von `text-gliedern`).
 
-Satz endet auf ein einsilbiges Wort (Fehllaut möglich):
-- „A good headline is short and clear.“ (`zeitungsartikel`)
+Satz endet auf ein einsilbiges Wort (Fehllaut möglich): keiner (nach der Sprachprüfung wurde „A good headline is short and clear.“ durch „A good headline is short and interesting.“ ersetzt; neu erzeugt: dazu „The number fell in one year and then rose again.“ und „I think the second text is made up.“, nur Ausklingen abgeschnitten).
 
 Dip-Schnitt über 40 ms (Risiko, dass eine Silbe angeschnitten wird; besonders zweisilbige Enden):
 - „A short conclusion helps your readers.“ (85 ms) · „Write your first idea in a new paragraph.“ (35 ms) · „The introduction says what the text is about.“ (35 ms)

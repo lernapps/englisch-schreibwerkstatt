@@ -195,8 +195,8 @@ blocks:
         items:
           - audio: this-story-is-about-a-fox-and-a-rabbit.mp3
             text: This story is about a fox and a rabbit.
-          - audio: i-think-the-second-text-is-imaginary.mp3
-            text: I think the second text is imaginary.
+          - audio: i-think-the-second-text-is-made-up.mp3
+            text: I think the second text is made up.
           - audio: is-this-a-true-report-or-an-invented-story.mp3
             text: Is this a true report or an invented story?
       - type: open-task

@@ -71,9 +71,9 @@ blocks:
         explanation: Der Anlass steht am Anfang. Sophie sagt in Zeile 3, dass sie sich bewirbt, und nennt die Stelle.
       - type: text
         text: |
-          4. I believe I am a good person for this job for two reasons. First, I am friendly and I like to help people. At school I help in the library, where I put books back on the shelves and show students where to find the book they need. I am also patient when someone needs a lot of help.
+          4. I believe I am the right person for this job for two reasons. First, I am friendly and I like to help people. At school I help in the library, where I put books back on the shelves and show students where to find the book they need. I am also patient when someone needs a lot of help.
           5. Second, I am reliable. I write for the school newspaper, and I have never been late with a text. People at school know that I finish my work carefully and on time. I also wrote a report about our school library, and I enjoyed talking to the readers.
-          6. Your advertisement asks for good English and for help with the reading groups. I speak and write English every day, and I enjoy reading to other people, and I would like to help readers who feel shy about speaking English, because I remember how that feels in a new country. I can work four hours a day on three days a week, as the advertisement says.
+          6. Your advertisement asks for good English and for help with the reading groups. I speak and write English every day, and I enjoy reading to other people. I would like to help readers who feel shy about speaking English, because I remember how that feels in a new country. I can work four hours a day, three days a week, as the advertisement says.
       - type: multiple-choice
         id: bewerbung-beispiele
         text: "Welche Zeilen zeigen mit einem Beispiel, warum Sophie für die Stelle passt? Wähle alle passenden Zeilen."
@@ -149,8 +149,8 @@ blocks:
         id: bewerbung-ordnen
         text: "Eine Bewerbung um einen Job im Café ist durcheinander. Bringe die Teile in die Reihenfolge des Bauplans."
         items:
-          - Dear Mrs Clarke,
-          - I am writing to apply for the job as a café helper.
+          - Dear Ms Clarke,
+          - I am writing to apply for the job of café helper.
           - I am friendly, and I have helped at a school cake sale.
           - Your advertisement asks for someone who can work on Saturdays, and I can do that.
           - I would be happy to come for an interview.
@@ -245,7 +245,7 @@ blocks:
 
           I am good with plants and with people. At home I look after the vegetable garden, and I have sold flowers at a school plant sale. I am also careful, because I always read the instructions before I start.
 
-          Your advertisement asks for someone who can carry things and talk to customers. I am strong, and I enjoy giving advice. I can work on three days a week in the holidays.
+          Your advertisement asks for someone who can carry things and talk to customers. I am strong, and I enjoy giving advice. I can work three days a week in the holidays.
 
           I would be very happy to come for an interview at any time that suits you.
 

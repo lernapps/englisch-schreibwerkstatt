@@ -72,7 +72,7 @@ blocks:
         text: |
           3. First, our team. There are four of us, and Mr Hill helps us. We met for the first time last Thursday, and we had a lot of ideas.
           4. Now let me turn to our plans. Every issue will have a news page, an interview with a teacher and a page with puzzles. Ellie will write about a school garden, Amir will interview a teacher and Peter will draw the puzzles.
-          5. Next, when the newspaper will come out. The first issue will be ready in four weeks. After that, we will publish a new issue every month.
+          5. Next, I will tell you when the newspaper will come out. The first issue will be ready in four weeks. After that, we will publish a new issue every month.
       - type: multiple-choice
         id: praes-uebergang
         text: "Welche Zeilen beginnen mit einem Übergang zum nächsten Punkt? Wähle alle passenden Zeilen."
@@ -171,7 +171,7 @@ blocks:
               - answer: "Today"
                 message: "Today steht am Anfang des Vortrags. Hier geht der Vortrag schon weiter."
           - source: "Zusammengefasst: Die Bibliothek hilft uns allen."
-            target: "[To sum up|In short], the library helps us all."
+            target: "[To sum up|In short|In conclusion|To conclude], the library helps us all."
             mistakes:
               - answer: "First"
                 message: "First beginnt den ersten Punkt. Ein Schluss fasst zusammen."
@@ -230,7 +230,7 @@ blocks:
           - text: Du sprichst im neutralen Ton, ohne Kurzformen und Slang.
             kind: form
         solution: |
-          Good afternoon, everybody. Today I want to tell you about our class. First, we are a friendly group and we help each other. Now let me turn to our projects. Last month we made a bird house for the school garden. To sum up, our class is small, but it is very busy. Thank you for listening.
+          Good afternoon, everybody. Today I want to tell you about our class. First, we are a friendly group and we help each other. Now let me turn to our projects. Last month we made a bird box for the school garden. To sum up, our class is small, but it is very busy. Thank you for listening.
 
           Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
   - type: section

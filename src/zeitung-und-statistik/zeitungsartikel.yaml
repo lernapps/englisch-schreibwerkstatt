@@ -178,10 +178,10 @@ blocks:
         task: "Schreibe den Anfang eines lead aus den Stichwörtern. Der Stadtrat und das Museum sind erfunden."
         hint: "Ein lead sagt, was geschehen ist. Schreibe über die Vergangenheit oder die Zukunft, nicht über die Gegenwart."
         items:
-          - cue: "council / announce / new bus line"
-            target: "The council (has announced|announced) a new bus line."
+          - cue: "council / announce / new bus route"
+            target: "The council (has announced|announced) a new bus route."
             mistakes:
-              - answer: "The council announce a new bus line."
+              - answer: "The council announce a new bus route."
                 message: "Nach The council brauchst du die Form der Vergangenheit: announced oder has announced."
           - cue: "museum / open / on Mondays / from May"
             target: "The museum (will open|is going to open) on Mondays from May."
@@ -211,8 +211,8 @@ blocks:
         form: { punctuation: ok, case: hint }
         task: "Höre den Satz und schreibe ihn auf."
         items:
-          - audio: a-good-headline-is-short-and-clear.mp3
-            target: A good headline is short and clear.
+          - audio: a-good-headline-is-short-and-interesting.mp3
+            target: A good headline is short and interesting.
           - audio: the-lead-answers-the-most-important-questions.mp3
             target: The lead answers the most important questions.
           - audio: a-comment-gives-the-opinion-of-the-writer.mp3

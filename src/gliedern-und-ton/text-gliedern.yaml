@@ -72,7 +72,7 @@ blocks:
           6. *A garden for Millbrook School*
           7. Our school has a big empty space behind the sports hall. Many students sit there at lunch time, but there is nothing to do. I think a garden would be a good idea for this place.
           8. First, a garden is good for learning. In science lessons we could look at plants and insects. We could also grow vegetables and use them in the school kitchen.
-          9. Second, a garden is good for the school community. Students from every year could work together on Saturdays, and parents could help too.
+          9. Second, a garden is good for the school community. Students from every year group could work together on Saturdays, and parents could help too.
           10. Third, a garden is cheap. Seeds and tools do not cost much, and the school shop could sell the vegetables.
           11. In short, a school garden helps us learn, brings people together and costs little. Let us ask the head teacher to start it this year.
       - type: single-choice
@@ -93,7 +93,7 @@ blocks:
         text: |
           12. **Mr Hill:** Thank you, Ellie. Your text has a clear plan: an introduction, three ideas in three paragraphs and a short conclusion.
           13. **Sophie:** I like that every paragraph starts with a signal word: first, second, third.
-          14. **Amir:** And the conclusion says the ideas again. It has no new idea.
+          14. **Amir:** And the conclusion repeats the ideas. It has no new idea.
       - type: multiple-choice
         id: gliedern-schluss
         text: "Welche Zeilen zeigen, wie Ellies Text gebaut ist? Wähle alle passenden Zeilen."
@@ -178,7 +178,7 @@ blocks:
           - source: "Zweitens ist ein Fahrrad gut für dich."
             target: "[Second|Secondly], a bike is good for you."
           - source: "Kurz gesagt ist ein Fahrrad eine gute Idee."
-            target: "[In short|To sum up], a bike is a good idea."
+            target: "[In short|To sum up|In conclusion|To conclude], a bike is a good idea."
             mistakes:
               - answer: "In the end"
                 message: "In the end heißt am Ende einer Geschichte. Für den Schluss eines Textes schreibst du In short oder To sum up."
@@ -222,7 +222,7 @@ blocks:
           - text: Du schreibst in ganzen Sätzen.
             kind: form
         solution: |
-          I think the second idea is the best because students from every year can work together. A garden brings people together.
+          I think the second idea is the best because students from every year group can work together. A garden brings people together.
           Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
       - type: open-task
         id: gliedern-schreiben

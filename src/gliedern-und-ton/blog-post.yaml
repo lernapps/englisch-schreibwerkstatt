@@ -81,8 +81,8 @@ blocks:
         explanation: Der Titel steht oben, der Einstieg begrüßt die Leser, der Hauptteil erzählt die Neuigkeiten und der Aufruf am Ende bittet um einen Kommentar.
       - type: text
         text: |
-          7. **Kommentar von Ellie:** Hi Sophie, great post! You wrote that there will be a puzzle page. Can we have a joke of the week too? I think the readers would love it.
-          8. **Antwort von Sophie:** Good idea, Ellie! I'll ask Mr Hill on Thursday. Thanks for the comment!
+          7. **Comment from Ellie:** Hi Sophie, great post! You wrote that there will be a puzzle page. Can we have a joke of the week too? I think the readers would love it.
+          8. **Reply from Sophie:** Good idea, Ellie! I'll ask Mr Hill on Thursday. Thanks for the comment!
       - type: single-choice
         id: blog-bezug
         text: "Woran siehst du in Zeile 7, dass Ellies Kommentar sich auf den Beitrag bezieht?"
@@ -235,7 +235,7 @@ blocks:
           - text: Du schreibst in ganzen Sätzen.
             kind: form
         solution: |
-          Blogbeitrag:
+          Blog post:
 
           A photo page for our paper?
 
@@ -245,7 +245,7 @@ blocks:
 
           What do you think? Leave a comment and tell me!
 
-          Oder Kommentar:
+          Or comment:
 
           Hi Sophie, I like your idea! You said that students can send pictures. Can they send drawings too?
 

@@ -52,8 +52,8 @@ blocks:
             source: ob
       - type: text
         text: |
-          1. **Sophie an Ellie:** Hi Ellie! Can you help me put up the new poster? It's for The Millbrook Messenger. Meet me at the library door at twelve. You're the best!
-          2. **Ellie an Sophie:** No problem! I'll bring the tape. See you there!
+          1. **Sophie to Ellie:** Hi Ellie! Can you help me put up the new poster? It's for The Millbrook Messenger. Meet me at the library door at twelve. You're the best!
+          2. **Ellie to Sophie:** No problem! I'll bring the tape. See you there!
       - type: single-choice
         id: ton-verstehen
         text: "Worum bittet Sophie Ellie in Zeile 1?"
@@ -70,7 +70,7 @@ blocks:
         explanation: Sophie bittet um Hilfe mit dem Plakat und nennt den Treffpunkt.
       - type: text
         text: |
-          3. **Sophie an Mr Hill:** Dear Mr Hill, the first poster for The Millbrook Messenger is ready. Could you help us to put it up on the notice board in the corridor? We would like to do it before lunch. Thank you very much. Best wishes, Sophie
+          3. **Sophie to Mr Hill:** Dear Mr Hill, the first poster for The Millbrook Messenger is ready. Could you help us to put it up on the notice board in the corridor? We would like to do it before lunch. Thank you very much. Best wishes, Sophie
           4. **Mr Hill:** Of course, Sophie. For the main hall, you need permission from the school office. Please send them a formal message.
       - type: single-choice
         id: ton-zeile
@@ -88,7 +88,7 @@ blocks:
         explanation: Zeile 3 ist höflich und neutral. Zeile 1 hat Kurzformen und lockere Wörter.
       - type: text
         text: |
-          5. **Sophie an das Schulbüro:** Dear Sir or Madam, I am writing to ask for permission to display a poster in the main hall. The poster is for a new school newspaper, The Millbrook Messenger. I would be grateful if you could tell me whether this is possible. Yours faithfully, Sophie
+          5. **Sophie to the school office:** Dear Sir or Madam, I am writing to ask for permission to display a poster in the main hall. The poster is for a new school newspaper, The Millbrook Messenger. I would be grateful if you could tell me whether this is possible. Yours faithfully, Sophie
           6. **Amir:** Wow, that is a long message for one poster!
           7. **Peter:** It sounds polite, but I wouldn't send it to Ellie. "I am writing to ask for permission" is too stiff for a friend.
           8. **Sophie:** Right. My words change with my reader: a friend, a teacher, the office.
@@ -178,7 +178,7 @@ blocks:
         hint: "Lass weg, was für diesen Leser nicht passt. Oder schreibe es so, wie du es einem Freund sagst."
         items:
           - cue: "To Mr Hill, no short form: I can't come to the meeting."
-            target: "I (cannot|can not) come to the meeting."
+            target: "I (cannot|am unable to) come to the meeting."
             mistakes:
               - answer: "I can't come to the meeting."
                 message: "Das ist noch die Kurzform. An Mr Hill schreibst du das Wort ganz aus."

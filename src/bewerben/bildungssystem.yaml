@@ -87,7 +87,7 @@ blocks:
       - type: text
         text: |
           9. In Germany, I went to a Grundschule first. Now I go to a Gymnasium, which ends with an exam called the Abitur. Both the A-levels and the Abitur qualify students for university.
-          10. I hope this helps for my CV. Best wishes, Sophie
+          10. I hope this helps with my CV. Best wishes, Sophie
       - type: open-task
         id: bildung-meinung
         task: "In England gibt es GCSE-Prüfungen am Ende von Year 11. In den USA sammelt man Credits in jedem Kurs. Welche Idee gefällt dir besser? Schreibe zwei bis drei Sätze auf Englisch."

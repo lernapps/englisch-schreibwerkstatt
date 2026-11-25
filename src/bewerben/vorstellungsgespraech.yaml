@@ -94,10 +94,10 @@ blocks:
         explanation: Auf „a time when“ antwortest du mit einer kleinen Geschichte, die schon vorbei ist.
       - type: text
         text: |
-          11. **Mr Anderson:** The job is four hours a day on three days a week. Is that all right for you?
+          11. **Mr Anderson:** The job is four hours a day, three days a week. Is that all right for you?
           12. **Sophie:** Yes, that is perfect. I have no other plans for the summer holidays, and I would like to work with the reading groups.
           13. **Mr Anderson:** Good. Do you have any questions for us?
-          14. **Sophie:** Yes, I do. What would a normal day in the library look like, and who would I work with?
+          14. **Sophie:** Yes, I do. What would a typical day in the library look like, and who would I work with?
           15. **Mr Anderson:** You would start by putting books back on the shelves, and you would work with our team of librarians. Thank you, Sophie. We will send you an email next week.
           16. **Sophie:** Thank you very much for your time. Goodbye, Mr Anderson.
       - type: multiple-choice

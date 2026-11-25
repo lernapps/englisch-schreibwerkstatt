@@ -76,7 +76,7 @@ blocks:
         explanation: Wenn man mehrere Antworten ankreuzen darf, ergeben die Prozente zusammen mehr als hundert.
       - type: text
         text: |
-          5. The library counts its visits every year. In 2019 there were 180,000 visits. In 2020 the number fell to 95,000, because the library was closed for several months. Since then it has risen every year and reached 215,000 in 2024, the highest figure in the six years.
+          5. The library counts its visits every year. In 2019 there were 180,000 visits. In 2020 the number fell to 95,000, because the library was closed for several months. Since then it has risen every year and reached 215,000 in 2024, the highest figure in those six years.
           6. The head librarian explains the rise with the new homework club and the longer opening hours. “Visits are now 19 per cent higher than in 2019,” she said. “Libraries still matter to young people.” She adds that the homework club meets twice a week and that the number of young members has grown.
       - type: figure
         image: images/diagramm-bibliothek.svg
@@ -238,7 +238,7 @@ blocks:
         hint: "Denke an by und to. Beim Vergleich brauchst du zweimal as."
         items:
           - cue: "visits / fall / by 85,000 / from 2019 to 2020"
-            target: "Visits (fell|went down) by 85,000 (from 2019 to 2020|between 2019 and 2020)."
+            target: "Visits (fell|went down|dropped|decreased) by 85,000 (from 2019 to 2020|between 2019 and 2020|in 2020)."
             mistakes:
               - answer: "Visits fell to 85,000 from 2019 to 2020."
                 message: "To nennt den neuen Wert. 85,000 ist aber der Unterschied, den nennst du mit by."
@@ -248,7 +248,7 @@ blocks:
               - answer: "Reading is half popular as sport."
                 message: "Bei half as popular as brauchst du zwei as."
           - cue: "visits / rise / to 160,000 / in 2022"
-            target: "Visits (rose|went up) to 160,000 in 2022."
+            target: "Visits (rose|went up|increased) to 160,000 in 2022."
             mistakes:
               - answer: "Visits rose by 160,000 in 2022."
                 message: "By nennt den Unterschied. 160,000 ist der Wert im Jahr 2022, also der neue Wert."
@@ -277,8 +277,8 @@ blocks:
         items:
           - audio: let-me-describe-the-chart-in-a-few-sentences.mp3
             text: Let me describe the chart in a few sentences.
-          - audio: the-number-fell-for-two-years-and-then-rose-again.mp3
-            text: The number fell for two years and then rose again.
+          - audio: the-number-fell-in-one-year-and-then-rose-again.mp3
+            text: The number fell in one year and then rose again.
           - audio: this-chart-is-easy-to-understand.mp3
             text: This chart is easy to understand.
       - type: figure
@@ -300,7 +300,7 @@ blocks:
           - text: Du liest nicht alle Zahlen der Reihe nach vor.
             kind: form
         solution: |
-          The chart shows how 900 young people in Brindley spend their free time. The most popular activity is meeting friends with 68 per cent, and the least popular is reading with 22 per cent. More young people watch videos than play computer games, and fewer young people play computer games than do sport. In short, young people spend most of their free time with friends.
+          The chart shows how 900 young people in Brindley spend their free time. The most popular activity is meeting friends at 68 per cent, and the least popular is reading with 22 per cent. More young people watch videos than play computer games, and fewer young people play computer games than do sport. In short, young people spend most of their free time with friends.
           Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
   - type: section
     id: weiter
