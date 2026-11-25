@@ -1,0 +1,264 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Ein Interview vorbereiten und aufschreiben
+description: "Fragen für ein Interview vorbereiten und ein Interview als Text aufschreiben: mit offenen Fragen und Q und A."
+competencies: [interview]
+scope: Die Seite zeigt, wie man ein Interview für die Schülerzeitung vorbereitet und als Text aufschreibt. Lesestück ist ein Chat mit Amirs Interview mit Mr Hill über die neue Zeitung (Thema in Zeile 4, fünf offene Fragen in den Zeilen 5, 7, 9, 11 und 13, Antworten in den Zeilen 6, 8, 10, 12 und 14, Dank in Zeile 15). Vorbereitung ist ein Thema und fünf offene Fragen. Eine offene Frage beginnt mit einem Fragewort (what, why, how, when, where, who) und lässt den Gast erzählen; eine Ja-Nein-Frage bringt wenig. Der Text hat einen Einstieg mit Thema und Gast, dann abwechselnd Q (Frage) und A (Antwort), am Ende den Dank. In der Frage steht nach dem Fragewort das Hilfsverb do, does oder did, dann die Person und das Verb. Geübt werden Ja-Nein-Fragen zu offenen Fragen umbauen, die Wortstellung einer Frage, Fragen und Antworten als Q und A aufschreiben, Hören und Nachsprechen und zwei offene Aufgaben (Lieblingsfrage, fünf Fragen für ein Interview mit dem Hausmeister). Nicht hier sind Bericht, Sachtext und Umwandeln.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Nach dem Bericht kommt ein Gespräch in die Zeitung: ein **Interview**. Du stellst Fragen und schreibst Frage und Antwort auf. Danach kannst du Fragen für ein Interview vorbereiten und ein Interview als Text aufschreiben."
+      - type: single-choice
+        id: interview-start
+        text: "Du willst von einem Mitschüler viel über seinen Hund erfahren. Welche Frage hilft dir am meisten?"
+        options:
+          - text: Do you walk your dog every day
+            correct: false
+            info: "Darauf kann er nur yes oder no sagen. Du erfährst fast nichts."
+          - text: Is your dog a big dog
+            correct: false
+            info: "Auch das ist eine Ja-Nein-Frage. Der Mitschüler antwortet mit einem Wort."
+          - text: What does your dog do all day
+            correct: true
+            info: "Eine Frage mit what lässt den Mitschüler erzählen. So bekommst du eine lange Antwort."
+        explanation: Eine Frage mit einem Fragewort lässt den anderen erzählen. Eine Ja-Nein-Frage bringt nur ein Wort.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Amir interviewt Mr Hill
+    blocks:
+      - type: text
+        text: "Lies den Chat und das Interview in drei Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: interview
+            source: das Interview
+          - target: topic
+            source: das Thema
+          - target: voice
+            source: die Stimme
+          - target: notice board
+            source: das Schwarze Brett
+          - target: advice
+            source: der Rat
+          - target: fact
+            source: die Tatsache
+          - target: instrument
+            source: das Instrument
+      - type: text
+        text: |
+          1. **Amir:** I want to interview Mr Hill for the newspaper. My topic is the newspaper itself.
+          2. **Sophie:** Ask open questions with what, why or how. Then he cannot answer only yes or no.
+          3. **Amir:** I know. I wrote five questions.
+      - type: single-choice
+        id: interview-verstehen
+        text: "Welchen Rat gibt Sophie in Zeile 2?"
+        options:
+          - text: Nur Fragen mit who stellen
+            correct: false
+            info: "In Zeile 2 stehen what, why und how, nicht nur who."
+          - text: Fragen stellen, auf die man yes oder no sagt
+            correct: false
+            info: "Zeile 2 sagt das Gegenteil: Er soll nicht nur yes oder no antworten können."
+          - text: Offene Fragen mit what, why oder how stellen
+            correct: true
+            info: "So steht es in Zeile 2: Ask open questions with what, why or how."
+        explanation: Sophie rät zu offenen Fragen, damit Mr Hill mehr als ein Wort sagt.
+      - type: text
+        text: |
+          4. *Interview: Mr Hill and the new newspaper*
+          5. **Q:** Hello, Mr Hill. Why did you start a school newspaper?
+          6. **A:** I wanted every student to have a voice. A newspaper gives them a place for their ideas.
+          7. **Q:** How do you choose the texts?
+          8. **A:** The team reads them together. We look for clear texts about things that happened at school.
+          9. **Q:** What was the hardest part of the first week?
+          10. **A:** Finding a name. We tried many names before we chose The Millbrook Messenger.
+          11. **Q:** Where can students find the newspaper?
+          12. **A:** In the library and on the notice board. We also put a copy in the hall.
+          13. **Q:** What advice do you have for new writers?
+          14. **A:** Listen carefully and write down what you hear. Then check every fact.
+      - type: single-choice
+        id: interview-zeile
+        text: "In welcher Zeile steht die Antwort darauf, wo Schüler die Zeitung finden?"
+        options:
+          - text: Zeile 8
+            correct: false
+            info: "In Zeile 8 geht es darum, wie das Team Texte auswählt."
+          - text: Zeile 10
+            correct: false
+            info: "In Zeile 10 geht es um den Namen der Zeitung."
+          - text: Zeile 12
+            correct: true
+            info: "Zeile 12 nennt die Bibliothek, das Schwarze Brett und die Halle."
+        explanation: Die Frage in Zeile 11 beginnt mit where, die Antwort steht in Zeile 12.
+      - type: text
+        text: |
+          15. **Amir:** Thank you very much for your time, Mr Hill.
+          16. **Peter:** Every question starts with a question word. Nobody answered with only yes or no.
+          17. **Ellie:** And the interview starts with the topic and a friendly greeting and ends with a thank you.
+      - type: multiple-choice
+        id: interview-bauplan
+        text: "Welche Zeilen zeigen, wie das Interview gebaut ist? Wähle alle passenden Zeilen."
+        options:
+          - text: Zeile 4 nennt das Thema des Interviews
+            correct: true
+            info: "Richtig: Mr Hill and the new newspaper sagt, worum es geht."
+          - text: Zeile 15 ist der Dank am Ende
+            correct: true
+            info: "Richtig: Amir bedankt sich bei Mr Hill."
+          - text: Zeile 5 ist eine Frage, auf die man nur yes oder no sagt
+            correct: false
+            info: "Zeile 5 beginnt mit why. Mr Hill muss einen Grund nennen."
+        explanation: Das Interview hat ein Thema und einen Gruß am Anfang, abwechselnd Q und A und am Ende einen Dank.
+      - type: open-task
+        id: interview-meinung
+        task: "Welche Frage aus dem Interview findest du am besten, und warum? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst eine der fünf Fragen aus dem Interview.
+            source: /fuer-die-schuelerzeitung/interview/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I like the question about the first week because the answer is interesting. I want to know more about the name.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: bauplan
+    title: Der Bauplan eines Interviews
+    blocks:
+      - type: figure
+        image: images/bauplan-interview.svg
+        alt: "Vier Kästen untereinander. Oben die Vorbereitung, dann die Einleitung, dann Frage und Antwort im Wechsel, unten der Dank."
+        caption: "Der Bauplan eines Interviews von oben nach unten gelesen. Achte darauf, was vor dem Gespräch passiert."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Ein **Interview** ist ein Gespräch, das du als Text aufschreibst. Vorher wählst du das Thema und sammelst fünf **offene Fragen**. Sie beginnen mit einem Fragewort (*what, why, how, when, where, who*) und lassen den Gast erzählen. Im Text steht zuerst die **Einleitung** mit Thema und Gast und einem freundlichen Gruß (*Hello, Mr Hill.*). Dann folgen **Q** (Frage) und **A** (Antwort) im Wechsel. Am Ende bedankst du dich."
+      - type: text
+        text: "In einer Frage kommt nach dem Fragewort zuerst das Hilfsverb *do*, *does* oder *did*, dann die Person und dann das Verb: *When do you start?* Das Verb nach *did* bleibt in der Grundform. Mit *be* geht es ohne *do*: Das Verb steht direkt nach dem Fragewort, zum Beispiel *What is your job?*"
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Fragewort, Hilfsverb, Person, Verb. Offene Fragen bringen lange Antworten."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: language-task
+        id: interview-offen
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Baue jede Ja-Nein-Frage zu einer offenen Frage um. Das Fragewort im Cue sagt dir, wonach du fragst."
+        hint: "Das Fragewort steht vorn. Danach folgen do, does oder did, die Person und das Verb."
+        items:
+          - cue: "Do you play an instrument? (what)"
+            target: "What instrument do you play?"
+            mistakes:
+              - answer: "What instrument you play?"
+                message: "Nach dem Fragewort fehlt do. Eine Frage braucht das Hilfsverb."
+              - answer: "What instrument play you?"
+                message: "Die Person steht vor dem Verb: you play, nicht play you."
+          - cue: "Did you go to the park? (when)"
+            target: "When did you go to the park?"
+            mistakes:
+              - answer: "When you went to the park?"
+                message: "Nach dem Fragewort fehlt did. Eine Frage braucht das Hilfsverb."
+              - answer: "When did you went to the park?"
+                message: "Nach did bleibt das Verb in der Grundform."
+          - cue: "Do you like your new class? (why)"
+            target: "Why do you like your new class?"
+            mistakes:
+              - answer: "Why you like your new class?"
+                message: "Nach dem Fragewort fehlt do. Eine Frage braucht das Hilfsverb."
+              - answer: "Why do you likes your new class?"
+                message: "Nach do bleibt das Verb in der Grundform, ohne -s."
+        explanation: Eine offene Frage hat das Fragewort vorn, danach Hilfsverb, Person und Verb.
+      - type: ordering
+        id: interview-reihenfolge
+        text: "Aus den Teilen soll eine offene Frage werden. Bringe sie in die richtige Reihenfolge."
+        items:
+          - What
+          - does
+          - the school cook
+          - make
+          - for lunch?
+        hint: "Das Fragewort steht vorn, dann folgt das Hilfsverb. Die Person kommt vor dem Verb."
+        explanation: Fragewort, Hilfsverb, Person, Verb, dann der Rest der Frage.
+      - type: language-task
+        id: interview-aufschreiben
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Schreibe die Zeilen eines Interviews auf. Beginne mit Q oder A, bei der letzten Zeile schreibst du nur den Satz."
+        hint: "Frage und Antwort beginnen mit Q und A. Die Frage hat das Fragewort vorn."
+        items:
+          - cue: "Q: when / the club / meet"
+            target: "Q: When does the club meet?"
+            mistakes:
+              - answer: "Q: When the club meets?"
+                message: "Nach dem Fragewort fehlt does. Eine Frage braucht das Hilfsverb."
+              - answer: "Q: When does the club meets?"
+                message: "Nach does bleibt das Verb in der Grundform, ohne -s."
+          - cue: "A: on Tuesdays / after school"
+            target: "A: (We meet |)on Tuesdays after school."
+          - cue: "Thanks / for / the interview"
+            target: "Thanks for the interview."
+        explanation: Die Frage steht in einer Zeile mit Q, die Antwort in einer Zeile mit A. Am Ende steht der Dank.
+      - type: language-task
+        id: interview-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: prepare-your-questions-carefully-before-the-meeting.mp3
+            target: Prepare your questions carefully before the meeting.
+          - audio: a-good-interview-starts-with-a-friendly-greeting.mp3
+            target: A good interview starts with a friendly greeting.
+          - audio: the-guest-answered-every-question-patiently.mp3
+            target: The guest answered every question patiently.
+        explanation: Die Sätze zeigen, wie man über ein Interview spricht.
+  - type: section
+    id: anwenden
+    title: Selbst sprechen und schreiben
+    blocks:
+      - type: speaking-task
+        id: interview-nachsprechen
+        language: en
+        task: "Höre die Fragen und sprich sie nach. So fragst du in einem Interview."
+        items:
+          - audio: what-did-you-enjoy-most-about-your-childhood.mp3
+            text: What did you enjoy most about your childhood?
+          - audio: how-did-you-become-a-famous-musician.mp3
+            text: How did you become a famous musician?
+          - audio: thank-you-for-answering-my-questions-today.mp3
+            text: Thank you for answering my questions today.
+      - type: open-task
+        id: interview-schreiben
+        task: "Du interviewst den Hausmeister (the caretaker) deiner Schule für die Schülerzeitung. Schreibe fünf offene Fragen auf Englisch."
+        points:
+          - text: Du schreibst fünf Fragen.
+            source: /fuer-die-schuelerzeitung/interview/#bauplan
+          - text: Jede Frage beginnt mit einem Fragewort und kann nicht mit yes oder no beantwortet werden.
+            source: /fuer-die-schuelerzeitung/interview/#bauplan
+          - text: Nach dem Fragewort steht do, does oder did, dann die Person und das Verb. Mit is oder was steht das Verb direkt nach dem Fragewort.
+            kind: form
+          - text: Die Fragen passen zum Thema Hausmeister und Schule.
+            source: /fuer-die-schuelerzeitung/interview/#bauplan
+        solution: |
+          1. What is your job at the school?
+          2. How do you start your day?
+          3. Why do you like working here?
+          4. When is the school busy?
+          5. Where do you keep all the keys?
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Das Interview ist geschrieben. Auf der nächsten Seite vergleichst du zwei Texte zum selben Thema: einen **Sachtext** und eine **erfundene Geschichte**."

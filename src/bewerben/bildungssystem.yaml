@@ -1,0 +1,234 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Schulsysteme in England und den USA
+description: "Die Schulsysteme in England und den USA mit ihren Abschlüssen beschreiben und mit Deutschland vergleichen: mit einer Nachricht an Mr Anderson."
+competencies: [bildungssystem]
+scope: Die Seite zeigt, wie man die Schulsysteme in England und den USA mit ihren Abschlüssen beschreibt und mit Deutschland vergleicht. Lesestück ist Sophies Nachricht an Mr Anderson über ihre Schule (England in den Zeilen 3 bis 5, USA in den Zeilen 6 bis 8, Deutschland in den Zeilen 9 und 10). England, Fakten aus Education in England und Education in the United Kingdom, nämlich Key Stage 1 und 2 in der Grundschule, Key Stage 3 und 4 in der weiterführenden Schule, GCSE-Prüfungen am Ende von Year 11, Bildungspflicht oder Ausbildung bis 18, sixth form mit A-levels. USA, Fakten aus High school in the United States, nämlich grades 9 bis 12 mit den Namen freshman, sophomore, junior, senior, Credits für bestandene Kurse, GPA als Notendurchschnitt, grade 9 entspricht ungefähr Year 10. College heißt in den USA oft Universität, in England kann es auch eine Schule für ältere Schüler sein (sixth form college). Deutschland nur in groben Stufen (Grundschule, weiterführende Schule, Abitur oder anderer Abschluss). Year und grade sind Jahrgänge, nicht das Alter. Ein kurzer Absatz sagt, dass man an einer High School neben Pflichtfächern Wahlfächer wählt; das wird nicht geübt. Geübt werden Begriffe erklären, college richtig verstehen, die Namen der US-Stufen ordnen, Sätze über den eigenen Abschluss mit Cue, Hören und Nachsprechen, eine Meinung zu zwei Systemen und die Erklärung des eigenen Abschlusses für einen Lebenslauf. Nicht hier sind Berufe, E-Mail, Lebenslauf und Bewerbung. Sophie schreibt die Nachricht auf Mr Andersons Rat und bedankt sich dafür; sie schließt mit Yours sincerely und ihrem Namen.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Für einen Lebenslauf musst du deinen Schulabschluss erklären. Dazu liest du, wie Sophie Mr Anderson ihre Schule beschreibt. Danach kannst du die **Schulsysteme** in England und den USA mit ihren Abschlüssen beschreiben und mit Deutschland vergleichen."
+      - type: single-choice
+        id: bildung-start
+        text: "Auf einer englischen Schulseite steht: Students in Year 11 take important exams. Was bedeutet Year 11?"
+        options:
+          - text: Die Schüler sind elf Jahre alt
+            correct: false
+            info: "Year ist kein Alter. Es zählt die Schuljahre, und Schüler in Year 11 sind meist deutlich älter als elf."
+          - text: Die Schüler sind in Klasse 11 wie in Deutschland
+            correct: false
+            info: "Die Zählung ist anders. Year 1 und Klasse 1 beginnen nicht im selben Alter, darum passt Year 11 nicht zu Klasse 11."
+          - text: Die Schüler sind im elften Schuljahr der englischen Schule
+            correct: true
+            info: "Richtig: Year 11 ist ein Schuljahr, kein Alter."
+        explanation: Year und grade sind Jahrgänge. Sie sagen nichts direkt über das Alter und sind nicht gleich der deutschen Klasse.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Sophies Nachricht an Mr Anderson
+    blocks:
+      - type: text
+        text: "Lies die Nachricht in drei Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: sixth form
+            source: die Oberstufe in England, zwei Jahre nach Year 11
+          - target: credit
+            source: der Leistungspunkt für einen bestandenen Kurs
+          - target: primary school
+            source: die Grundschule in England
+          - target: secondary school
+            source: die weiterführende Schule
+          - target: qualify
+            source: berechtigen
+      - type: text
+        text: |
+          1. **Message from Sophie to Mr Anderson**
+          2. Dear Mr Anderson,
+          3. Thank you for your advice about the job. School systems are different, so I want to explain them in a short message.
+          4. In England, children start at primary school, which has Key Stage 1 and Key Stage 2. Secondary school has Key Stage 3 and Key Stage 4 for students from 11 to 16 years old.
+          5. At the end of Year 11, students take exams called GCSEs. After that, young people must stay in education or training until the age of 18. Many of them go to sixth form and study for A-levels.
+      - type: single-choice
+        id: bildung-england
+        text: "Was müssen junge Leute in England nach den GCSE-Prüfungen tun?"
+        options:
+          - text: Sie müssen sofort einen Beruf lernen
+            correct: false
+            info: "Zeile 5 sagt education or training. Ein Beruf ist nur eine von mehreren Möglichkeiten."
+          - text: Sie müssen weiter lernen oder eine Ausbildung machen
+            correct: true
+            info: "Richtig: Nach Zeile 5 bleiben sie in Bildung oder Ausbildung bis 18."
+          - text: Sie müssen ein Studium beginnen
+            correct: false
+            info: "Ein Studium kommt später. Zeile 5 nennt als nächsten Schritt sixth form und A-levels."
+        explanation: Bis zum Alter von 18 bleibt man in Bildung oder Ausbildung, zum Beispiel in der sixth form.
+      - type: text
+        text: |
+          6. In the USA, most high schools have grades 9 to 12. The four years have names: freshman, sophomore, junior and senior.
+          7. Students get credits for every course they pass, and the school works out a GPA, the average of their grades. A student needs enough credits to finish high school.
+          8. Be careful with the word "college". In the USA, people often use it for a university. In England, a college can also be a school for older students who study for A-levels, a sixth form college.
+      - type: single-choice
+        id: bildung-zeile
+        text: "In welcher Zeile warnt Sophie vor dem Wort college?"
+        options:
+          - text: Zeile 6
+            correct: false
+            info: "Zeile 6 nennt grades und die vier Namen der Jahre, nichts über college."
+          - text: Zeile 7
+            correct: false
+            info: "Zeile 7 erklärt credits und GPA. Das Wort college kommt dort nicht vor."
+          - text: Zeile 8
+            correct: true
+            info: "Zeile 8 beginnt mit Be careful und erklärt, was college in den USA und in England heißen kann."
+        explanation: Zeile 8 sagt, dass college nicht überall dasselbe bedeutet.
+      - type: text
+        text: |
+          9. In Germany, I went to a Grundschule first. At home I go to a Gymnasium, which ends with an exam called the Abitur. Both the A-levels and the Abitur qualify students for university.
+          10. I hope this helps. Yours sincerely, Sophie Weber
+      - type: open-task
+        id: bildung-meinung
+        task: "In England gibt es GCSE-Prüfungen am Ende von Year 11. In den USA sammelt man Credits in jedem Kurs. Welche Idee gefällt dir besser? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du entscheidest dich für das englische oder das amerikanische System.
+            source: /bewerben/bildungssystem/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I like the American idea better because you get credits for every course. You do not have to wait for one big exam.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: stufen
+    title: Schulstufen im Vergleich
+    blocks:
+      - type: figure
+        image: images/schulsysteme-vergleich.svg
+        alt: "Drei Kästen untereinander mit je drei Stufen: England, USA und Deutschland."
+        caption: "Lies jeden Kasten von oben nach unten. Die Stufen der Länder sind verschieden, auch wenn sie ähnlich klingen."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "In England zählst du **Years** und **Key Stages**, in den USA **grades**. Ein Year oder ein grade ist ein Schuljahr, nicht dein Alter. Grade 9 entspricht ungefähr Year 10. Am Ende der weiterführenden Schule stehen in England die **GCSE**-Prüfungen, danach folgen in der **sixth form** die **A-levels**. In den USA schließt du nach grade 12 die High School ab. Für Deutschland reichen grobe Stufen: Grundschule, weiterführende Schule und ein Abschluss wie das Abitur."
+      - type: text
+        text: "In den USA geht vor der High School die **middle school** (steht im Bild über der High School), und an der High School haben nicht alle dieselben Kurse: Neben Pflichtfächern wählst du Wahlfächer. Mehr zum Alltag an einer High School steht auf der [Lernlandkarte von lernapps.net](https://lernapps.net/apps/map/englisch/c/schule-usa/)."
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Das Wort *college* gibt es in beiden Ländern, aber mit anderer Bedeutung. Setze es nicht einfach mit „Hochschule“ gleich, sondern frage, aus welchem Land der Text kommt."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: bildung-begriffe
+        text: "Was bedeutet der Begriff?"
+        pairs:
+          - { left: GCSE, right: Prüfungen am Ende von Year 11 }
+          - { left: GPA, right: Notendurchschnitt aus den Kursen }
+          - { left: credit, right: Punkte für einen bestandenen Kurs }
+          - { left: senior, right: Schüler im letzten Jahr der High School }
+        distractors:
+          - Prüfung nach dem Studium
+        hint: "Alle vier Begriffe stehen in Sophies Nachricht. Suche sie dort."
+        explanation: GCSE und A-levels gehören nach England, GPA und credits in die USA. Senior ist das vierte Jahr der High School.
+      - type: single-choice
+        id: bildung-college
+        text: "Eine Person aus den USA sagt: I study at a college. Was ist gemeint?"
+        options:
+          - text: Sie besucht eine weiterführende Schule
+            correct: false
+            info: "Eine weiterführende Schule heißt in den USA high school. College meint dort meist das Studium."
+          - text: Sie macht eine Ausbildung in einem Betrieb
+            correct: false
+            info: "Für eine Ausbildung im Betrieb sagt man training oder apprenticeship, nicht college."
+          - text: Sie studiert an einer Hochschule
+            correct: true
+            info: "Richtig: In den USA sagen viele college für die Hochschule."
+        explanation: In den USA ist ein college oft eine Hochschule. In England meint das Wort manchmal eine Schule für ältere Schüler.
+      - type: ordering
+        id: bildung-reihenfolge
+        text: "Eine Schülerin an einer High School in den USA beschreibt vier Jahre. Bringe die Sätze in die richtige Reihenfolge."
+        items:
+          - I start high school as a freshman.
+          - In my second year I am a sophomore.
+          - In my third year I am a junior.
+          - In my last year I am a senior.
+        hint: "Die vier Namen stehen in Sophies Nachricht in der Reihenfolge der Jahre."
+        explanation: Die Jahre heißen freshman, sophomore, junior und senior, vom ersten bis zum letzten Jahr.
+      - type: language-task
+        id: bildung-satz
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Schreibe zu jedem Cue einen Satz über Schulstufen. Du darfst Wörter ergänzen."
+        hint: "Denke an in vor Year, an grades bei den USA und an to oder for nach apply."
+        items:
+          - cue: "she / be / Year 10"
+            target: "She is in Year 10."
+            mistakes:
+              - answer: "She is Year 10."
+                message: "Bei Schuljahren sagst du in Year 10."
+          - cue: "USA / high school / grades 9 to 12"
+            target: "In the (USA|US|United States), (high school has|high schools have) grades 9 to 12."
+            mistakes:
+              - answer: "In the USA, high school has years 9 to 12."
+                message: "In den USA zählt man grades, in England years."
+          - cue: "Abitur / apply / university"
+            target: "With the Abitur you can apply to a university."
+            mistakes:
+              - answer: "With the Abitur you can apply university."
+                message: "Nach apply steht to vor der Hochschule."
+        explanation: Year gehört zu England, grade zu den USA. Mit apply to bewirbst du dich bei einer Hochschule.
+      - type: language-task
+        id: bildung-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: every-school-system-has-its-own-words-and-levels.mp3
+            target: Every school system has its own words and levels.
+          - audio: many-young-people-continue-their-education-after-the-exams.mp3
+            target: Many young people continue their education after the exams.
+          - audio: your-school-report-tells-other-people-about-your-education.mp3
+            target: Your school report tells other people about your education.
+        explanation: Die Sätze zeigen, wie man über Schule und Abschluss spricht.
+  - type: section
+    id: anwenden
+    title: Selbst sprechen und schreiben
+    blocks:
+      - type: speaking-task
+        id: bildung-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So kannst du deine Schule erklären."
+        items:
+          - audio: i-will-describe-my-school-in-a-few-sentences.mp3
+            text: I will describe my school in a few sentences.
+          - audio: please-explain-the-difference-between-the-two-systems.mp3
+            text: Please explain the difference between the two systems.
+          - audio: in-my-country-students-leave-school-at-different-ages.mp3
+            text: In my country, students leave school at different ages.
+      - type: open-task
+        id: bildung-schreiben
+        task: "Erkläre deinen Schulabschluss so, dass ihn ein Mensch in England oder den USA versteht, zum Beispiel für einen Lebenslauf. Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst deine Schule und das Land.
+            source: /bewerben/bildungssystem/#stufen
+          - text: Du nennst den Abschluss und wann er kommt.
+            source: /bewerben/bildungssystem/#stufen
+          - text: Du erklärst ihn mit einem englischen Wort oder Vergleich.
+            source: /bewerben/bildungssystem/#stufen
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I go to a Realschule in Germany. The school finishes with an exam called the Mittlere Reife after year ten. In England, students take their GCSEs at about the same age.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Du kannst jetzt deinen Abschluss erklären. Auf der nächsten Seite schreibst du eine **formelle E-Mail**: Sophie hat die Schule erklärt und stellt Mr Anderson nun ihre Fragen zur Stelle."

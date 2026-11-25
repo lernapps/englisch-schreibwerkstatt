@@ -1,0 +1,220 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Sachtext oder erfundener Text
+description: "Sachtexte und erfundene Texte unterscheiden und ihre Merkmale nennen: mit zwei Texten über Bienen aus der Schulbibliothek."
+competencies: [sachtext-fiktion]
+scope: Die Seite zeigt, wie man Sachtexte und erfundene Texte unterscheidet. Lesestück ist ein Chat, in dem Peter in der Schulbibliothek zwei Texte über Bienen findet (Text A, ein Sachtext über Honigbienen mit Quelle, in den Zeilen 4 bis 8; Text B, eine erfundene Geschichte über die Biene Buzz mit wörtlicher Rede, in den Zeilen 9 bis 12; Zeilen 13 und 14 vergleichen). Ein Sachtext will informieren, nennt Fakten und oft eine Quelle und spricht von echten Dingen. Ein erfundener Text will unterhalten, hat eine Erzählstimme, erfundene Figuren und wörtliche Rede. Wo ein Text steht, sagt nicht, ob er wahr ist; auch in einer Zeitung kann ein erfundener Text stehen. Wörtliche Rede einer erfundenen Figur gehört nicht in einen Sachtext. Geübt werden Sätze den Merkmalen zuordnen, Merkmale an einem neuen Text ankreuzen, zwei Aussagen auf wahr oder falsch prüfen, Hören und Nachsprechen und zwei offene Aufgaben (welcher Text gefällt dir, eine Merkmalsliste). Nicht hier sind Bericht, Interview und Umwandeln.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Nicht jeder Text in der Zeitung berichtet von Tatsachen. Manche Texte sind **Sachtexte**, andere sind **erfunden** (auf Englisch *made up* oder *invented*). Danach kannst du Sachtexte und erfundene Texte unterscheiden und typische Merkmale nennen."
+      - type: single-choice
+        id: sachtext-start
+        text: "Du liest einen Text über einen Drachen, der in Millbrook wohnt und mit Kindern spricht. Was für ein Text ist das?"
+        options:
+          - text: Ein Sachtext, weil er in einem Buch gedruckt wurde
+            correct: false
+            info: "Auch erfundene Geschichten stehen gedruckt in Büchern. Der Ort sagt nichts darüber, ob ein Text wahr ist."
+          - text: Ein erfundener Text, weil es keine Drachen gibt
+            correct: true
+            info: "Der Drache ist erfunden, also ist auch der Text erfunden. Ein Sachtext spricht von echten Menschen, Tieren und Sachen."
+          - text: Ein Sachtext, weil er nur ein paar kurze Sätze hat
+            correct: false
+            info: "Die Länge sagt nichts darüber, ob ein Text wahr ist. Kurze Geschichten sind auch erfunden."
+        explanation: Ein Text mit erfundenen Figuren ist ein erfundener Text, egal wo er steht und wie lang er ist.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Zwei Texte aus der Bibliothek
+    blocks:
+      - type: text
+        text: "Lies den Chat und die zwei Texte in drei Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: hive
+            source: der Bienenstock
+          - target: wax
+            source: das Wachs
+          - target: pollinate
+            source: bestäuben
+          - target: crop
+            source: die Nutzpflanze
+          - target: source
+            source: die Quelle
+          - target: narrator
+            source: die Erzählstimme
+          - target: fact
+            source: die Tatsache
+      - type: text
+        text: |
+          1. **Peter:** I found two texts in the school library. Both are about bees.
+          2. **Sophie:** Are they the same kind of text?
+          3. **Peter:** Read them and decide.
+          4. *Text A: Honey bees*
+          5. Honey bees live together in a nest called a hive. The inside of the hive has small cells made of wax.
+          6. Bees make honey, and people keep bees for it. Farmers also use honey bees, because the bees pollinate their crops.
+          7. People use the wax from the hive too, for example for candles.
+          8. *Source: a book about bees from the school library*
+      - type: single-choice
+        id: sachtext-verstehen
+        text: "Was sagt Text A über Honigbienen?"
+        options:
+          - text: Sie leben zusammen in einem Nest
+            correct: true
+            info: "So steht es in Zeile 5: Honey bees live together in a nest called a hive."
+          - text: Sie machen selbst Kerzen aus ihrem Wachs
+            correct: false
+            info: "Zeile 7 sagt, dass die Menschen das Wachs für Kerzen benutzen, nicht die Bienen."
+          - text: Sie bleiben bei Regen im Nest und erzählen Geschichten
+            correct: false
+            info: "Das steht in Text B, der erfunden ist. Text A nennt nur Tatsachen."
+        explanation: Text A beschreibt, wo Honigbienen leben und wozu Menschen sie nutzen.
+      - type: text
+        text: |
+          9. *Text B: Buzz and the Rainy Day*
+          10. Buzz was a small bee with a big smile. One rainy morning she looked out of the hive and felt sad.
+          11. “I hate the rain,” she said. “I cannot fly in it, and I want to see the flowers!”
+          12. Her friend Bo the bee laughed. “Come inside, Buzz. Let us tell stories.” So the two friends told stories in the warm hive, and Buzz forgot about the rain.
+      - type: multiple-choice
+        id: sachtext-zeile
+        text: "Welche Zeilen zeigen, dass Text B erfunden ist? Wähle alle passenden Zeilen."
+        options:
+          - text: Zeile 10 nennt eine Biene mit Namen und einem Lächeln
+            correct: true
+            info: "Richtig: Buzz ist eine erfundene Figur. Echte Bienen haben keine Namen."
+          - text: Zeile 11 enthält wörtliche Rede
+            correct: true
+            info: "Richtig: Buzz spricht in Anführungszeichen. Eine erfundene Figur, die spricht, gibt es nur in einer Geschichte."
+          - text: Zeile 8 nennt die Quelle des Textes
+            correct: false
+            info: "Zeile 8 gehört zu Text A. Eine Quelle ist ein Merkmal des Sachtextes."
+        explanation: Eine erfundene Figur und wörtliche Rede zeigen, dass Text B eine Geschichte ist.
+      - type: text
+        text: |
+          13. **Sophie:** Text A tells us facts and names its source. Text B has a story with names.
+          14. **Peter:** And in text B somebody speaks. That never happens in text A.
+      - type: open-task
+        id: sachtext-meinung
+        task: "Welcher Text gefällt dir besser, Text A oder Text B, und warum? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst einen der beiden Texte.
+            source: /fuer-die-schuelerzeitung/sachtext-fiktion/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I like text B better because it is a funny story. I like Buzz and her friend.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: merkmale
+    title: Die Merkmale der zwei Textarten
+    blocks:
+      - type: figure
+        image: images/merkmale-sachtext-fiktion.svg
+        alt: "Zwei Spalten nebeneinander. Links stehen Merkmale eines Sachtextes, rechts Merkmale eines erfundenen Textes."
+        caption: "Die zwei Spalten im Vergleich. Achte darauf, was in der linken und was in der rechten Spalte steht."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Ein **Sachtext** will informieren. Er nennt **Fakten**, oft eine **Quelle** (*source*) und spricht von echten Menschen, Tieren und Sachen. Ein **erfundener Text** will unterhalten. Eine **Erzählstimme** (*narrator*) erzählt, die Figuren sind erfunden und sprechen in **wörtlicher Rede**. Auch ein Sachtext kann ein Zitat einer echten Person enthalten, aber eine erfundene Figur spricht dort nie."
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Fakten und Quelle: Sachtext. Erzählstimme, erfundene Figuren und ihre wörtliche Rede: erfundener Text."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: sachtext-zuordnen
+        text: "Zu welchem Merkmal passt der Satz?"
+        pairs:
+          - { left: "Source: a book about dogs from the library", right: "Quelle genannt" }
+          - { left: "“Wait for me!” shouted the little dog.", right: "wörtliche Rede" }
+          - { left: "Rex the dog was brave and a little bit silly.", right: "erfundene Figur" }
+          - { left: "Many people keep honey bees for their honey.", right: "Fakt" }
+        explanation: Eine Quelle und ein Fakt gehören zum Sachtext. Wörtliche Rede und eine erfundene Figur gehören zur Geschichte.
+      - type: multiple-choice
+        id: sachtext-merkmale
+        text: "Welche Merkmale passen zu diesem Text? Wähle alle passenden aus."
+        material:
+          - type: text
+            text: "Max the fox walked into the garden. “Nobody can see me,” he thought. Then he smiled."
+        options:
+          - text: Eine Figur denkt in wörtlicher Rede
+            correct: true
+            info: "Richtig: “Nobody can see me” sind die Gedanken der Figur in Anführungszeichen."
+          - text: Eine Erzählstimme sagt, was die Figur tut
+            correct: true
+            info: "Richtig: Der Erzähler sagt, dass Max in den Garten ging und lächelte."
+          - text: Der Text nennt eine Quelle
+            correct: false
+            info: "Unter dem Text steht keine Quelle. Eine Quelle gehört zum Sachtext."
+          - text: Der Text besteht nur aus Fakten
+            correct: false
+            info: "Ein Fuchs, der denkt und lächelt, ist erfunden. Das ist keine Tatsache."
+        explanation: Eine Figur mit Namen, wörtliche Rede und eine Erzählstimme sind Merkmale eines erfundenen Textes.
+      - type: true-false
+        id: sachtext-zeitung
+        text: "Was in der Zeitung steht, ist immer wahr."
+        answer: false
+        explanation: Auch in einer Zeitung kann ein erfundener Text stehen. Ob ein Text wahr ist, prüfst du an Fakten und Quelle.
+      - type: true-false
+        id: sachtext-rede
+        text: "In einem Sachtext über Bienen darf eine Biene sprechen: “I am tired,” said the bee."
+        answer: false
+        explanation: Ein Sachtext spricht von echten Tieren, Menschen und Sachen. Eine sprechende Biene in wörtlicher Rede gehört in eine erfundene Geschichte.
+      - type: language-task
+        id: sachtext-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: a-factual-text-gives-information-about-animals.mp3
+            target: A factual text gives information about animals.
+          - audio: the-author-of-a-story-invents-the-characters.mp3
+            target: The author of a story invents the characters.
+          - audio: every-article-should-name-its-sources-properly.mp3
+            target: Every article should name its sources properly.
+        explanation: Die Sätze zeigen, wie man über Textarten spricht.
+  - type: section
+    id: anwenden
+    title: Selbst sprechen und schreiben
+    blocks:
+      - type: speaking-task
+        id: sachtext-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So sprichst du über Textarten."
+        items:
+          - audio: this-story-is-about-a-fox-and-a-rabbit.mp3
+            text: This story is about a fox and a rabbit.
+          - audio: i-think-the-second-text-is-invented.mp3
+            text: I think the second text is invented.
+          - audio: is-this-a-true-report-or-an-invented-story.mp3
+            text: Is this a true report or an invented story?
+      - type: open-task
+        id: sachtext-schreiben
+        task: "Schreibe eine Merkmalsliste auf Englisch: drei Merkmale eines Sachtextes und drei Merkmale einer erfundenen Geschichte. Kurze Stichpunkte reichen."
+        points:
+          - text: Du nennst drei Merkmale eines Sachtextes, zum Beispiel Fakten und Quelle.
+            source: /fuer-die-schuelerzeitung/sachtext-fiktion/#merkmale
+          - text: Du nennst drei Merkmale einer erfundenen Geschichte, zum Beispiel Erzählstimme und wörtliche Rede.
+            source: /fuer-die-schuelerzeitung/sachtext-fiktion/#merkmale
+          - text: Du trennst die zwei Listen klar.
+            kind: form
+        solution: |
+          Non-fiction text: facts, a source, real things and people.
+          Story: a narrator, invented characters, speech.
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Du kannst die zwei Textarten unterscheiden. Auf der nächsten Seite machst du aus einer Geschichte einen Bericht für die Zeitung."

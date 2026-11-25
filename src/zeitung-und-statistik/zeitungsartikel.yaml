@@ -1,0 +1,261 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Der Zeitungsartikel
+description: "Den Aufbau eines Zeitungsartikels beschreiben (headline, lead, body) und Bericht und Kommentar unterscheiden: mit einer Zeitungsseite über eine Stadtbücherei."
+competencies: [zeitungsartikel]
+scope: "Die Seite zeigt den Aufbau eines Nachrichtenartikels und den Unterschied zwischen Bericht und Kommentar. Lesestück ist eine erfundene Zeitungsseite aus der Stadt Tarnwick über die Sonntagsöffnung der Stadtbücherei (headline in Zeile 1, lead in Zeile 2, Einzelheiten und Zitat der Sprecherin in den Zeilen 3 bis 6, Kommentar mit Meinung und Forderung in den Zeilen 7 bis 10). Die headline ist kurz. Der lead sagt in ein bis zwei Sätzen das Wichtigste und beantwortet Wer, Was, Wann, Wo und Warum. Der body bringt Einzelheiten, Zahlen und ein Zitat mit dem Namen der Person; Weniger Wichtiges steht zuletzt (inverted pyramid). Im Bericht steht keine Meinung, ein Kommentar sagt, was die schreibende Person denkt. Der Bauplan wird wie eine Schablone auf den Artikel gelegt. Geübt werden Teile erkennen, Zeilen belegen, Bericht und Kommentar unterscheiden, einen lead schreiben, einen Artikel ordnen, Hören und Nachsprechen und zwei offene Aufgaben (Meinung zur Sonntagsöffnung, ein kurzer Nachrichtenartikel). Nicht hier sind Quellen prüfen und Signalwörter für Meinung (nächste Seite) und Diagramme."
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Eine Zeitung will dir in wenigen Sekunden sagen, worum es geht. Danach kannst du den Aufbau eines Zeitungsartikels beschreiben (**headline**, **lead**, **body**) und einen Bericht von einem Kommentar unterscheiden."
+      - type: single-choice
+        id: zeitung-start
+        text: "Du hast zehn Sekunden Zeit für einen Zeitungsartikel und willst wissen, worum es geht. Was liest du?"
+        options:
+          - text: Den letzten Absatz, dort steht das Ergebnis
+            correct: false
+            info: "Am Ende eines Artikels stehen meist Einzelheiten, die weniger wichtig sind. Das Ergebnis steht oben."
+          - text: Die Schlagzeile und den ersten Absatz
+            correct: true
+            info: "Die Schlagzeile und der erste Absatz sagen das Wichtigste. Mit ihnen weißt du schnell, worum es geht."
+          - text: Das Zitat in der Mitte
+            correct: false
+            info: "Ein Zitat gibt eine Stimme zum Thema wieder. Es erklärt nicht, was geschehen ist."
+        explanation: Wer eilig liest, schaut oben auf den Text. Dort steht, was geschehen ist.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Eine Zeitungsseite aus Tarnwick
+    blocks:
+      - type: text
+        text: "Lies die Zeitungsseite in drei Abschnitten. Zuerst kommen Schlagzeile und Anfang, dann der Rest des Artikels, zuletzt ein Kommentar zum selben Thema. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: council
+            source: der Stadtrat
+          - target: announce
+            source: bekannt geben
+          - target: petition
+            source: die Unterschriftenliste
+          - target: budget
+            source: der Haushalt
+          - target: librarian
+            source: die Bibliothekarin, der Bibliothekar
+          - target: councillor
+            source: das Ratsmitglied
+      - type: text
+        text: |
+          1. **Tarnwick library to open on Sundays**
+          2. Tarnwick Central Library will open every Sunday from March, the town council announced on Tuesday. The council hopes that more families, school students and adults who work during the week will use the library at weekends.
+      - type: single-choice
+        id: zeitung-verstehen
+        text: "Was will der Stadtrat mit der Sonntagsöffnung erreichen (Zeile 2)?"
+        options:
+          - text: Er will Geld sparen
+            correct: false
+            info: "Von Sparen steht in Zeile 2 nichts. Die Sonntagsöffnung kostet sogar zusätzliches Geld (Zeile 4)."
+          - text: Mehr Menschen sollen am Wochenende in die Bücherei kommen
+            correct: true
+            info: "Das steht am Ende von Zeile 2: Familien, Schüler und Berufstätige sollen die Bücherei am Wochenende nutzen."
+          - text: Die Bücherei soll an allen Wochentagen länger öffnen
+            correct: false
+            info: "Zeile 2 spricht nur vom Sonntag. Von längeren Zeiten an anderen Tagen steht dort nichts."
+        explanation: Der Stadtrat will die Bücherei am Wochenende für mehr Menschen öffnen.
+      - type: text
+        text: |
+          3. The library is closed on Sundays at the moment. A council report says that about 1,800 people have signed a petition for longer opening hours, and the number of visitors rose by 12 per cent last year. For people who work during the week, Sunday is often the only day when they can visit the library.
+          4. The extra hours will cost £46,000 a year, and the council will take the money from its culture budget. Two part-time librarians will start work in February.
+          5. “Many students need a quiet place to study at the weekend, and their homes are often too small or too noisy,” said Hannah Brook, head of library services. “On Sundays we will also offer a free homework club and a reading hour for young children.”
+          6. Not everybody agrees with the plan. Councillor Derek Lowe said that the money would be better spent on the town’s bus service. The council will count the visitors after one year and then decide if Sunday opening stays.
+      - type: single-choice
+        id: zeitung-zitat
+        text: "In welcher Zeile steht das Zitat von Hannah Brook, also ihre Worte in Anführungszeichen?"
+        options:
+          - text: Zeile 3
+            correct: false
+            info: "Zeile 3 nennt Zahlen aus einem Bericht des Stadtrats. Dort spricht keine Person in Anführungszeichen."
+          - text: Zeile 5
+            correct: true
+            info: "In Zeile 5 stehen Hannah Brooks Worte in Anführungszeichen, danach ihr Name und ihre Aufgabe."
+          - text: Zeile 6
+            correct: false
+            info: "In Zeile 6 sagt Derek Lowe etwas, aber nicht in seinen eigenen Worten und ohne Anführungszeichen. Das ist kein Zitat."
+        explanation: Ein Zitat gibt die Worte einer Person genau wieder. Es steht in Anführungszeichen mit dem Namen der Person.
+      - type: text
+        text: |
+          7. **Comment: Open the doors on Sunday**
+          8. I think the council has made the right decision. A library that is closed on the one day when many people have time is not much use. Clearly, a town needs a place where people can read, learn and meet. A library is not only a place for books. It is also a warm, quiet room for people who have no space at home.
+          9. Some people say that the money should go to the buses. But a town can pay for books and for buses, and both matter to the people who live here.
+          10. The council should not wait a whole year, however. It should count the visitors every three months and talk to the people who use the library.
+      - type: single-choice
+        id: zeitung-forderung
+        text: "In welcher Zeile steht, was der Stadtrat nach Meinung der schreibenden Person tun soll?"
+        options:
+          - text: Zeile 8
+            correct: false
+            info: "Zeile 8 sagt, was die schreibende Person denkt, aber nicht, was der Stadtrat noch tun soll."
+          - text: Zeile 9
+            correct: false
+            info: "Zeile 9 sagt, dass Bücher und Busse wichtig sind. Eine Aufgabe für den Stadtrat steht dort nicht."
+          - text: Zeile 10
+            correct: true
+            info: "Zeile 10 sagt mit should, was der Stadtrat tun soll: die Besucher öfter zählen und mit den Nutzern sprechen."
+        explanation: Ein Kommentar sagt nicht nur, was geschah, sondern auch, was die schreibende Person richtig findet und fordert.
+      - type: open-task
+        id: zeitung-meinung
+        task: "Soll die Bücherei in deiner Nähe sonntags öffnen? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du sagst, was du denkst, zum Beispiel mit I think.
+            kind: form
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I think a library should open on Sundays because many people only have time on that day. Families could read together, and students could study in peace.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: bauplan
+    title: Der Bauplan eines Zeitungsartikels
+    blocks:
+      - type: figure
+        image: images/bauplan-zeitungsartikel.svg
+        alt: "Drei Kästen untereinander. Oben die Schlagzeile, darunter ein Kasten mit fünf Fragewörtern, unten ein großer Kasten mit drei Zeilen für Einzelheiten."
+        caption: "Lege diesen Bauplan wie eine Schablone auf einen Artikel, zum Beispiel auf den aus Tarnwick: So findest du die Teile wieder."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Die **headline** ist die Schlagzeile: kurz und klar. Der **lead** ist der erste Absatz (paragraph). Er sagt in ein bis zwei Sätzen das Wichtigste und beantwortet die W-Fragen: Wer? Was? Wann? Wo? Warum? Der **body** bringt Einzelheiten, Zahlen und ein **Zitat** (quote) mit dem Namen der Person. Weniger Wichtiges steht zuletzt: Journalisten nennen dieses Prinzip die **inverted pyramid** (umgekehrte Pyramide). Ein **Bericht** (report) sagt, was geschehen ist, ohne Meinung. Ein **Kommentar** (comment) sagt, was jemand davon hält; er trägt oft das Wort Comment in der Überschrift."
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Im lead steht das Wichtigste zuerst. Der Bericht erzählt, was war. Der Kommentar sagt, was jemand davon hält."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: zeitung-teile
+        text: "Ein Artikel über ein Schwimmbad ist in Teile zerlegt. Zu welchem Teil des Bauplans gehört jedes Stück?"
+        pairs:
+          - { left: "Pool closes for repairs", right: headline }
+          - {
+              left: "Willowbank Swimming Pool will be closed for six weeks, the town council said on Monday.",
+              right: lead,
+            }
+          - {
+              left: "The new roof will cost £120,000, and the lessons for children will move to the school hall.",
+              right: body,
+            }
+          - { left: "“We know that many people use the pool,” said manager Lucy Dunn.", right: Zitat }
+        distractors: [Kommentar]
+        explanation: Die Schlagzeile ist kurz. Der lead sagt, was geschieht und wann. Der body bringt Einzelheiten, das Zitat steht mit Namen der Person.
+      - type: single-choice
+        id: zeitung-bericht
+        text: "Welcher Satz gehört in einen Bericht und nicht in einen Kommentar?"
+        options:
+          - text: The old market closed on Friday
+            correct: true
+            info: "Der Satz sagt, was geschehen ist, und lässt sich nachprüfen. So schreibt ein Bericht."
+          - text: I think the old market was beautiful
+            correct: false
+            info: "I think zeigt eine Meinung. Das gehört in einen Kommentar."
+          - text: The council should have asked the neighbours
+            correct: false
+            info: "Should sagt, was jemand besser gemacht hätte. Das ist eine Forderung, also Meinung."
+          - text: It was a terrible decision
+            correct: false
+            info: "Terrible bewertet die Entscheidung. Ein Bericht bewertet nicht."
+        explanation: Ein Bericht sagt, was geschehen ist. Wer etwas bewertet oder fordert, schreibt einen Kommentar.
+      - type: language-task
+        id: zeitung-lead
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Schreibe den Anfang eines lead aus den Stichwörtern. Der Stadtrat und das Museum sind erfunden."
+        hint: "Ein lead sagt, was geschehen ist. Schreibe über die Vergangenheit oder die Zukunft, nicht über die Gegenwart."
+        items:
+          - cue: "council / announce / new bus route"
+            target: "The council (has announced|announced) a new bus route."
+            mistakes:
+              - answer: "The council announce a new bus route."
+                message: "Nach The council brauchst du die Form der Vergangenheit: announced oder has announced."
+          - cue: "museum / open / on Mondays / from May"
+            target: "The museum (will open|is going to open) on Mondays from May."
+            mistakes:
+              - answer: "The museum will open in Mondays from May."
+                message: "Vor einem Wochentag steht on, in Mondays ist falsch."
+          - cue: "two hundred people / sign / petition / last week"
+            target: "Two hundred people signed a petition last week."
+            mistakes:
+              - answer: "Two hundred people have signed a petition last week."
+                message: "Mit last week steht das simple past: signed."
+        explanation: Der lead berichtet in ganzen Sätzen, was geschehen ist oder geschehen wird, und nennt dabei Wer, Was und Wann.
+      - type: ordering
+        id: zeitung-ordnen
+        text: "Die Teile eines Artikels über eine Markthalle sind durcheinander. Bringe sie in die Reihenfolge, in der sie gedruckt werden."
+        items:
+          - Market hall in Wenlow to close for a year
+          - The market hall in Wenlow will close next month for one year because the roof is no longer safe, the council said.
+          - Workers found holes in the roof in spring, and the repairs will cost £640,000.
+          - “We want everybody to feel safe here,” said manager Paula Reyes.
+          - The council will decide next year if the town needs a new roof.
+        hint: "Oben steht, was die Leser zuerst wissen müssen. Einzelheiten und Folgen kommen danach."
+        explanation: Zuerst die headline, dann der lead mit dem Wichtigsten. Im body folgen Zahlen, ein Zitat und zuletzt das, was weniger wichtig ist.
+      - type: language-task
+        id: zeitung-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: a-good-headline-is-short-and-interesting.mp3
+            target: A good headline is short and interesting.
+          - audio: the-lead-answers-the-most-important-questions.mp3
+            target: The lead answers the most important questions.
+          - audio: a-comment-gives-the-opinion-of-the-writer.mp3
+            target: A comment gives the opinion of the writer.
+        explanation: Die Sätze nennen, was ein guter Artikel und ein guter Kommentar tun.
+  - type: section
+    id: anwenden
+    title: Selbst schreiben
+    blocks:
+      - type: speaking-task
+        id: zeitung-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So sprichst du über Zeitungen."
+        items:
+          - audio: the-reporter-wrote-a-short-report-about-the-market.mp3
+            text: The reporter wrote a short report about the market.
+          - audio: many-readers-read-only-the-first-paragraph.mp3
+            text: Many readers read only the first paragraph.
+          - audio: the-town-newspaper-comes-out-every-thursday.mp3
+            text: The town newspaper comes out every Thursday.
+      - type: open-task
+        id: zeitung-schreiben
+        task: "Der Stadtrat von Pellmoor hat am Bahnhof neue Fahrradständer aufgestellt (erfunden). Schreibe einen kurzen Artikel: eine headline, einen lead und im body zwei Sätze, einer davon ein Zitat. Erfinde die Einzelheiten."
+        points:
+          - text: Die headline ist kurz und sagt, worum es geht.
+            source: /zeitung-und-statistik/zeitungsartikel/#bauplan
+          - text: Der lead sagt in ein bis zwei Sätzen das Wichtigste und beantwortet Wer, Was, Wann und Wo.
+            source: /zeitung-und-statistik/zeitungsartikel/#bauplan
+          - text: Im body steht ein Zitat in Anführungszeichen mit dem Namen der Person.
+            source: /zeitung-und-statistik/zeitungsartikel/#bauplan
+          - text: Der Text enthält keine eigene Meinung und steht in ganzen Sätzen in der Vergangenheit.
+            kind: form
+        solution: |
+          Bike stands for Pellmoor station
+
+          Pellmoor Council has opened sixty new bike stands at the railway station, the mayor said on Thursday. Many people who cycle to work had asked for them for years.
+
+          The stands cost £18,000 and have a roof. “Now I can leave my bike here without worry,” said cyclist Mark Ellison.
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Du kennst jetzt den Aufbau eines Artikels. Auf der nächsten Seite liest du zwei Texte zum selben Anlass: Du trennst **Information** von **Meinung** und prüfst, ob eine Nachricht seriös ist."

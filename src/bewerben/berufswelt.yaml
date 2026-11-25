@@ -1,0 +1,252 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Berufe und Ferienjobs
+description: "Berufe benennen und über Ferienjob, Praktikum und Berufswünsche sprechen: mit der Anzeige einer Bücherei."
+competencies: [berufswelt]
+scope: Die Seite zeigt, wie man Berufe benennt und über Ferienjob, Praktikum und Berufswünsche spricht. Lesestück ist die Anzeige Summer Library Assistant der Millbrook Library (Zeilen 1 bis 7, Aufgaben Bücher einsortieren, Besucher am Schalter unterstützen, bei Lesegruppen helfen; vier Stunden am Tag, drei Tage pro Woche, in den Sommerferien), ein Gespräch von Sophie mit Mr Anderson über Ferienjob, Praktikum und work experience (Zeilen 8 bis 15) und Sophies Notizen (Zeilen 16 bis 20). Ein holiday job ist bezahlte Arbeit für einige Wochen, work experience ist in der Schule meist ein bis zwei Wochen und meist unbezahlt, ein internship dauert meist ein bis vier Monate und kann bezahlt oder unbezahlt sein; part-time heißt in Teilzeit, apply for a job heißt sich bewerben. Vor einem Beruf steht a oder an (a vet, an engineer); job ist zählbar, work nicht. Geübt werden Berufe den Tätigkeiten zuordnen, a und an einsetzen, Sätze mit Cue schreiben, Hören und Nachsprechen, eine Meinung zu Ferienjob und work experience und drei Sätze über einen Wunschberuf. Nicht hier sind Schulabschlüsse, E-Mail, Lebenslauf und Bewerbung. Im Gespräch sagt Sophie, dass sie für ein Schuljahr aus Deutschland hier ist; Mr Anderson rät ihr, zuerst über ihre Schule zu schreiben, dann Fragen zu stellen und sich zu bewerben.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Sophie möchte in den Sommerferien Geld verdienen und findet die Anzeige einer Bücherei. Du liest sie mit ihr. Danach kannst du **Berufe benennen** und über **Ferienjob**, **Praktikum** und deine **Berufswünsche** sprechen."
+      - type: single-choice
+        id: berufe-start
+        text: "Du erzählst, dass du eine Stelle in einem Laden suchst. Welcher Satz ist richtig?"
+        options:
+          - text: I am looking for a work in a shop
+            correct: false
+            info: "Work heißt Arbeit im Allgemeinen und kann man nicht zählen. Eine einzelne Stelle ist ein job."
+          - text: I am looking for job in a shop
+            correct: false
+            info: "Job kann man zählen. Im Singular fehlt hier der Artikel a."
+          - text: I am looking for a job in a shop
+            correct: true
+            info: "Richtig: ein einzelner job, darum a job."
+        explanation: Ein einzelner Job ist zählbar und braucht a oder an. Work meint Arbeit im Allgemeinen.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Die Anzeige der Bücherei
+    blocks:
+      - type: text
+        text: "Lies Anzeige, Gespräch und Notizen in drei Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: advert
+            source: die Anzeige
+          - target: reliable
+            source: zuverlässig
+          - target: apply
+            source: sich bewerben
+          - target: librarian
+            source: der Bibliothekar, die Bibliothekarin
+          - target: translator
+            source: der Übersetzer, die Übersetzerin
+          - target: internship
+            source: das Praktikum
+          - target: unpaid
+            source: unbezahlt
+          - target: shelves
+            source: die Regale
+      - type: text
+        text: |
+          1. **Millbrook Library**
+          2. **Summer Library Assistant**
+          3. We are looking for a Summer Library Assistant for the school holidays.
+          4. Your tasks: you put books back on the shelves, you help visitors at the desk and you help at our reading groups.
+          5. Working hours: four hours a day, three days a week, in the summer holidays. This is a part-time job.
+          6. We are looking for someone who speaks good English, is friendly and is reliable. You do not need work experience.
+          7. Questions? Write to library\@example.org. To apply, send us an email.
+      - type: single-choice
+        id: berufe-anzeige
+        text: "Was gehört zu den Aufgaben des Summer Library Assistant?"
+        options:
+          - text: Besuchern am Schalter helfen
+            correct: true
+            info: "Zeile 4 sagt help visitors at the desk."
+          - text: Bücher an die Besucher verkaufen
+            correct: false
+            info: "In Zeile 4 steht nichts vom Verkaufen. Man stellt Bücher zurück ins Regal."
+          - text: Die Lesegruppen leiten
+            correct: false
+            info: "Zeile 4 sagt help at our reading groups. Man hilft dort, man leitet sie nicht."
+        explanation: Die Aufgaben stehen in Zeile 4, nach dem Wort tasks.
+      - type: text
+        text: |
+          8. **Sophie:** Good morning, Mr Anderson. I saw your advert for the summer job.
+          9. **Mr Anderson:** Good morning, Sophie. Yes, we need a helper for the holidays. Have you worked before?
+          10. **Sophie:** Not in a real job. I am here from Germany for one school year. But I write for the school newspaper, and I help in the school library. Is that useful?
+          11. **Mr Anderson:** Very useful. That is a kind of work experience too.
+          12. **Sophie:** Is a holiday job the same as an internship?
+          13. **Mr Anderson:** Not quite. A holiday job is paid work for a few weeks. An internship is a time in a company to learn about a job, and it can be paid or unpaid. At school, work experience usually lasts one or two weeks, and most students are not paid.
+          14. **Sophie:** I see. I would like to be a librarian one day. Or perhaps a journalist, or a translator.
+          15. **Mr Anderson:** Then this job is a good start. Please write to me about your school in Germany first, because school systems are different. After that you can ask your questions and apply.
+      - type: multiple-choice
+        id: berufe-zeile
+        text: "Welche Zeilen zeigen, dass Sophie schon etwas kann, das für den Job nützlich ist? Wähle alle passenden Zeilen."
+        options:
+          - text: Zeile 10 sagt, dass sie für die Schülerzeitung schreibt und in der Schulbibliothek hilft
+            correct: true
+            info: "Richtig: Das sind Dinge, die zu einer Bücherei passen."
+          - text: Zeile 11 nennt das eine Art work experience
+            correct: true
+            info: "Richtig: Mr Anderson sagt, dass ihre Erfahrung für den Job zählt."
+          - text: Zeile 9 sagt, dass sie schon in einer Bücherei gearbeitet hat
+            correct: false
+            info: "In Zeile 9 fragt Mr Anderson nur, ob sie schon gearbeitet hat. Sophie antwortet in Zeile 10 mit Not in a real job."
+        explanation: In den Zeilen 10 und 11 steht, was Sophie schon kann und wie Mr Anderson es einordnet.
+      - type: text
+        text: |
+          16. *Sophie's notes after the talk*
+          17. Holiday job: paid, a few weeks, for example in the summer. I can do this one.
+          18. Work experience: one or two weeks at school, not paid. I can ask my teacher about it.
+          19. Job ideas: librarian, journalist, translator. I like books, words and stories. I want a job with words.
+          20. Next step: write to Mr Anderson about my school. Then ask my questions and apply.
+      - type: open-task
+        id: berufe-meinung
+        task: "Was ist für Jugendliche besser, ein Ferienjob oder eine Woche work experience? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du entscheidest dich für eines von beiden.
+            source: /bewerben/berufswelt/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I think a holiday job is better because you earn some money. You also learn to be on time.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: wortfeld
+    title: Berufe und Arbeit
+    blocks:
+      - type: figure
+        image: images/berufe-wortfeld.svg
+        alt: "Sechs Berufe untereinander, jeweils mit a oder an davor und einer kurzen deutschen Erklärung rechts."
+        caption: "Schau auf das kleine Wort vor dem Beruf: a oder an. Die Berufe stehen hier mit dem, was man dort tut."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Vor einem Beruf steht **a** oder **an**, vor einem Vokallaut **an**. Einen einzelnen **job** kannst du zählen, **work** nicht: *Arbeit* im Allgemeinen heißt *work*. Ein **holiday job** ist bezahlte Arbeit für einige Wochen, **part-time** heißt in Teilzeit. **Work experience** ist ein kurzes Schülerpraktikum von meist ein bis zwei Wochen ohne Bezahlung; ein **internship** dauert meist ein bis vier Monate. Mit **apply for** bewirbst du dich um eine Stelle."
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "*A job, two jobs* aber *work* ohne a. Du bewirbst dich *for* a job, nicht *to* a job."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: berufe-zuordnen
+        text: "Welcher Beruf passt zur Beschreibung?"
+        pairs:
+          - { left: "She helps people to find books.", right: a librarian }
+          - { left: "He writes reports for a newspaper.", right: a journalist }
+          - { left: "She turns a German text into English.", right: a translator }
+          - { left: "He explains new words to a class.", right: a teacher }
+        distractors:
+          - a mechanic
+        hint: "Lies die Beschreibungen genau: Was tut die Person?"
+        explanation: Jede Beschreibung nennt die Arbeit, die zum Beruf gehört.
+      - type: language-task
+        id: berufe-artikel
+        languages: { source: de, target: en }
+        mode: gap
+        form: { case: ok, punctuation: ok }
+        task: "Setze a oder an ein."
+        hint: "An steht vor einem Vokallaut, a vor einem Konsonantenlaut. Hör auf den Laut, nicht auf den Buchstaben."
+        items:
+          - source: "Sophie möchte Journalistin werden."
+            target: "Sophie would like to be [a] journalist."
+            mistakes:
+              - answer: "an"
+                message: "Journalist beginnt mit einem Konsonantenlaut. Davor steht a."
+          - source: "Er möchte Schauspieler werden."
+            target: "He would like to be [an] actor."
+            mistakes:
+              - answer: "a"
+                message: "Actor beginnt mit einem Vokallaut. Davor steht an."
+          - source: "Das ist ein interessanter Beruf."
+            target: "That is [an] interesting job."
+            mistakes:
+              - answer: "a"
+                message: "Das Wort direkt nach dem Artikel ist interesting. Es beginnt mit einem Vokallaut, darum an."
+        explanation: Vor einem Vokallaut steht an. Entscheidend ist das nächste Wort, auch wenn es ein Adjektiv ist.
+      - type: language-task
+        id: berufe-satz
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Schreibe zu jedem Cue einen Satz über einen Ferienjob. Du darfst Wörter ergänzen."
+        hint: "Denke an a vor dem Job, an das kleine Wort nach look und apply und an das kleine to nach want."
+        items:
+          - cue: "I / look for / holiday job / summer"
+            target: "I am looking for a holiday job (for|in) the summer."
+            mistakes:
+              - answer: "I am looking for holiday job for the summer."
+                message: "Vor holiday job fehlt der Artikel. Ein einzelner job braucht a."
+              - answer: "I am looking for a holiday work for the summer."
+                message: "Work kann man nicht zählen. Eine Stelle ist ein job."
+          - cue: "I / work / four hours / day"
+            target: "I work four hours (a|per|each) day."
+            mistakes:
+              - answer: "I work four hours at day."
+                message: "Bei Zeitangaben dieser Art sagst du a day oder per day, nicht at day."
+          - cue: "I / want / apply / job"
+            target: "I want to apply for the job."
+            mistakes:
+              - answer: "I want to apply to the job."
+                message: "Nach apply steht for, wenn es um eine Stelle geht."
+              - answer: "I want apply for the job."
+                message: "Nach want brauchst du to vor dem zweiten Verb."
+        explanation: Ein Satz über Arbeit braucht den Artikel vor dem job und das richtige kleine Wort, zum Beispiel apply for.
+      - type: language-task
+        id: berufe-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: many-students-want-to-earn-some-money-in-the-holidays.mp3
+            target: Many students want to earn some money in the holidays.
+          - audio: a-week-of-work-experience-can-be-very-useful.mp3
+            target: A week of work experience can be very useful.
+          - audio: our-librarian-is-always-friendly-and-helpful.mp3
+            target: Our librarian is always friendly and helpful.
+        explanation: Die Sätze zeigen, wie man über Arbeit und Praktikum spricht.
+  - type: section
+    id: anwenden
+    title: Selbst sprechen und schreiben
+    blocks:
+      - type: speaking-task
+        id: berufe-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So kannst du später über deine Wünsche sprechen."
+        items:
+          - audio: i-am-interested-in-a-career-in-medicine.mp3
+            text: I am interested in a career in medicine.
+          - audio: i-would-like-to-work-with-animals-in-the-future.mp3
+            text: I would like to work with animals in the future.
+          - audio: i-would-enjoy-a-job-with-lots-of-variety.mp3
+            text: I would enjoy a job with lots of variety.
+      - type: open-task
+        id: berufe-schreiben
+        task: "Schreibe drei Sätze über einen Beruf, den du später gern ausüben möchtest. Schreibe auf Englisch."
+        points:
+          - text: Du nennst den Beruf mit a oder an.
+            source: /bewerben/berufswelt/#wortfeld
+          - text: Du sagst, was man in diesem Beruf tut.
+            source: /bewerben/berufswelt/#wortfeld
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I would like to be a photographer. A photographer takes pictures for magazines and websites. I like this job because I enjoy looking at the world in a different way.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Du kennst jetzt die Wörter für Arbeit und Beruf. Auf der nächsten Seite geht es um Schulabschlüsse: Mr Anderson möchte wissen, wie Sophies Schule in Deutschland aufgebaut ist. Wie erklärst du in England, welche Schule du besucht hast?"

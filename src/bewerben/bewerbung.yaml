@@ -1,0 +1,261 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Die Bewerbung (cover letter)
+description: "Eine Bewerbung für einen Ferienjob schreiben: mit Sophies Brief an die Stadtbücherei Millbrook."
+competencies: [bewerbung]
+scope: "Die Seite zeigt, wie eine Bewerbung (cover letter) für einen Ferienjob gebaut ist. Lesestück ist Sophies Brief an Mr Anderson, den Leiter der Millbrook Library, in drei Abschnitten (Betreff, Anrede und Anlass in den Zeilen 1 bis 3, Eignung mit zwei Beispielen in den Zeilen 4 und 5, Bezug zur Stelle in Zeile 6, Dank, Bitte um ein Gespräch und Gruß in den Zeilen 7 bis 10). Die Bewerbung liegt dem CV bei, stellt die Person vor und erklärt, warum sie für die Stelle passt; sie gilt für genau eine Stelle. Der Bauplan hat sechs Teile: Anrede, Anlass, Eignung (Eigenschaft mit Beispiel), Bezug zur Stelle, Schluss und Gruß. Der Ton ist formal, ohne Kurzformen. Typische Fehler sind den Lebenslauf zu wiederholen, keinen Bezug zur Stelle herzustellen und zu informell zu schreiben. Geübt werden Teile ordnen, Sätze den Teilen zuordnen, informelle Sätze verbessern, Hören und Nachsprechen und zwei offene Aufgaben (Meinung zum Brief, eigene Bewerbung einer erfundenen Person). Nicht hier sind der Lebenslauf und das Vorstellungsgespräch."
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Auf der Seite davor hat Sophie ihren CV geschrieben, und Mr Anderson wartet noch auf den kurzen Brief. Du kennst schon die formelle E-Mail. Sophie schickt an die Stadtbücherei von Millbrook ihren CV und dazu eine **Bewerbung** (cover letter), einen Brief mit einem Anliegen. Danach kannst du eine Bewerbung für ein Praktikum oder einen Ferienjob schreiben."
+      - type: single-choice
+        id: bewerbung-start
+        text: "Sophies CV ist fertig. Was schreibt sie in die Bewerbung dazu?"
+        options:
+          - text: Ihren Lebenslauf noch einmal, nur in ganzen Sätzen und mit allen Jahreszahlen
+            correct: false
+            info: "Der Lebenslauf liegt schon bei. Wenn sie ihn wiederholt, liest der Leser alles doppelt und erfährt nichts Neues."
+          - text: Warum sie für diese Stelle passt und was sie dort tun möchte
+            correct: true
+            info: "Die Bewerbung begründet, was der CV nur aufzählt."
+          - text: Nur, dass sie die Stelle sehr gern haben möchte, und ein Dankeschön
+            correct: false
+            info: "Ein Wunsch allein überzeugt nicht. Der Leser möchte wissen, warum sie passt."
+        explanation: Der CV zählt auf, die Bewerbung begründet. Sie erklärt, warum du für die Stelle passt.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Sophies Brief an Mr Anderson
+    blocks:
+      - type: text
+        text: "Lies den Brief in drei Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: position
+            source: die Stelle
+          - target: to apply
+            source: sich bewerben
+          - target: application
+            source: die Bewerbung
+          - target: reliable
+            source: zuverlässig
+          - target: patient
+            source: geduldig
+          - target: shelves
+            source: die Regale
+          - target: attached
+            source: beigelegt
+          - target: to suit
+            source: passen, recht sein
+      - type: text
+        text: |
+          1. *Subject: Application for Summer Library Assistant*
+          2. Dear Mr Anderson,
+          3. I am writing to apply for the position of Summer Library Assistant at Millbrook Library, which I saw in your advertisement. I am spending a school year in Millbrook, and I would like to work in your library during the summer holidays.
+      - type: single-choice
+        id: bewerbung-anlass
+        text: "Warum schreibt Sophie den Brief (Zeilen 1 bis 3)?"
+        options:
+          - text: Sie fragt, ob die Bücherei eine Stelle frei hat
+            correct: false
+            info: "Das wäre eine Anfrage. Sophie kennt die Stelle schon aus der Anzeige."
+          - text: Sie bewirbt sich um die Stelle als Summer Library Assistant
+            correct: true
+            info: "So steht es in Zeile 3: I am writing to apply."
+          - text: Sie bedankt sich für die Antwort auf ihre Fragen
+            correct: false
+            info: "Das war in der E-Mail davor. Hier schreibt sie, um sich zu bewerben. Um ein Gespräch bittet sie erst am Ende."
+        explanation: Der Anlass steht am Anfang. Sophie sagt in Zeile 3, dass sie sich bewirbt, und nennt die Stelle.
+      - type: text
+        text: |
+          4. I believe I am the right person for this job for two reasons. First, I am friendly and I like to help people. At school I help in the library, where I put books back on the shelves and show students where to find the book they need. I am also patient when someone needs a lot of help.
+          5. Second, I am reliable. I write for the school newspaper, and I have never been late with a text. People at school know that I finish my work carefully and on time. I also wrote a report about our school library, and I enjoyed talking to the readers.
+          6. Your advertisement asks for good English and for help with the reading groups. I speak and write English every day, and I enjoy reading to other people. I would like to help readers who feel shy about speaking English, because I remember how that feels in a new country. I can work four hours a day, three days a week, as the advertisement says.
+      - type: multiple-choice
+        id: bewerbung-beispiele
+        text: "Welche Zeilen zeigen mit einem Beispiel, warum Sophie für die Stelle passt? Wähle alle passenden Zeilen."
+        options:
+          - text: Zeile 4 nennt ihre Hilfe in der Schulbibliothek
+            correct: true
+            info: "Richtig: Das ist ein Beispiel für „friendly“, sie hilft anderen."
+          - text: Zeile 5 nennt die Schülerzeitung und die Texte, die nie zu spät waren
+            correct: true
+            info: "Richtig: Das ist ein Beispiel für „reliable“."
+          - text: Zeile 6 nennt ein drittes Beispiel aus der Schulzeit
+            correct: false
+            info: "Zeile 6 knüpft an die Anzeige an. Das ist der Bezug zur Stelle, kein Beispiel."
+          - text: Zeile 3 nennt, in welcher Klasse Sophie ist
+            correct: false
+            info: "Zeile 3 nennt die Stelle und den Grund des Briefs. Von einer Klasse steht dort nichts."
+        explanation: Die Zeilen 4 und 5 zeigen je eine Eigenschaft mit einem Beispiel. Zeile 6 bezieht sich auf die Anzeige.
+      - type: text
+        text: |
+          7. Thank you for reading my letter. I have attached my CV, which gives you more information about my school and my experience. I am sure that the work would also help me to learn more about libraries.
+          8. I would be very happy to talk to you about the position, and I can come to the library for an interview at any time that suits you.
+          9. Yours sincerely,
+          10. Sophie Weber
+      - type: single-choice
+        id: bewerbung-gespraech
+        text: "In welcher Zeile bittet Sophie um ein Gespräch?"
+        options:
+          - text: Zeile 8
+            correct: true
+            info: "Zeile 8 sagt, dass Sophie gern zu einem Gespräch kommt."
+          - text: Zeile 7
+            correct: false
+            info: "Zeile 7 bedankt sich und sagt, dass der CV beiliegt."
+          - text: Zeile 6
+            correct: false
+            info: "Zeile 6 knüpft an die Anzeige an. Von einem Gespräch steht dort nichts."
+        explanation: Der Schluss besteht aus Dank und der Bitte um ein Gespräch. Dann folgen Gruß und Name.
+      - type: open-task
+        id: bewerbung-meinung
+        task: "Welchen Absatz in Sophies Brief findest du am überzeugendsten, und warum? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst einen Absatz oder ein Beispiel aus dem Brief.
+            source: /bewerben/bewerbung/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I think the second example is the best because it shows that Sophie finishes her work on time. A library needs people who are reliable.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: bauplan
+    title: Der Bauplan einer Bewerbung
+    blocks:
+      - type: figure
+        image: images/bauplan-bewerbung.svg
+        alt: "Sechs Kästen untereinander, die ersten zwei in einer Farbe, die nächsten zwei in einer zweiten, die letzten zwei in einer dritten."
+        caption: "Der Bauplan von oben nach unten gelesen: so ist auch Sophies Brief gebaut."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Der CV liegt der Bewerbung bei. Die Bewerbung stellt dich vor und erklärt, warum du für die Stelle passt. Ihr **Bauplan** hat sechs Teile. Über dem Brief steht wie in der E-Mail ein kurzer Betreff (*subject*). Dann kommen die Anrede und der Anlass, danach der Hauptteil mit der Eignung und dem Bezug zur Stelle, zuletzt der Schluss und der Gruß. Für die **Eignung** nennst du eine Eigenschaft und ein Beispiel, bei einem Praktikum am besten aus Schule und Freizeit. Beim **Bezug zur Stelle** greifst du auf, was die Anzeige verlangt. Der Ton ist formal: keine Kurzformen, kein *Hi*. Jede Bewerbung gilt für genau eine Stelle."
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Der CV zählt auf, die Bewerbung begründet. Schreibe nicht den CV noch einmal ab, und schreibe jeden Brief für genau eine Stelle."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: ordering
+        id: bewerbung-ordnen
+        text: "Eine Bewerbung um einen Job im Café ist durcheinander. Bringe die Teile in die Reihenfolge des Bauplans."
+        items:
+          - Dear Ms Clarke,
+          - I am writing to apply for the job of café helper.
+          - I am friendly, and I have helped at a school cake sale.
+          - Your advertisement asks for someone who can work on Saturdays, and I can do that.
+          - I would be happy to come for an interview.
+          - Yours sincerely,
+        hint: "Die Anrede kommt zuerst und der Gruß zuletzt. Dazwischen: erst der Grund des Briefs, dann Eignung und Bezug zur Stelle, zuletzt der Schluss."
+        explanation: Anrede, Anlass, Eignung, Bezug zur Stelle, Schluss und Gruß, in dieser Reihenfolge.
+      - type: matching
+        id: bewerbung-zuordnen
+        text: "Zu welchem Teil der Bewerbung gehört der Satz?"
+        pairs:
+          - { left: "I am applying for the holiday job at your shop.", right: Anlass }
+          - { left: "I am good at talking to people, and I helped at a book sale last year.", right: Eignung }
+          - { left: "You want someone who knows about stories, and I read every week.", right: Bezug zur Stelle }
+          - { left: "I look forward to hearing from you.", right: Schluss }
+        distractors: [Wiederholung des Lebenslaufs]
+        explanation: Der Anlass nennt die Stelle, die Eignung eine Eigenschaft mit Beispiel, der Bezug greift die Anzeige auf, der Schluss schließt höflich ab. Den Lebenslauf wiederholst du nicht.
+      - type: language-task
+        id: bewerbung-verbessern
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Der vorgegebene Satz ist zu informell für eine Bewerbung. Schreibe ihn neu: ohne Umgangssprache und ohne Kurzformen."
+        hint: "Eine Bewerbung ist formal. Schreibe Kurzformen aus und nimm höfliche Wörter."
+        items:
+          - cue: "Hi Ms Reed,"
+            target: "Dear Ms Reed,"
+            mistakes:
+              - answer: "Hello Ms Reed,"
+                message: "Hello ist freundlich, aber in einer Bewerbung beginnt die Anrede mit Dear."
+              - answer: "Hi Ms Reed,"
+                message: "Hi klingt wie eine Nachricht an Freunde. In einer Bewerbung beginnst du mit Dear."
+          - cue: "I wanna work in your shop 'cos I like books."
+            target: "I (would like|want) to work in your shop because I like books."
+            mistakes:
+              - answer: "I wanna work in your shop because I like books."
+                message: "Wanna ist Umgangssprache. Schreibe want to oder would like to."
+              - answer: "I would like to work in your shop 'cos I like books."
+                message: "'cos ist Umgangssprache. Schreibe because."
+          - cue: "I'm sure I'd be a good helper."
+            target: "I am sure I would be a good helper."
+            mistakes:
+              - answer: "I'm sure I would be a good helper."
+                message: "I'm ist eine Kurzform. In einer Bewerbung schreibst du I am."
+              - answer: "I am sure I'd be a good helper."
+                message: "I'd ist eine Kurzform. In einer Bewerbung schreibst du I would."
+        explanation: Eine Bewerbung ist formal. Du beginnst mit Dear, schreibst Kurzformen aus und vermeidest Umgangssprache.
+      - type: language-task
+        id: bewerbung-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: begin-your-letter-with-a-clear-reason.mp3
+            target: Begin your letter with a clear reason.
+          - audio: give-one-example-from-your-own-experience.mp3
+            target: Give one example from your own experience.
+          - audio: end-your-letter-with-a-polite-goodbye.mp3
+            target: End your letter with a polite goodbye.
+        explanation: Die Sätze sagen, wie eine Bewerbung aufgebaut wird.
+  - type: section
+    id: anwenden
+    title: Selbst schreiben und sprechen
+    blocks:
+      - type: speaking-task
+        id: bewerbung-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So klingt eine höfliche Bewerbung."
+        items:
+          - audio: i-am-very-interested-in-this-opportunity.mp3
+            text: I am very interested in this opportunity.
+          - audio: i-have-helped-at-several-school-events.mp3
+            text: I have helped at several school events.
+          - audio: i-hope-you-will-find-my-letter-helpful.mp3
+            text: I hope you will find my letter helpful.
+      - type: open-task
+        id: bewerbung-schreiben
+        task: "Schreibe eine kurze Bewerbung um einen Ferienjob. Erfinde die Person und die Stelle: Helfer im Hillside Garden Centre, der Brief geht an Ms Reed. Nimm keine echten Daten."
+        points:
+          - text: Du beginnst mit einer Anrede mit Namen und endest mit Gruß und Namen.
+            source: /bewerben/bewerbung/#bauplan
+          - text: Du nennst die Stelle und sagst, warum du schreibst.
+            source: /bewerben/bewerbung/#bauplan
+          - text: Du nennst eine Eigenschaft mit einem Beispiel und knüpfst an die Anzeige an.
+            source: /bewerben/bewerbung/#bauplan
+          - text: Du bittest am Schluss um ein Gespräch.
+            source: /bewerben/bewerbung/#bauplan
+          - text: Du schreibst formal, ohne Kurzformen, und wiederholst den CV nicht.
+            kind: form
+        solution: |
+          Dear Ms Reed,
+
+          I am writing to apply for the position of holiday helper at Hillside Garden Centre.
+
+          I am good with plants and with people. At home I look after the vegetable garden, and I have sold flowers at a school plant sale. I am also careful, because I always read the instructions before I start.
+
+          Your advertisement asks for someone who can carry things and talk to customers. I am strong, and I enjoy giving advice. I can work three days a week in the holidays.
+
+          I would be very happy to come for an interview at any time that suits you.
+
+          Yours sincerely,
+          Jordan Lee
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Die Bewerbung ist geschrieben und abgeschickt. Auf der nächsten Seite lädt Mr Anderson Sophie zum **Vorstellungsgespräch** ein: Du übst, typische Fragen in drei Schritten zu beantworten."

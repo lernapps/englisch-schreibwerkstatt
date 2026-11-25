@@ -1,0 +1,258 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Information und Meinung
+description: "Information und Meinung unterscheiden und seriöse Nachrichten erkennen: mit einer Nachricht und einem Kommentar zu einem Skatepark-Plan."
+competencies: [information-meinung]
+scope: "Die Seite zeigt, wie man Information und Meinung trennt und seriöse Nachrichten erkennt. Lesestück sind zwei erfundene Texte zum selben Anlass, dem Plan eines Skateparks in der Stadt Dunmere, eine Nachricht (Zeilen 1 bis 6) und ein Kommentar (Zeilen 7 bis 11). Information lässt sich nachprüfen (Zahl, Name, Ort, Zeit, Zitat mit Namen), eine Meinung sagt, was jemand denkt, findet oder fordert. Der Farbstift ist das Bild dafür, echte Markierung gibt es nicht, geübt wird mit einer Auswahlaufgabe. Signalwörter für Meinung sind I think, in my opinion, clearly, shocking, should und must; auch Wertwörter zeigen Meinung. Fünf Fragen prüfen eine Nachricht: Quelle, Belege, Datum, Autor und Gegenstimme. Geübt werden Sätze einordnen, eine Quelle prüfen, Meinungssätze in Informationssätze umschreiben, Hören und Nachsprechen und zwei offene Aufgaben. Nicht hier sind Aufbau des Artikels und Diagramme."
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Auf der letzten Seite hast du gesehen: Ein Bericht sagt, was geschah, ein Kommentar sagt, was jemand davon hält. Hier trennst du beides auch im einzelnen Satz. Danach kannst du **Information** und **Meinung** unterscheiden und seriöse Nachrichten erkennen."
+      - type: single-choice
+        id: info-start
+        text: "Zwei Sätze über einen Film. Der erste lautet „Der Film dauert zwei Stunden.“, der zweite „Der Film ist langweilig.“ Was ist der Unterschied?"
+        options:
+          - text: Beide sind Information, der zweite klingt nur stärker
+            correct: false
+            info: "Ob etwas langweilig ist, hängt von der Person ab. Das ist keine Information, die man messen kann."
+          - text: Der erste lässt sich nachprüfen, der zweite ist eine Meinung
+            correct: true
+            info: "Die Länge eines Films kann man nachmessen. Ob er langweilig ist, findet jeder anders."
+          - text: Der zweite ist falsch, weil er nicht genau ist
+            correct: false
+            info: "Eine Meinung ist nicht falsch. Man kann ihr zustimmen oder nicht, aber man kann sie nicht nachprüfen."
+        explanation: Information lässt sich nachprüfen. Eine Meinung sagt, was jemand findet.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Ein Skatepark für Dunmere
+    blocks:
+      - type: text
+        text: "Lies zwei Texte zum selben Anlass: eine Nachricht und einen Kommentar. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: council
+            source: der Stadtrat
+          - target: councillor
+            source: das Ratsmitglied
+          - target: skatepark
+            source: die Skateanlage
+          - target: planning document
+            source: die Planungsunterlage
+          - target: website
+            source: die Internetseite
+          - target: youth council
+            source: der Jugendrat
+          - target: shocking
+            source: schockierend
+          - target: give in
+            source: nachgeben
+      - type: text
+        text: |
+          1. **Council plans skatepark in Fenton Park**
+          2. *By Tom Ashby, local reporter*
+          3. Dunmere Town Council wants to build a skatepark in Fenton Park. The skatepark would stand next to the tennis courts and would cost £280,000, the council’s planning document says.
+          4. In a survey of 640 young people last autumn, 71 per cent said that the town needs a skatepark. At the moment the nearest skatepark is in Marsden, 14 miles away. The new park would be free for everybody to use, and the council says that it would stay open all year.
+          5. Some neighbours are worried about noise. Councillor Janet Moss said that the park would be open from 9 am to 8 pm and that it would stand 60 metres from the nearest houses. “We have looked at the noise carefully,” she said. A public meeting will take place in the town hall, and neighbours can send their comments until the end of the month.
+          6. The plans have been on the council’s website for two weeks. Sports clubs, schools and the youth council have already sent their views, and the council has promised to show all comments on its website after the meeting.
+      - type: single-choice
+        id: info-verstehen
+        text: "Wovor haben einige Nachbarn Sorge, und was antwortet der Stadtrat (Zeile 5)?"
+        options:
+          - text: Sie fürchten Lärm, und der Stadtrat nennt Abstand und Öffnungszeiten
+            correct: true
+            info: "In Zeile 5 sagt Janet Moss, dass der Park nur tagsüber offen ist und 60 Meter von den Häusern entfernt steht."
+          - text: Sie fürchten hohe Kosten, und der Stadtrat will das Projekt verkleinern
+            correct: false
+            info: "Die Kosten stehen in Zeile 3. Die Sorge der Nachbarn in Zeile 5 gilt dem Lärm."
+          - text: Sie fürchten Lärm, und der Stadtrat will den Plan zurückziehen
+            correct: false
+            info: "Der Stadtrat hält am Plan fest. Er lädt zu einer Versammlung ein und nimmt Kommentare an."
+        explanation: Die Nachbarn sorgen sich wegen des Lärms. Der Stadtrat antwortet mit Zahlen zur Öffnungszeit und zum Abstand.
+      - type: text
+        text: |
+          7. **Comment: Build the skatepark**
+          8. I think a skatepark is the best idea the council has had for years. Young people have nowhere to go, and a trip to Marsden costs money and time. Clearly, Fenton Park is the right place.
+          9. It is shocking that some neighbours are against the plan before they have seen it. Young people are not a danger; they are neighbours too. The council should listen to everybody, but it must not give in to a few loud voices.
+          10. Of course, a skatepark needs good lights, clean ground and clear rules. These are details that the council and young people can solve together.
+          11. A town that does not ask its young people makes a big mistake.
+      - type: single-choice
+        id: info-zeile
+        text: "In welcher Zeile steht eine Forderung an den Stadtrat?"
+        options:
+          - text: Zeile 4
+            correct: false
+            info: "Zeile 4 nennt eine Umfrage mit Zahlen. Das ist Information, keine Forderung."
+          - text: Zeile 8
+            correct: false
+            info: "Zeile 8 sagt, was die schreibende Person gut findet. Eine Forderung steht dort nicht."
+          - text: Zeile 9
+            correct: true
+            info: "Zeile 9 sagt mit should und must, was der Stadtrat tun und nicht tun soll."
+        explanation: Eine Forderung sagt, was jemand tun soll. Sie ist Meinung, auch wenn sie ruhig klingt.
+      - type: open-task
+        id: info-meinung
+        task: "Sollte die Stadt den Skatepark bauen? Schreibe zwei bis drei Sätze auf Englisch und nenne einen Grund."
+        points:
+          - text: Du sagst, was du denkst, zum Beispiel mit I think.
+            kind: form
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I think the council should build the skatepark if it keeps the noise low. Young people need a safe place to meet, and the park is open only in the daytime.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: farbstift
+    title: Der Farbstift
+    blocks:
+      - type: figure
+        image: images/farbstift-information-meinung.svg
+        alt: "Zwei Stifte untereinander, ein blauer und ein roter. Zu jedem Stift stehen zwei Zeilen mit Hinweisen."
+        caption: "Blau steht für das, was man nachprüfen kann, Rot für das, was jemand findet. Lies einen Text in Gedanken mit beiden Stiften."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "**Information** kannst du nachprüfen: eine Zahl, ein Name, ein Ort, eine Zeit, ein Zitat mit dem Namen der Person. Eine **Meinung** sagt, was jemand denkt, findet oder fordert. Du kannst ihr zustimmen oder nicht, nachprüfen kannst du sie nicht.\n\nSignalwörter für Meinung sind **I think**, **in my opinion**, **clearly**, **shocking**, **should** und **must**. Auch Wörter, die bewerten (good, bad, boring), zeigen Meinung.\n\nIn einer Nachricht kann Meinung stehen, wenn eine Person zitiert wird. Dann gehört sie dieser Person."
+      - type: text
+        text: |
+          Ein seriöser **Artikel** (article) beantwortet fünf Fragen:
+          - Quelle (source): Woher kommt die Information?
+          - Belege: Gibt es Zahlen, Zitate oder Dokumente?
+          - Datum (date): Wann wurde der Text geschrieben?
+          - Autor (author): Wer hat ihn geschrieben?
+          - Gegenstimme: Kommt auch die andere Seite zu Wort?
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Information kannst du prüfen, Meinung kannst du teilen oder nicht. Je mehr der fünf Fragen ein Text beantwortet, desto eher ist er seriös."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: multiple-choice
+        id: info-farbstift
+        text: "Der Farbstift liegt bereit. Welche Sätze über einen Markt sind Information? Wähle alle passenden Sätze."
+        options:
+          - text: The market has eighty-five stalls and opens on Saturdays
+            correct: true
+            info: "Zahl und Zeit lassen sich nachprüfen. Das ist Information."
+          - text: The cheese stall is the best one
+            correct: false
+            info: "The best bewertet den Stand. Andere finden einen anderen Stand besser, das ist Meinung."
+          - text: Prices at the market are too high
+            correct: false
+            info: "Too high bewertet die Preise, auch ohne Signalwort. Eine Zahl, die man prüfen kann, steht nicht im Satz."
+          - text: A stall owner said that sales rose last year
+            correct: true
+            info: "Der Satz berichtet, was eine Person gesagt hat. Dass sie es gesagt hat, kann man prüfen."
+          - text: Everybody should buy their vegetables there
+            correct: false
+            info: "Should sagt, was jemand tun soll. Das ist eine Forderung, also Meinung."
+        explanation: Die Sätze mit Zahl, Zeit oder Bericht über eine Aussage sind Information. Bewertungen und Forderungen sind Meinung.
+      - type: matching
+        id: info-satzart
+        text: "Was für ein Satz ist es? Ordne jedem Satz über ein Museum die Art zu."
+        pairs:
+          - { left: "The museum has twelve rooms.", right: "Zahl (Information)" }
+          - { left: "“We want more visitors,” said the manager.", right: "Zitat (Information)" }
+          - { left: "The museum is boring.", right: "Wertung (Meinung)" }
+          - { left: "The museum must open on Mondays.", right: "Forderung (Meinung)" }
+        explanation: Zahl und Zitat gehören zur Information. Eine Wertung sagt, wie jemand etwas findet, eine Forderung, was jemand tun soll.
+      - type: single-choice
+        id: info-quelle
+        text: "Du findest diesen Beitrag im Netz. Was spricht dagegen, dass er eine seriöse Nachricht ist?"
+        material:
+          - type: text
+            text: "*Post from a web page, no name and no date:* The new market hall is terrible! Everybody knows that the council takes our money. Tell all your friends now!"
+        options:
+          - text: Autor, Datum, Belege und Gegenstimme fehlen
+            correct: true
+            info: "Der Beitrag nennt keine Quelle und keine Zahlen. Er gibt nur Wertungen wieder, und niemand wird gefragt."
+          - text: Der Beitrag ist zu kurz, darum kann er nicht stimmen
+            correct: false
+            info: "Auch ein kurzer Text kann seriös sein, wenn er Quelle, Belege und Datum nennt. Die Länge entscheidet nicht."
+          - text: Der Beitrag nennt den Stadtrat, darum ist er unfair
+            correct: false
+            info: "Einen Stadtrat darf man nennen und kritisieren. Entscheidend ist, ob der Text Belege zeigt."
+        explanation: Ein seriöser Text nennt Quelle, Belege, Datum und Autor und lässt die andere Seite zu Wort kommen.
+      - type: language-task
+        id: info-umschreiben
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Schreibe aus jeder Meinung einen Informationssatz. Nutze die Stichwörter hinter „becomes:“."
+        hint: "Ein Informationssatz nennt etwas, das man prüfen kann: eine Zahl, einen Preis, eine Zeit."
+        items:
+          - cue: "“The pool is far too expensive.” becomes: ticket / cost / £6"
+            target: "A ticket costs (£6|six pounds|6 pounds)."
+            mistakes:
+              - answer: "A ticket cost £6."
+                message: "Nach A ticket steht costs mit s."
+          - cue: "“The bus is always late.” becomes: bus / arrive / twelve minutes late / on Monday"
+            target: "The bus (arrived|was) (twelve|12) minutes late on Monday."
+            mistakes:
+              - answer: "The bus arrives twelve minutes late on Monday."
+                message: "Der Montag ist vorbei, in einem Bericht steht die Vergangenheit: arrived oder was."
+          - cue: "“The new library is great.” becomes: library / have / forty thousand books"
+            target: "The new library has (forty thousand|40,000) books."
+            mistakes:
+              - answer: "The new library have forty thousand books."
+                message: "Nach library steht has, nicht have."
+        explanation: Ein Informationssatz ersetzt die Wertung durch eine Zahl, einen Preis oder eine Zeit.
+      - type: language-task
+        id: info-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: a-serious-article-names-its-sources.mp3
+            target: A serious article names its sources.
+          - audio: good-reporters-ask-people-with-different-opinions.mp3
+            target: Good reporters ask people with different opinions.
+          - audio: always-check-the-date-before-you-believe-a-story.mp3
+            target: Always check the date before you believe a story.
+        explanation: Die Sätze nennen, worauf du bei einer Nachricht achtest.
+  - type: section
+    id: anwenden
+    title: Selbst schreiben
+    blocks:
+      - type: speaking-task
+        id: info-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So fragst du nach einer Quelle."
+        items:
+          - audio: who-is-the-author-of-this-message.mp3
+            text: Who is the author of this message?
+          - audio: i-want-to-hear-the-other-side-before-i-decide.mp3
+            text: I want to hear the other side before I decide.
+          - audio: please-tell-me-the-name-of-the-writer.mp3
+            text: Please tell me the name of the writer.
+      - type: open-task
+        id: info-schreiben
+        task: "Die Stadt Hollin will den Marktplatz samstags für Autos sperren (erfunden). Schreibe auf Englisch zwei Sätze Information und zwei Sätze Meinung. Trenne beide Teile deutlich, zum Beispiel mit zwei Absätzen."
+        points:
+          - text: Die zwei Informationssätze nennen etwas, das man prüfen kann, zum Beispiel Ort, Zeit oder Preis.
+            source: /zeitung-und-statistik/information-meinung/#farbstift
+          - text: Die zwei Meinungssätze sagen, was du denkst oder was die Stadt tun soll, zum Beispiel mit I think oder should.
+            source: /zeitung-und-statistik/information-meinung/#farbstift
+          - text: Die Informationssätze enthalten kein Wort, das bewertet.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          The market square in Hollin will be closed to cars on Saturdays from eight in the morning. The council says that the change will start in May and cost £9,000.
+
+          In my opinion this is a good idea because people can walk safely. The council should also ask the shop owners what they think.
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Du kannst Information von Meinung trennen. Auf der nächsten Seite liest du einen Text mit einer Umfrage und zwei Diagrammen und beschreibst, was sich verändert."

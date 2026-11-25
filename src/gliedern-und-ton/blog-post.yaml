@@ -1,0 +1,258 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Einen Blogbeitrag schreiben
+description: "Einen Blogbeitrag und einen Forenkommentar schreiben: derselbe Inhalt wie im Vortrag, aber locker und persönlich."
+competencies: [blog-post]
+scope: Die Seite zeigt, wie ein Blogbeitrag auf dem Schulblog und ein Kommentar im Forum darunter gebaut werden. Lesestück ist Sophies Blogbeitrag über das erste Treffen des Zeitungsteams und die Pläne, derselbe Inhalt wie ihr Vortrag auf der Seite davor, aber informal und persönlich (Titel in Zeile 1, Einstieg in Zeile 2, Hauptteil in den Zeilen 3 und 4, Aufruf zum Kommentieren in Zeile 5), dazu Ellies Kommentar mit Bezug auf den Beitrag in Zeile 7 und Sophies Antwort in Zeile 8. Der Bauplan hat Titel, Einstieg, Hauptteil und Aufruf; der Ton ist informal mit Hi, Kurzformen und Ausrufezeichen. Ein Kommentar hat einen lockeren Gruß, einen Bezug auf den Beitrag und eine eigene Idee oder Frage. Geübt werden einen Titel wählen, einen zu formalen Entwurf locker umschreiben, einen Kommentar mit Bezug ergänzen, Hören und Nachsprechen und zwei offene Aufgaben (Vergleich von Vortrag und Blogbeitrag, eigener Blogeintrag oder Kommentar). Nicht hier sind der Meinungstext im Leserbrief und die formelle E-Mail.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Sophie hat der Klasse die Schülerzeitung vorgestellt. Jetzt erzählt sie davon auf dem Schulblog. Ein **Blog** ist ein Online-Tagebuch, das alle lesen können. Unter dem Beitrag können Leser einen **Kommentar** schreiben. Danach kannst du einen Blogbeitrag oder einen Kommentar unter einem Beitrag schreiben."
+      - type: single-choice
+        id: blog-start
+        text: "Du schreibst auf dem Schulblog über ein neues Hobby. Wie beginnst du den Beitrag?"
+        options:
+          - text: Dear Sir or Madam, I am writing to inform you about my hobby
+            correct: false
+            info: "So beginnt ein formaler Brief an ein Büro. Auf einem Blog schreiben Mitschüler an Mitschüler."
+          - text: A hobby is something that people do in their free time
+            correct: false
+            info: "Das klingt wie ein Lexikon. Ein Blog hat eine persönliche Stimme: Du erzählst von dir."
+          - text: Hi everyone! I have some news about my new hobby
+            correct: true
+            info: "Richtig: Du sprichst die Leser locker an und erzählst von dir."
+        explanation: Ein Blogbeitrag beginnt locker und persönlich.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Der Blog der Schule
+    blocks:
+      - type: text
+        text: "Lies Sophies Blogbeitrag und die Kommentare darunter in drei Abschnitten. Der Inhalt ist derselbe wie in ihrem Vortrag. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: title
+            source: der Titel
+          - target: issue
+            source: die Ausgabe
+          - target: puzzle
+            source: das Rätsel
+          - target: tricky
+            source: schwierig, knifflig
+          - target: forum
+            source: das Forum
+          - target: reply
+            source: die Antwort, antworten
+      - type: text
+        text: |
+          1. *Our school newspaper is on its way!*
+          2. Hi everyone! Last Thursday we had the very first meeting of the newspaper team, and I'm still excited about it.
+      - type: single-choice
+        id: blog-verstehen
+        text: "Worüber schreibt Sophie in Zeile 2?"
+        options:
+          - text: Über das erste Treffen des Zeitungsteams
+            correct: true
+            info: "Richtig: Zeile 2 nennt das erste Treffen des Teams."
+          - text: Über den Verkauf der fertigen Zeitung
+            correct: false
+            info: "Die Zeitung gibt es noch nicht. Sophie schreibt vom ersten Treffen."
+          - text: Über ein Treffen der ganzen Schule
+            correct: false
+            info: "In Zeile 2 steht the newspaper team, nicht die ganze Schule."
+        explanation: Der Einstieg sagt, worum es geht.
+      - type: text
+        text: |
+          3. So what's the plan? Every issue will have a news page, an interview with a teacher and a page full of puzzles. Ellie is going to write about a school garden, Amir will ask a teacher some tricky questions, and Peter is drawing the puzzles. There are four of us, and Mr Hill helps us.
+          4. The first issue comes out in four weeks. After that, there will be a new one every month. Cool, right?
+          5. Now it's your turn! Do you have an idea for the paper? Write a comment below or put a note in the box next to the library door. We read everything!
+          6. *Sophie*
+      - type: matching
+        id: blog-zeilen
+        text: "Welche Zeile gehört zu welchem Teil des Blogbeitrags?"
+        pairs:
+          - { left: Zeile 1, right: Titel }
+          - { left: Zeile 2, right: Einstieg }
+          - { left: Zeile 3, right: Hauptteil }
+          - { left: Zeile 5, right: Aufruf zum Kommentieren }
+        explanation: Der Titel steht oben, der Einstieg begrüßt die Leser, der Hauptteil erzählt die Neuigkeiten und der Aufruf am Ende bittet um einen Kommentar.
+      - type: text
+        text: |
+          7. **Comment from Ellie:** Hi Sophie, great post! You wrote that there will be a puzzle page. Can we have a joke of the week too? I think the readers would love it.
+          8. **Reply from Sophie:** Good idea, Ellie! I'll ask Mr Hill on Thursday. Thanks for the comment!
+      - type: single-choice
+        id: blog-bezug
+        text: "Woran siehst du in Zeile 7, dass Ellies Kommentar sich auf den Beitrag bezieht?"
+        options:
+          - text: Sie schreibt einen eigenen Titel
+            correct: false
+            info: "Ein Kommentar hat keinen eigenen Titel. In Zeile 7 steht auch keiner."
+          - text: Sie fängt mit Dear Sophie an
+            correct: false
+            info: "Zeile 7 beginnt mit Hi Sophie. Und eine Anrede allein zeigt noch keinen Bezug."
+          - text: Sie nennt die Rätselseite aus dem Beitrag
+            correct: true
+            info: "Richtig: Die Rätselseite steht in Zeile 3 des Beitrags. Ellie greift sie auf."
+        explanation: Ein guter Kommentar nennt etwas aus dem Beitrag und fügt dann eine eigene Idee hinzu.
+  - type: section
+    id: bauplan
+    title: Der Bauplan eines Blogbeitrags
+    blocks:
+      - type: figure
+        image: images/bauplan-blog-post.svg
+        alt: "Vier Kästen untereinander: Titel, Einstieg, Hauptteil und Aufruf. In jedem steht ein Beispielsatz."
+        caption: "Der Bauplan eines Blogbeitrags von oben nach unten gelesen. Die Beispielsätze gehören zu einem anderen Beitrag als Sophies."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: |
+          Ein Blogbeitrag hat vier Teile. Du schreibst in der Ich-Form und **informal**, denn die Leser sind Mitschüler.
+
+          - **Titel:** kurz, er macht neugierig.
+          - **Einstieg** (die Einleitung des Beitrags): ein bis zwei lockere Sätze. Du sprichst die Leser an und sagst, worum es geht.
+          - **Hauptteil:** die Neuigkeiten in kurzen Absätzen (paragraphs).
+          - **Aufruf:** Du fragst die Leser nach ihrer Meinung und bittest um einen Kommentar.
+
+          Ein **Kommentar** unter dem Beitrag hat drei Teile: einen lockeren Gruß, einen Bezug auf den Beitrag und deine eigene Idee oder Frage.
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Ein Blog klingt wie du. Ein Kommentar zeigt erst auf den Beitrag und bringt dann deine Idee."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: blog-titel
+        text: "Du schreibst auf dem Schulblog über eine neue Leseecke in der Bibliothek. Welcher Titel passt am besten?"
+        options:
+          - text: Dear readers, here is a text about the reading corner
+            correct: false
+            info: "Ein Gruß gehört in den Einstieg, nicht in den Titel. Der Titel soll kurz sein."
+          - text: Reading corner
+            correct: false
+            info: "Das ist kurz, aber es sagt wenig. Ein guter Titel macht neugierig."
+          - text: Come and see our new reading corner!
+            correct: true
+            info: "Kurz, locker und mit einer Einladung: So macht ein Titel neugierig."
+        explanation: Ein Blog-Titel ist kurz und lädt zum Lesen ein.
+      - type: language-task
+        id: blog-umschreiben
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Der Entwurf für den Blog über die Leseecke ist zu formal. Schreibe jeden Satz locker, mit Kurzform oder lockerem Gruß."
+        hint: "Schreibe so, wie du es Freunden sagen würdest. Kurz und persönlich."
+        items:
+          - cue: "I am very happy about the new reading corner."
+            target: "I'm (so|very|really) happy about the new reading corner."
+            mistakes:
+              - answer: "I am very happy about the new reading corner."
+                message: "Das ist der Satz aus dem Entwurf. Es fehlt die Kurzform: Schreibe I'm statt I am."
+          - cue: "We do not have enough chairs yet."
+            target: "We don't have enough chairs yet."
+            mistakes:
+              - answer: "We do not have enough chairs yet."
+                message: "Das ist der Satz aus dem Entwurf. Es fehlt die Kurzform: Schreibe don't statt do not."
+          - cue: "Dear readers, I would like to welcome you."
+            target: "(Hi|Hello|Hey) (everyone|everybody|all|there)"
+            mistakes:
+              - answer: "Dear readers"
+                message: "Dear readers ist zu förmlich für einen Blog. Begrüße die Leser so, wie du eine Gruppe von Freunden begrüßt."
+        explanation: Ein Blog klingt locker. Kurzformen und ein lockerer Gruß helfen dabei.
+      - type: language-task
+        id: blog-kommentar
+        languages: { source: de, target: en }
+        mode: gap
+        form: { case: ok, punctuation: ok }
+        task: "Setze die Wörter in den Kommentar ein. Du kennst sie aus den Zeilen 7 und 8."
+        hint: "Ein Kommentar dankt, zeigt auf den Beitrag und stellt dann eine Frage oder bringt eine Idee."
+        items:
+          - source: "Danke für deinen Beitrag!"
+            target: "[Thanks|Thank you] for your post!"
+          - source: "Du hast geschrieben, dass es ein Rätsel gibt."
+            target: "You [wrote|said] that there is a puzzle."
+            mistakes:
+              - answer: "write"
+                message: "Das Wort steht noch in der Grundform. Du meinst etwas, das Sophie schon geschrieben hat."
+          - source: "Können wir auch einen Witz der Woche haben?"
+            target: "[Can|Could] we have a joke of the week too?"
+        explanation: Dank, Bezug auf den Beitrag und eine Frage machen einen guten Kommentar.
+      - type: language-task
+        id: blog-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: use-your-own-voice-in-every-paragraph.mp3
+            target: Use your own voice in every paragraph.
+          - audio: readers-like-a-short-and-friendly-title.mp3
+            target: Readers like a short and friendly title.
+          - audio: ask-your-readers-to-leave-a-comment.mp3
+            target: Ask your readers to leave a comment.
+        explanation: Die Sätze geben Tipps für einen guten Blogbeitrag.
+  - type: section
+    id: anwenden
+    title: Selbst schreiben
+    blocks:
+      - type: speaking-task
+        id: blog-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So klingt ein lockerer Blog."
+        items:
+          - audio: hi-everybody-here-is-some-news-from-the-library.mp3
+            text: Hi everybody, here is some news from the library.
+          - audio: please-tell-me-what-you-think-about-the-idea.mp3
+            text: Please tell me what you think about the idea.
+          - audio: thanks-for-reading-and-have-a-lovely-weekend.mp3
+            text: Thanks for reading, and have a lovely weekend.
+      - type: open-task
+        id: blog-meinung
+        task: "Vergleiche den Plan in Sophies Vortrag (Zeile 4) mit dem Plan im Blogbeitrag (Zeile 3). Welche Fassung gefällt dir besser, und warum? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst eine Fassung, Vortrag oder Blogbeitrag.
+            source: /gliedern-und-ton/blog-post/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I like the blog post better because it sounds like a friend. The talk is clear, but it is more serious.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+      - type: open-task
+        id: blog-schreiben
+        task: "Wähle eine Aufgabe. Entweder schreibst du einen kurzen Blogbeitrag mit vier bis sechs Sätzen über eine neue Idee für die Schülerzeitung. Oder du schreibst einen Kommentar zu Sophies Beitrag."
+        points:
+          - text: Der Blogbeitrag hat Titel, Einstieg, Hauptteil und Aufruf. Der Kommentar hat Gruß, Bezug auf den Beitrag und eine eigene Idee oder Frage.
+            source: /gliedern-und-ton/blog-post/#bauplan
+          - text: Du schreibst locker und persönlich, mit Hi und mindestens einer Kurzform.
+            kind: form
+          - text: Der Blogbeitrag bittet um einen Kommentar, oder der Kommentar stellt eine Frage.
+            source: /gliedern-und-ton/blog-post/#bauplan
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          Blog post:
+
+          A photo page for our paper?
+
+          Hi everyone! I've got a new idea for the newspaper. What about a photo page?
+
+          Every month we could show three photos of school life. You can send us your best pictures, and we choose the winner.
+
+          What do you think? Leave a comment and tell me!
+
+          Or comment:
+
+          Hi Sophie, I like your idea! You said that students can send pictures. Can they send drawings too?
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Du kannst jetzt gliedern, den Ton wählen, einen Vortrag halten und bloggen. Im nächsten Kapitel schreibst du Berichte und Interviews für die Schülerzeitung."

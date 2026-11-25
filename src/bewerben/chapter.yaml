@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Bewerben
+summary: Sophie sucht einen Ferienjob und findet die Anzeige einer Bücherei. Du lernst Berufe und Schulsysteme kennen und schreibst eine formelle E-Mail, einen Lebenslauf und eine Bewerbung. Am Ende bereitest du dich auf ein Vorstellungsgespräch vor.
+pages: [das-brauchst-du, berufswelt, bildungssystem, formelle-email, lebenslauf, bewerbung, vorstellungsgespraech]
+selfAssessment:
+  pages:
+    - exercises:
+        - /bewerben/berufswelt/#berufe-zuordnen
+        - /bewerben/berufswelt/#berufe-satz
+    - exercises:
+        - /bewerben/bildungssystem/#bildung-begriffe
+        - /bewerben/bildungssystem/#bildung-reihenfolge
+    - exercises:
+        - /bewerben/formelle-email/#fmail-ordnen
+        - /bewerben/formelle-email/#fmail-anrede
+    - exercises:
+        - /bewerben/lebenslauf/#lebenslauf-teile
+        - /bewerben/lebenslauf/#lebenslauf-fehler
+    - exercises:
+        - /bewerben/bewerbung/#bewerbung-ordnen
+        - /bewerben/bewerbung/#bewerbung-zuordnen
+    - exercises:
+        - /bewerben/vorstellungsgespraech/#vorstellungsgespraech-zuordnen
+        - /bewerben/vorstellungsgespraech/#vorstellungsgespraech-antwort

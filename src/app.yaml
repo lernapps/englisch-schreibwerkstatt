@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+format: 2
+subject: englisch
+title: Sachtexte nach Bauplan schreiben
+intro: Die Millbrook School bekommt eine Schülerzeitung, den Millbrook Messenger. Mr Hill (Englischlehrer) leitet das Team aus Sophie, Ellie, Peter und Amir. Du lernst, einen Sachtext nach einem Bauplan zu gliedern und den Ton von informal bis formal zu wählen. Dann schreibst du Berichte und Interviews, durchschaust Zeitungsartikel und Statistiken und schreibst am Ende mit Sophie eine Bewerbung um einen Ferienjob in der Bücherei.
+languages: [de]
+scope:
+  text: Die App erklärt Jugendlichen im Englischunterricht (Stufe 7-8 und 9-10), wie man Sachtexte nach einem Bauplan schreibt. Zwei Bilder tragen sie. Der Bauplan ist eine Schablone mit festen Teilen je Textsorte (Einleitung, Hauptteil, Schluss; headline, lead, body; Anrede, Anliegen, Gruß). Der Ton-Regler geht von informal über neutral bis formal. Gelernt werden Texte gliedern, formelle und informelle Sprache, Vortrag, Blogbeitrag, Bericht, Interview, Sachtext und erfundener Text, Textsorte umwandeln, Zeitungsartikel, Information und Meinung, Diagramme beschreiben, Berufe, Schulsysteme in Großbritannien und den USA, formelle E-Mail, Lebenslauf, Bewerbung und Vorstellungsgespräch. Alle Texte sind eigene Texte, Namen von Firmen, Orten und Personen sind erfunden. Offene Aufgaben haben Punkte und eine Musterlösung; die App bewertet den Text nicht, die Lernenden prüfen ihn an den Punkten.
+  out:
+    - Persönliche Briefe und Nachrichten (steht im Explainer „Alltag“)
+    - Geschichten schreiben (steht im Explainer „Geschichten“)
+    - Meinungstexte wie Leserbrief und Kommentar (kommt später)
+    - Bewertung der Aussprache und der freien Texte durch die App
+chapters: [gliedern-und-ton, fuer-die-schuelerzeitung, zeitung-und-statistik, bewerben]

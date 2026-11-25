@@ -1,0 +1,262 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Formell und informell
+description: "Den Ton wählen: dieselbe Bitte an eine Freundin, an den Lehrer und an das Schulbüro. Mit dem Ton-Regler."
+competencies: [formell-informell]
+scope: Die Seite führt den Ton-Regler ein (informal, neutral, formal) und zeigt, dass der Ton zum Leser passen muss. Lesestück ist ein Chat der Schülerzeitung mit derselben Bitte in drei Tönen (informal an Ellie in Zeile 1, höflich-neutral an Mr Hill in Zeile 3, formal an das Schulbüro in Zeile 5). Informal heißt Kurzformen, Hi und lockere Wörter. Neutral heißt ganze Sätze, please, thank you, Dear Mr Hill und Best wishes. Formal heißt keine Kurzformen, Sätze wie I would like to ask und I would be grateful if, Dear Sir or Madam und Yours faithfully. Anrede und Gruß müssen zum selben Ton passen. Zu steif im Chat ist falsch, zu locker an den Lehrer auch. Geübt werden Sätze dem Ton zuordnen, Anrede und Gruß einsetzen, Sätze für einen Leser umschreiben, Hören und Nachsprechen und zwei offene Aufgaben (Meinung, dieselbe Bitte in zwei Tönen). Nicht hier sind Vortrag, Blogbeitrag und die formelle E-Mail.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Der Text ist gegliedert, aber noch fehlt etwas: Wie klingt er? Du schreibst an Freunde anders als an Lehrer und anders als an ein Büro. Danach kannst du **formelle** und **informelle** Wörter und Ausdrücke unterscheiden und passend zur Situation wählen."
+      - type: single-choice
+        id: ton-start
+        text: "Du schreibst Mr Hill eine Nachricht, weil du die Hausaufgabe nicht verstanden hast. Wie schreibst du?"
+        options:
+          - text: Wie im Chat mit Freunden, mit Kurzformen und Slang
+            correct: false
+            info: "Mr Hill gehört nicht in deinen Freundeschat. Slang und Kurzformen klingen für einen Lehrer zu locker."
+          - text: Höflich, in ganzen Sätzen und ohne Slang
+            correct: true
+            info: "So schreibst du an einen Lehrer: freundlich, aber ohne Slang."
+          - text: So steif wie möglich, mit sehr schweren Wörtern
+            correct: false
+            info: "Zu steif ist auch falsch. Schwere Wörter machen eine Nachricht nicht besser, sie klingen nur seltsam."
+        explanation: Der Ton hängt vom Leser ab. Einem Lehrer schreibst du höflich, aber nicht übertrieben steif.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Dieselbe Bitte, dreimal
+    blocks:
+      - type: text
+        text: "Sophie bittet dreimal um dasselbe, aber an drei verschiedene Leser. Lies die Nachrichten in drei Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: poster
+            source: das Plakat
+          - target: put up
+            source: aufhängen
+          - target: tape
+            source: das Klebeband
+          - target: permission
+            source: die Erlaubnis
+          - target: display
+            source: aushängen, zeigen
+          - target: stiff
+            source: steif
+          - target: formal
+            source: förmlich
+          - target: whether
+            source: ob
+      - type: text
+        text: |
+          1. **Sophie to Ellie:** Hi Ellie! Can you help me put up the new poster? It's for The Millbrook Messenger. Meet me at the library door at twelve. You're the best!
+          2. **Ellie to Sophie:** No problem! I'll bring the tape. See you there!
+      - type: single-choice
+        id: ton-verstehen
+        text: "Worum bittet Sophie Ellie in Zeile 1?"
+        options:
+          - text: Ellie soll beim Aufhängen des Plakats helfen
+            correct: true
+            info: "Richtig: Sophie fragt, ob Ellie helfen kann, das Plakat aufzuhängen."
+          - text: Ellie soll das Plakat für die Zeitung malen
+            correct: false
+            info: "Das Plakat ist schon da: Sophie spricht vom neuen Plakat. Gefragt ist Hilfe beim Aufhängen."
+          - text: Ellie soll in der Bibliothek ein Buch holen
+            correct: false
+            info: "Die Bibliothek ist nur der Treffpunkt: Sophie wartet dort an der Tür."
+        explanation: Sophie bittet um Hilfe mit dem Plakat und nennt den Treffpunkt.
+      - type: text
+        text: |
+          3. **Sophie to Mr Hill:** Dear Mr Hill, the first poster for The Millbrook Messenger is ready. Could you help us to put it up on the notice board in the corridor? We would like to do it before lunch. Thank you very much. Best wishes, Sophie
+          4. **Mr Hill:** Of course, Sophie. For the main hall, you need permission from the school office. Please send them a formal message.
+      - type: single-choice
+        id: ton-zeile
+        text: "Sophie bittet Mr Hill in Zeile 3 um dasselbe wie Ellie in Zeile 1. Woran siehst du, dass sie hier anders schreibt?"
+        options:
+          - text: Sie schreibt länger, und darum klingt es höflich
+            correct: false
+            info: "Länge allein macht nichts höflich. Es kommt auf die Wörter an."
+          - text: Sie benutzt schwere Wörter wie permission
+            correct: false
+            info: "Das Wort permission steht erst in Zeile 4 und in Zeile 5, nicht in Zeile 3."
+          - text: Mit Dear Mr Hill und Could you, ohne Kurzform
+            correct: true
+            info: "Richtig: Anrede, Could you und Thank you very much sind höflich. Eine Kurzform wie it's gibt es in Zeile 3 nicht."
+        explanation: Zeile 3 ist höflich und neutral. Zeile 1 hat Kurzformen und lockere Wörter.
+      - type: text
+        text: |
+          5. **Sophie to the school office:** Dear Sir or Madam, I am writing to ask for permission to display a poster in the main hall. The poster is for a new school newspaper, The Millbrook Messenger. I would be grateful if you could tell me whether this is possible. Yours faithfully, Sophie
+          6. **Amir:** Wow, that is a long message for one poster!
+          7. **Peter:** It sounds polite, but I wouldn't send it to Ellie. "I am writing to ask for permission" is too stiff for a friend.
+          8. **Sophie:** Right. My words change with my reader: a friend, a teacher, the office.
+      - type: multiple-choice
+        id: ton-belege
+        text: "Welche Zeilen zeigen, dass der Ton zum Leser passen muss? Wähle alle passenden Zeilen."
+        options:
+          - text: Zeile 7 sagt, dass ein steifer Satz zu einer Freundin nicht passt
+            correct: true
+            info: "Richtig: Peter findet den Satz aus Zeile 5 für einen Freund zu steif."
+          - text: Zeile 8 sagt, dass sich die Wörter mit dem Leser ändern
+            correct: true
+            info: "Richtig: Sophie fasst es zusammen: ein Freund, ein Lehrer, das Büro."
+          - text: Zeile 6 sagt, dass die Nachricht an das Büro zu kurz ist
+            correct: false
+            info: "In Zeile 6 sagt Amir das Gegenteil: Die Nachricht ist lang."
+        explanation: Die Zeilen 7 und 8 sagen, dass Sophie die Wörter nach dem Leser wählt.
+  - type: section
+    id: ton
+    title: Der Ton-Regler
+    blocks:
+      - type: figure
+        image: images/ton-regler-formell-informell.svg
+        alt: "Ein Regler mit einem Farbverlauf von Orange über Grau zu Dunkelblau und drei Stationen. Unter jeder Station steht ein Beispielsatz für dieselbe Frage."
+        caption: "Der Ton-Regler von links nach rechts gelesen: Der Knopf steht in der Mitte, aber du schiebst ihn je nach Leser. Achte auf die Beispielsätze."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: |
+          Der **Ton-Regler** hat drei Stellungen. Du stellst ihn nach dem Leser ein.
+
+          - **informal** für Freunde: Kurzformen (short forms), lockere Wörter wie hey und cool, ein Ausrufezeichen.
+          - **neutral** für Lehrer und Klasse: ganze Sätze, höfliche Fragen wie „Could you …?“ und Wörter wie please und thank you.
+          - **formal** für Büros und Menschen, die du nicht kennst: keine Kurzformen, Sätze wie „I would like to ask …“.
+
+          Auch **Anrede und Gruß** ändern sich. Schau dir dazu die Zeilen 1, 3 und 5 an.
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Erst fragen: Wer liest? Dann den Regler einstellen. Bleib in einem Text bei einer Stellung: nicht locker anfangen und steif aufhören."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: ton-zuordnen
+        text: "Welcher Ton gehört zum Satz?"
+        pairs:
+          - { left: "Hey, can you give me a pen? I'm late!", right: informal }
+          - { left: "Could you give me a pen, please?", right: neutral }
+          - { left: "I would be grateful if you could give me a pen.", right: formal }
+        explanation: Kurzformen und hey sind informal. Could you und please sind neutral. I would be grateful if ist formal.
+      - type: language-task
+        id: ton-gruss
+        languages: { source: de, target: en }
+        mode: gap
+        form: { case: ok, punctuation: ok }
+        task: "Setze Anrede oder Gruß ein. Du kennst die Wörter aus den Zeilen 1 bis 5."
+        hint: "Anrede und Gruß müssen zum Leser und zum Ton passen."
+        items:
+          - source: "Mail an das Schulbüro: Wie fängt sie an?"
+            target: "[Dear Sir or Madam], I am writing about the music room."
+            mistakes:
+              - answer: "Hi"
+                message: "Hi ist eine lockere Anrede für Freunde. Die Mail geht an ein Büro."
+              - answer: "Dear Sir"
+                message: "Dear Sir spricht nur Männer an. Zeile 5 zeigt dir eine Anrede, die alle meint."
+          - source: "Dieselbe Mail: Wie endet sie?"
+            target: "Thank you for your help. [Yours faithfully], Sophie"
+            mistakes:
+              - answer: "Best wishes"
+                message: "Best wishes ist ein neutraler Gruß, zum Beispiel für eine Nachricht an Mr Hill. Eine formale Mail endet anders. Schau, wie die Mail in Zeile 5 endet."
+              - answer: "See you"
+                message: "See you ist ein Gruß unter Freunden und passt nicht zu einer formalen Mail."
+          - source: "Nachricht an Ellie: Wie endet sie?"
+            target: "Hi Ellie, can you help me? [See you|See you soon|See you later], Sophie"
+            mistakes:
+              - answer: "Yours faithfully"
+                message: "Yours faithfully gehört zu einer formalen Mail. Zu Hi passt ein lockerer Gruß."
+        explanation: "Ein formaler Brief an Sir or Madam endet mit Yours faithfully. Zu Hi passt ein lockerer Gruß wie See you."
+      - type: language-task
+        id: ton-umschreiben
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Schreibe den Satz für den Leser um, der vor dem Satz steht."
+        hint: "Lass weg, was für diesen Leser nicht passt. Oder schreibe es so, wie du es einem Freund sagst."
+        items:
+          - cue: "To Mr Hill, no short form: I can't come to the meeting."
+            target: "I cannot come to the meeting."
+            mistakes:
+              - answer: "I can't come to the meeting."
+                message: "Das ist noch die Kurzform. An Mr Hill schreibst du das Wort ganz aus."
+          - cue: "To Mr Hill, polite: Hey, can you tell me when the meeting is?"
+            target: "Could you tell me when the meeting is(, please|)?"
+            mistakes:
+              - answer: "Can you tell me when the meeting is?"
+                message: "Can you steht in Zeile 1, im Chat an Ellie. An Mr Hill schreibst du wie in Zeile 3: Could you."
+              - answer: "Hey, could you tell me when the meeting is?"
+                message: "Could ist gut, aber Hey ist für Mr Hill zu locker."
+          - cue: "To Ellie, in a chat: I am writing to ask if you are free on Friday."
+            target: "(Hi|Hey) Ellie, are you free (on |)Friday?"
+            mistakes:
+              - answer: "I am writing to ask whether you are free on Friday."
+                message: "So schreibst du an ein Büro. Ellie ist eine Freundin: frage direkt, wie im Chat."
+        explanation: "An Mr Hill schreibst du höflich ohne Kurzform und ohne Hey. An Ellie darf es kurz und locker sein."
+      - type: language-task
+        id: ton-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: write-a-careful-message-to-your-teacher.mp3
+            target: Write a careful message to your teacher.
+          - audio: friends-often-use-short-forms-in-a-message.mp3
+            target: Friends often use short forms in a message.
+          - audio: a-formal-letter-needs-polite-words-and-a-clear-ending.mp3
+            target: A formal letter needs polite words and a clear ending.
+        explanation: Die Sätze sagen, wie Ton und Leser zusammenpassen.
+  - type: section
+    id: anwenden
+    title: Selbst schreiben
+    blocks:
+      - type: speaking-task
+        id: ton-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. Der erste ist informal, der zweite neutral, der dritte formal."
+        items:
+          - audio: hey-are-you-ready-for-the-meeting.mp3
+            text: Hey, are you ready for the meeting?
+          - audio: could-you-please-send-me-the-answer-tomorrow.mp3
+            text: Could you please send me the answer tomorrow?
+          - audio: thank-you-for-your-time-and-your-answer.mp3
+            text: Thank you for your time and your answer.
+      - type: open-task
+        id: ton-meinung
+        task: "Vergleiche die Nachrichten in den Zeilen 1, 3 und 5. Welche würdest du am liebsten schreiben, und warum? Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst eine der drei Nachrichten.
+            source: /gliedern-und-ton/formell-informell/#lesestueck
+          - text: Du gibst einen Grund mit because.
+            kind: form
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I would like to write the message in line 1 because it is short and easy. Friends do not need many words.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+      - type: open-task
+        id: ton-schreiben
+        task: "Du möchtest am Freitag den Musikraum für eine Sitzung der Zeitung nutzen. Schreibe die Bitte zweimal: kurz an Amir und förmlich an das Schulbüro."
+        points:
+          - text: Die Nachricht an Amir ist locker und kurz.
+            source: /gliedern-und-ton/formell-informell/#ton
+          - text: Die Nachricht an das Büro ist formal und hat keine Kurzform.
+            source: /gliedern-und-ton/formell-informell/#ton
+          - text: Anrede und Gruß passen in jeder Nachricht zum Ton.
+            kind: form
+          - text: In beiden Nachrichten steht dieselbe Bitte.
+            kind: form
+        solution: |
+          Hi Amir! Can we use the music room on Friday? I think it's free after lunch. See you!
+
+          Dear Sir or Madam, I would like to ask whether we may use the music room on Friday afternoon for a meeting of the newspaper team. I would be grateful for your answer. Yours faithfully, Sophie
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Du kannst den Ton jetzt einstellen. Auf der nächsten Seite hältst du einen Vortrag: Sophie erzählt der Klasse von der Schülerzeitung, im neutralen Ton."

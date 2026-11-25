@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+description: "Kurz wiederholt: Kurzformen wie I'm, don't und she's. Du brauchst sie, bevor es um den Ton eines Textes geht."
+recap: [englisch/kurzformen]
+scope: Wiederholungsseite für das Kapitel. Sie nennt den Baustein Kurzformen mit seinem Ich-kann-Satz von der Lernlandkarte und zeigt in einer kleinen Wörtertabelle sechs Kurzformen mit ihrer langen Form (I'm, don't, she's, they're, isn't, we'll). Ein Apostroph steht dort, wo Buchstaben fehlen. Kurzformen gehören in Chats und Gespräche, nicht in formelle Texte; wie man den Ton eines Textes wählt, kommt erst auf der Seite Formell und informell dran. Hier gibt es keine Übung.
+blocks:
+  - type: section
+    id: wiederholung
+    title: Kurzformen
+    blocks:
+      - type: text
+        text: "Kannst du das schon? **Ich kann Kurzformen wie I’m, don’t und she’s richtig sprechen und mit Apostroph schreiben.** Das ist der Baustein „Kurzformen“ aus dem Explainer „Klang und Schrift“. In diesem Kapitel brauchst du ihn, weil Chats und Blogs voller Kurzformen sind."
+      - type: vocabulary
+        caption: Kurzformen
+        languages: { source: de, target: en }
+        entries:
+          - target: I'm
+            source: ich bin (I am)
+          - target: don't
+            source: nicht, bei Tun-Wörtern (do not)
+          - target: she's
+            source: sie ist (she is)
+          - target: they're
+            source: sie sind (they are)
+          - target: isn't
+            source: ist nicht (is not)
+          - target: we'll
+            source: wir werden (we will)
+      - type: text
+        text: "Der Apostroph steht dort, wo Buchstaben fehlen: I’m ist I am ohne das a. Merke dir noch: Kurzformen sind locker. In einem formellen Text stehen sie nicht. Wann das so ist, lernst du später auf der Seite [Formell und informell](/gliedern-und-ton/formell-informell/). Zuerst lernst du auf der nächsten Seite, wie man einen Text gliedert: in Einleitung, Hauptteil und Schluss."

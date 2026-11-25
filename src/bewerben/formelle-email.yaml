@@ -1,0 +1,281 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Eine formelle E-Mail schreiben
+description: "Eine formelle E-Mail schreiben, zum Beispiel um Informationen zu erfragen: mit Sophies Anfrage an die Bücherei."
+competencies: [formelle-email]
+scope: Die Seite zeigt, wie man eine formelle E-Mail oder einen formellen Brief schreibt, zum Beispiel um Informationen zu erfragen. Lesestück ist Sophies Anfrage an die Millbrook Library (Zeilen 1 bis 8, Betreff, Dear Mr Anderson, Anliegen mit Fragen zur Anzeige, Yours sincerely, Name), der Vergleich mit einer lockeren Nachricht an eine Freundin (Zeilen 9 bis 11) und die Antwort der Bücherei an Dear Ms Weber (Zeilen 12 bis 17). Der Bauplan hat Betreff (subject), Anrede, Anliegen, Gruß und Name. Die Anrede ist Dear mit Ms oder Mr und dem Nachnamen, Ms passt für jede Frau, ohne Namen schreibt man Dear Sir or Madam. Der Gruß passt zur Anrede, Yours sincerely nach einem Namen und Yours faithfully nach Dear Sir or Madam. Der Ton-Regler steht auf formal, das heißt keine Kurzformen, kein Hi, ein klarer Betreff und höfliche Ausdrücke wie I am writing to ask, Could you please, I would be grateful, I look forward to hearing from you. Geübt werden die Teile in die Reihenfolge bringen, Anrede und Gruß einsetzen, lockere Sätze formell umschreiben, feste Ausdrücke einsetzen, Hören und Nachsprechen, eine Meinung zu formell und locker und eine eigene formelle Anfrage. Nicht hier sind persönliche E-Mails, Lebenslauf und Bewerbung. Sophie hat Mr Anderson vorher schon über ihre Schule geschrieben; er bittet in seiner Antwort um einen CV und ein kurzes Anschreiben.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: "Sophie hat mit Mr Anderson gesprochen und ihm ihre Schule beschrieben. Jetzt hat sie noch Fragen zur Anzeige und schreibt ihm eine E-Mail, die höflich und genau ist. Danach kannst du eine **formelle E-Mail** schreiben, zum Beispiel um Informationen zu erfragen."
+      - type: single-choice
+        id: fmail-start
+        text: "Du schreibst einer Bücherei eine Frage zu einer Anzeige. Was schreibst du in die Betreff-Zeile?"
+        options:
+          - text: Hi everyone
+            correct: false
+            info: "Hi everyone ist eine lockere Begrüßung. Der Betreff soll sagen, worum es in der Mail geht."
+          - text: Question about the holiday job
+            correct: true
+            info: "Richtig: Der Betreff nennt kurz das Thema."
+          - text: Hello, I have some questions about the holiday job and the working hours
+            correct: false
+            info: "Das ist zu lang. Der Betreff ist eine kurze Überschrift, die Fragen stehen in der Mail."
+        explanation: Der Betreff ist kurz und sagt, worum es geht.
+  - type: section
+    id: lesestueck
+    title: Lesestück · Sophies Anfrage an die Bücherei
+    blocks:
+      - type: text
+        text: "Lies Sophies Mail, eine lockere Nachricht zum Vergleich und die Antwort der Bücherei. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+      - type: vocabulary
+        caption: Randglossar
+        languages: { source: de, target: en }
+        entries:
+          - target: grateful
+            source: dankbar
+          - target: reply
+            source: die Antwort
+          - target: attached
+            source: angehängt
+          - target: details
+            source: die genauen Angaben
+          - target: look forward to
+            source: sich freuen auf
+          - target: advert
+            source: die Anzeige
+          - target: file
+            source: die Datei
+      - type: text
+        text: |
+          1. **Subject:** Question about the Summer Library Assistant job
+          2. Dear Mr Anderson,
+          3. I am writing to ask for more information about the Summer Library Assistant job in your advert.
+          4. Thank you for reading my message about my school. I like books, and I enjoy working with people. I would like to know more before I apply.
+          5. Could you please tell me which days of the week I would work? Is it possible to start in the first week of the holidays?
+          6. I would be grateful for your reply. I look forward to hearing from you.
+          7. Yours sincerely,
+          8. Sophie Weber
+      - type: single-choice
+        id: fmail-anliegen
+        text: "Was möchte Sophie mit ihrer E-Mail erreichen?"
+        options:
+          - text: Sie möchte einen Termin für ein Vorstellungsgespräch
+            correct: false
+            info: "Davon steht in den Zeilen 3 bis 6 nichts. Sie fragt nur nach Informationen."
+          - text: Sie möchte sich schon für die Stelle bewerben
+            correct: false
+            info: "Zeile 4 sagt, dass sie mehr wissen möchte, before I apply. Die Bewerbung kommt später."
+          - text: Sie möchte mehr über die Stelle wissen
+            correct: true
+            info: "Richtig: Zeile 3 sagt, dass sie nach mehr Information fragt."
+        explanation: Das Anliegen steht in Zeile 3, gleich nach der Anrede.
+      - type: text
+        text: |
+          9. *The same question in a chat with a friend*
+          10. Hi! Saw an ad for a summer job at the library. Do you know if I can start in the first week? Can't wait!
+          11. Speak soon, Sophie
+          12. *The reply from the library*
+          13. Dear Ms Weber,
+          14. Thank you for your questions. The job is part-time, as the advert says, and you can find the details in the attached file.
+          15. If you are still interested, please send me your CV and a short letter about why you want the job.
+          16. Yours sincerely,
+          17. Mr Anderson
+      - type: multiple-choice
+        id: fmail-zeile
+        text: "Welche Zeilen zeigen, dass Sophies Mail an die Bücherei formell ist? Wähle alle passenden Zeilen."
+        options:
+          - text: Zeile 2 beginnt mit Dear und dem Namen
+            correct: true
+            info: "Richtig: Dear Mr Anderson ist eine formelle Anrede."
+          - text: Zeile 7 schließt mit Yours sincerely
+            correct: true
+            info: "Richtig: Das ist ein formeller Gruß."
+          - text: Zeile 10 beginnt mit Hi
+            correct: false
+            info: "Zeile 10 gehört zur lockeren Nachricht an eine Freundin, nicht zur Mail an die Bücherei."
+        explanation: Anrede und Gruß der Mail stehen in den Zeilen 2 und 7.
+      - type: open-task
+        id: fmail-meinung
+        task: "Wann schreibst du eine formelle E-Mail, und wann reicht eine lockere Nachricht? Gib je ein Beispiel. Schreibe zwei bis drei Sätze auf Englisch."
+        points:
+          - text: Du nennst ein Beispiel für eine formelle E-Mail.
+            source: /bewerben/formelle-email/#lesestueck
+          - text: Du nennst ein Beispiel für eine lockere Nachricht.
+            source: /bewerben/formelle-email/#lesestueck
+          - text: Du schreibst in ganzen Sätzen.
+            kind: form
+        solution: |
+          I write a formal email to a school office because I do not know the person. I send a short chat message to a friend because we know each other well.
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: bauplan
+    title: Der Bauplan einer formellen E-Mail
+    blocks:
+      - type: figure
+        image: images/bauplan-formelle-email.svg
+        alt: "Vier Kästen untereinander. Oben der Betreff und die Anrede, in der Mitte das Anliegen, unten der Gruß mit dem Namen."
+        caption: "Der Bauplan von oben nach unten gelesen: so ist auch Sophies Mail an die Bücherei gebaut."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: "Der **Betreff** (subject) sagt kurz, worum es geht. In der **Anrede** stehen *Dear*, *Ms* oder *Mr* und der Nachname. *Ms* passt für jede Frau. Kennst du den Namen nicht, schreibst du *Dear Sir or Madam*. Im **Anliegen** sagst du, warum du schreibst, und fragst höflich: *I am writing to ask …*, *Could you please …?* Der **Gruß** passt zur Anrede, danach steht dein Name."
+      - type: figure
+        image: images/ton-regler-formelle-email.svg
+        alt: "Ein Balken von informal über neutral bis formal, der Knopf steht ganz rechts."
+        caption: "Der Ton-Regler steht bei dieser Mail ganz rechts. Das heißt: höflich, ganze Wörter und kein Hi."
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: "Anrede und Gruß gehören zusammen. Mit einem Namen in der Anrede endest du mit *Yours sincerely*, ohne Namen mit *Yours faithfully*. Im Betreff steht ein kurzes Thema, in der ganzen Mail keine Kurzformen."
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: ordering
+        id: fmail-ordnen
+        text: "Die Teile einer formellen E-Mail an eine Bücherei sind durcheinander. Bringe sie in die Reihenfolge des Bauplans."
+        items:
+          - "Subject: Question about the reading groups"
+          - "Dear Sir or Madam,"
+          - "I am writing to ask when the reading groups meet."
+          - "Could you please send me the dates?"
+          - "Yours faithfully,"
+          - "Sophie Weber"
+        hint: "Der Betreff steht ganz oben, danach die Anrede. Das Anliegen steht in der Mitte, der Gruß und der Name zuletzt."
+        explanation: Betreff, Anrede, Anliegen, Gruß und Name stehen in dieser Reihenfolge.
+      - type: language-task
+        id: fmail-anrede
+        languages: { source: de, target: en }
+        mode: gap
+        form: { case: ok, punctuation: ok }
+        task: "Setze Anrede und Gruß ein."
+        hint: "Frage dich: Steht ein Name in der Anrede? Dann passt der Gruß dazu."
+        items:
+          - source: "Mail an Mr Hill, dessen Namen du kennst."
+            target: "Dear Mr Hill, I have a question about the club. Yours [sincerely], Sophie Weber"
+            mistakes:
+              - answer: "faithfully"
+                message: "Yours faithfully passt, wenn du den Namen nicht kennst. Hier steht Mr Hill in der Anrede."
+          - source: "Mail an eine Firma, bei der du keinen Namen kennst."
+            target: "Dear [Sir or Madam], I have a question about the job. Yours [faithfully], Sophie Weber"
+            mistakes:
+              - answer: "sincerely"
+                message: "Nach Dear Sir or Madam steht Yours faithfully. Yours sincerely braucht einen Namen in der Anrede."
+          - source: "Mail an Frau Green, deren Familienstand du nicht kennst."
+            target: "Dear [Ms] Green, I have a question about the course. Yours sincerely, Sophie Weber"
+            mistakes:
+              - answer: "Mrs"
+                message: "Mrs sagt, dass die Frau verheiratet ist. Das weißt du nicht. Mit Ms liegst du immer richtig."
+              - answer: "Miss"
+                message: "Miss wird für erwachsene Frauen immer seltener benutzt. Ms passt in jeder Mail."
+        explanation: Dear Ms oder Mr mit Nachnamen endet mit Yours sincerely. Dear Sir or Madam endet mit Yours faithfully.
+      - type: language-task
+        id: fmail-umschreiben
+        languages: { source: de, target: en }
+        form: { case: ok, punctuation: ok }
+        task: "Schreibe jeden lockeren Satz so um, dass er in eine formelle E-Mail passt."
+        hint: "Lass weg, was zu locker ist. Schreibe Wörter ganz aus."
+        items:
+          - cue: "Hi, can you send me the dates?"
+            target: "(Could|Can) you (please |)send me the dates(, please|)?"
+            mistakes:
+              - answer: "Hi, could you send me the dates?"
+                message: "Das Hi gehört nicht in die formelle Mail. Beginne mit der Frage."
+          - cue: "I'd like to know more."
+            target: "I would like to know more."
+            mistakes:
+              - answer: "I'd like to know more."
+                message: "Das ist noch die Kurzform. In einer formellen Mail schreibst du would ganz aus."
+          - cue: "Thanks a lot for your help!"
+            target: "Thank you (very much |)for your help."
+            mistakes:
+              - answer: "Thanks a lot for your help."
+                message: "Thanks a lot ist ein lockerer Dank. Schreibe Thank you, wenn du höflich bleiben willst."
+        explanation: Eine formelle Mail hat keine Kurzformen und keine lockeren Wörter. Mit Could you wird eine Frage höflich.
+      - type: language-task
+        id: fmail-ausdruck
+        languages: { source: de, target: en }
+        mode: gap
+        form: { case: ok, punctuation: ok }
+        task: "Setze das fehlende Wort ein. Du kennst die Redemittel aus Sophies Mail und der Antwort."
+        hint: "Die Redemittel stehen im Lesestück, in den Zeilen 6 und 14."
+        items:
+          - source: "Ich wäre dankbar für Ihre Antwort."
+            target: "I would be [grateful] for your reply."
+          - source: "Ich freue mich darauf, von Ihnen zu hören."
+            target: "I look forward to [hearing] from you."
+            mistakes:
+              - answer: "hear"
+                message: "Nach look forward to steht die -ing-Form: hearing."
+          - source: "Danke für Ihre Fragen."
+            target: "Thank you [for] your questions."
+            mistakes:
+              - answer: "to"
+                message: "Du bedankst dich für etwas, darum steht nach Thank you das Wort for."
+        explanation: Feste Redemittel machen eine Mail höflich. Nach look forward to steht eine -ing-Form.
+      - type: language-task
+        id: fmail-hoeren
+        languages: { source: de, target: en }
+        form: { punctuation: ok, case: hint }
+        task: "Höre den Satz und schreibe ihn auf."
+        items:
+          - audio: check-your-spelling-before-you-send-the-message.mp3
+            target: Check your spelling before you send the message.
+          - audio: a-formal-message-starts-with-a-polite-greeting.mp3
+            target: A formal message starts with a polite greeting.
+          - audio: please-reply-to-this-email-as-soon-as-possible.mp3
+            target: Please reply to this email as soon as possible.
+        explanation: Die Sätze zeigen, worauf man bei einer Mail achtet.
+  - type: section
+    id: anwenden
+    title: Selbst sprechen und schreiben
+    blocks:
+      - type: speaking-task
+        id: fmail-nachsprechen
+        language: en
+        task: "Höre die Sätze und sprich sie nach. So klingt ein höflicher Anfang und ein höflicher Schluss."
+        items:
+          - audio: i-have-one-question-about-the-reading-programme.mp3
+            text: I have one question about the reading programme.
+          - audio: many-thanks-for-your-help-and-information.mp3
+            text: Many thanks for your help and information.
+          - audio: i-would-appreciate-an-answer-before-the-weekend.mp3
+            text: I would appreciate an answer before the weekend.
+      - type: open-task
+        id: fmail-schreiben
+        task: "Deine Klasse möchte die Bücherei besuchen. Schreibe eine formelle E-Mail an die Bücherei und frage nach einem Termin. Du kennst keinen Namen."
+        points:
+          - text: Der Betreff sagt kurz, worum es geht.
+            source: /bewerben/formelle-email/#bauplan
+          - text: Anrede und Gruß passen zusammen, ohne Namen Dear Sir or Madam und Yours faithfully.
+            source: /bewerben/formelle-email/#bauplan
+          - text: Das Anliegen ist höflich und stellt eine klare Frage.
+            source: /bewerben/formelle-email/#bauplan
+          - text: Du benutzt keine Kurzformen und kein Hi.
+            kind: form
+        solution: |
+          Subject: Visit for our class
+
+          Dear Sir or Madam,
+
+          I am writing to ask about a visit to your library with my class. Could you please tell me when the library is open for school groups? I would also like to know how many students can come.
+
+          Thank you for your help.
+
+          Yours faithfully,
+
+          Your name
+
+          Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: "Du kannst jetzt höflich nach Informationen fragen. Mr Anderson bittet um einen CV und einen kurzen Brief. Als Nächstes schreibst du den **Lebenslauf** (CV) für den Ferienjob."
