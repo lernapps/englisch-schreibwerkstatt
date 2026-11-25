@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -83,6 +83,8 @@ Insgesamt 17 Übungsseiten und 4 Wiederholungsseiten. Außerhalb liegende Voraus
 **Übungsmuster** (Skills exercise-patterns, foreign-languages): Schablone füllen (`ordering`, `matching`), Regler zuordnen (`single-choice` mit `info` je Option, `matching` informal ↔ formal), Lücke (`language-task` gap), Schreiben mit Cue (`write`), Diktat und Nachsprechen, offene Aufgabe (`open-task` mit `points` und Musterlösung), Belegen mit Zeile (`single-choice` / `multiple-choice` mit Zeilenangabe), Meinung (offene Aufgabe). Lesestück als `text`-Blöcke in Abschnitten mit Randglossar; Details im Inhaltsführer.
 
 **Umfang:** In: alle 17 Bausteine, Texte im Stil Chat, Blog, Bericht, Interview, Artikel, Diagramm, E-Mail, CV, Bewerbung, Gespräch. Out (Abgrenzung): persönliche Briefe (#477), Geschichten (#479), Leserbrief und Kommentar als Meinungstext (#487), Vorstellung von Berufsbildern jenseits der Wörter; keine Bewertung freier Texte und der Aussprache durch die App. Daten: Statistiken sind erfunden (kleine Tabellen, 4 bis 6 Werte), Zeitungstexte erfunden. Sprachen: Deutsch (Erklärtext), Englisch (Beispiele, Lesestücke), britisches Englisch.
+
+**Prüfungen und Funde (Gesamtcheck der App, Code-Phase):** Lerner-Check der Musterseite (Sub-Agent, Klasse 7-8): Lösungen im Merke, Bildtext, Hinweise zu Ordnen und Lücke, Distraktor „Titel“, Varianten „Firstly/Secondly“ behoben. Gesamtcheck der fertigen App mit Sub-Agenten: Kapitel 1-2 als Lerner der Klasse 7 und Kapitel 3-4 als Lerner der Klasse 9-10; dazu je eine Prüfung der englischen und der deutschen Sprache. Behoben: Ablauf der Geschichte in Kapitel 4 (Reihenfolge Anzeige, Rat, Nachricht, E-Mail, CV, Brief, Gespräch), Alter und Zeiträume im CV, Gruß zur Anrede, fehlender Satz „Next, when the newspaper will come out“, „Mrs“ → „Ms“, deutsche Wörter in englischen Zeilen („Sophie to Ellie:“), Fakten zu England statt Großbritannien, `By`/`to` und Gaming im Diagramm, Einleitung mit „wenigen Sätzen“, Begriffe (Aussage, Redemittel, Einleitung), Rückmeldungen mit der richtigen Form, Archiv → Schulbibliothek, fünf W-Fragen einheitlich, unpassende oder fast gleiche Hörsätze ersetzt (zehn Sätze neu erzeugt, alle mehrsilbig endend); Lizenzmarke verdeckt keine Diagrammbeschriftung mehr. Nicht geändert: „Danach kannst du …“ in den Einstiegen (Stilfrage), „Erzählstil/Erzählstimme“, einzelne Sachwörter ohne Randglossar in Hörsätzen. Offen für die Ersteller:in: kein Hörurteil über die neuen Hörsätze (nichts Ungehörtes gilt als geprüft); Namen erfundener Orte (Tarnwick, Brindley, Marsden …) nicht auf zufällige Echtheit geprüft; Sachaussagen ohne geöffnete Quelle (Merkmale Sachtext/Fiktion, Aufbau Interview, indirekte Rede, grade 9 = Year 10).
 
 **Quellen** (nur Fakten, geöffnet am 2026-11-24 über `en.wikipedia.org`, CC BY-SA, keine Sätze übernommen): „Education in England“ (Key Stages, Year 11, GCSE, Pflicht bis 18, sixth form, A-levels), „High school in the United States“ (grades 9 bis 12, freshman bis senior, GPA, Credits), „Education in the United Kingdom“, „Key Stage“, „Résumé“ (CV im Vereinigten Königreich: keine persönlichen Angaben wie Foto, Geschlecht, Familienstand), „Cover letter“, „Job interview“. Nicht geöffnet (HTTP 429): „Inverted pyramid (journalism)“: wird beim Bau von `zeitungsartikel` neu versucht; sonst Aufbau (headline, lead, body) aus dem Auftrag. Keine VOA- und Wikinews-Texte übernommen (alle Lesestücke eigene Texte). Alle Fakten, die ein Lesestück nennt (zum Beispiel Schulsystem), stehen im Inhaltsführer unter „Sources“.
 
@@ -256,9 +258,9 @@ page, which a link. -->
 <!-- tasks: pages (8 added): the other pages or screens, after the pattern -->
 - [x] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [x] Run `npx --no -- lernapps check` until it passes.
-- [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
+- [x] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
-- [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
+- [x] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
       fixed.
 
 ## Commit
