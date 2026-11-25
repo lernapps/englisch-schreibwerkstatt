@@ -48,8 +48,6 @@ blocks:
             source: fast
           - target: opinion
             source: die Meinung
-          - target: quiz
-            source: das Quiz
       - type: text
         text: |
           1. **Mr Hill:** Amir, please write a report about Book Swap Day for the first newspaper. Write what happened. Keep your own opinion out of it.
@@ -160,7 +158,7 @@ blocks:
         languages: { source: de, target: en }
         form: { case: ok, punctuation: ok }
         task: "Schreibe jeden Satz für den Bericht im simple past. Der Cue nennt die Wörter."
-        hint: "Regelmäßige Verben bekommen -ed. Bei bring hilft nur auswendig: Es ist unregelmäßig."
+        hint: "Regelmäßige Verben bekommen -ed. Bring ist unregelmäßig: Seine Form im simple past musst du lernen."
         items:
           - cue: "the class / visit / the museum / on Tuesday"
             target: "The class visited the museum on Tuesday."
@@ -180,9 +178,9 @@ blocks:
             target: "The students brought old games on Monday."
             mistakes:
               - answer: "The students bringed old games on Monday."
-                message: "Bring ist unregelmäßig. Die Form im simple past ist nicht bringed."
+                message: "Bring ist unregelmäßig. Die Form im simple past ist nicht bringed, sondern brought."
               - answer: "The students bring old games on Monday."
-                message: "Das ist das present. Das simple past von bring ist unregelmäßig."
+                message: "Das ist das present. Das simple past von bring ist unregelmäßig: brought."
         explanation: Ein Bericht erzählt im simple past. Regelmäßige Verben bekommen -ed, bring wird zu brought.
       - type: single-choice
         id: bericht-meinungssatz

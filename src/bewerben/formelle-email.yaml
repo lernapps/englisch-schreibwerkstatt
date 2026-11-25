@@ -2,14 +2,14 @@
 title: Eine formelle E-Mail schreiben
 description: "Eine formelle E-Mail schreiben, zum Beispiel um Informationen zu erfragen: mit Sophies Anfrage an die Bücherei."
 competencies: [formelle-email]
-scope: Die Seite zeigt, wie man eine formelle E-Mail oder einen formellen Brief schreibt, zum Beispiel um Informationen zu erfragen. Lesestück ist Sophies Anfrage an die Millbrook Library (Zeilen 1 bis 8, Betreff, Dear Mr Anderson, Anliegen mit Fragen zur Anzeige, Yours sincerely, Name), der Vergleich mit einer lockeren Nachricht an eine Freundin (Zeilen 9 bis 11) und die Antwort der Bücherei an Dear Ms Weber (Zeilen 12 bis 17). Der Bauplan hat Betreff (subject), Anrede, Anliegen, Gruß und Name. Die Anrede ist Dear mit Ms oder Mr und dem Nachnamen, Ms passt für jede Frau, ohne Namen schreibt man Dear Sir or Madam. Der Gruß passt zur Anrede, Yours sincerely nach einem Namen und Yours faithfully nach Dear Sir or Madam. Der Ton-Regler steht auf formal, das heißt keine Kurzformen, kein Hi, ein klarer Betreff und höfliche Ausdrücke wie I am writing to ask, Could you please, I would be grateful, I look forward to hearing from you. Geübt werden die Teile in die Reihenfolge bringen, Anrede und Gruß einsetzen, lockere Sätze formell umschreiben, feste Ausdrücke einsetzen, Hören und Nachsprechen, eine Meinung zu formell und locker und eine eigene formelle Anfrage. Nicht hier sind persönliche E-Mails, Lebenslauf und Bewerbung.
+scope: Die Seite zeigt, wie man eine formelle E-Mail oder einen formellen Brief schreibt, zum Beispiel um Informationen zu erfragen. Lesestück ist Sophies Anfrage an die Millbrook Library (Zeilen 1 bis 8, Betreff, Dear Mr Anderson, Anliegen mit Fragen zur Anzeige, Yours sincerely, Name), der Vergleich mit einer lockeren Nachricht an eine Freundin (Zeilen 9 bis 11) und die Antwort der Bücherei an Dear Ms Weber (Zeilen 12 bis 17). Der Bauplan hat Betreff (subject), Anrede, Anliegen, Gruß und Name. Die Anrede ist Dear mit Ms oder Mr und dem Nachnamen, Ms passt für jede Frau, ohne Namen schreibt man Dear Sir or Madam. Der Gruß passt zur Anrede, Yours sincerely nach einem Namen und Yours faithfully nach Dear Sir or Madam. Der Ton-Regler steht auf formal, das heißt keine Kurzformen, kein Hi, ein klarer Betreff und höfliche Ausdrücke wie I am writing to ask, Could you please, I would be grateful, I look forward to hearing from you. Geübt werden die Teile in die Reihenfolge bringen, Anrede und Gruß einsetzen, lockere Sätze formell umschreiben, feste Ausdrücke einsetzen, Hören und Nachsprechen, eine Meinung zu formell und locker und eine eigene formelle Anfrage. Nicht hier sind persönliche E-Mails, Lebenslauf und Bewerbung. Sophie hat Mr Anderson vorher schon über ihre Schule geschrieben; er bittet in seiner Antwort um einen CV und ein kurzes Anschreiben.
 blocks:
   - type: section
     id: einstieg
     title: Worum es geht
     blocks:
       - type: text
-        text: "Sophie hat die Anzeige der Bücherei gelesen und hat noch Fragen. Sie schreibt eine E-Mail, die höflich und genau ist. Danach kannst du eine **formelle E-Mail** schreiben, zum Beispiel um Informationen zu erfragen."
+        text: "Sophie hat mit Mr Anderson gesprochen und ihm ihre Schule beschrieben. Jetzt hat sie noch Fragen zur Anzeige und schreibt ihm eine E-Mail, die höflich und genau ist. Danach kannst du eine **formelle E-Mail** schreiben, zum Beispiel um Informationen zu erfragen."
       - type: single-choice
         id: fmail-start
         text: "Du schreibst einer Bücherei eine Frage zu einer Anzeige. Was schreibst du in die Betreff-Zeile?"
@@ -53,7 +53,7 @@ blocks:
           1. **Subject:** Question about the Summer Library Assistant job
           2. Dear Mr Anderson,
           3. I am writing to ask for more information about the Summer Library Assistant job in your advert.
-          4. I am a student at Millbrook School, and I help in our school library. I like books, and I enjoy working with people. I would like to know more before I apply.
+          4. Thank you for reading my message about my school. I like books, and I enjoy working with people. I would like to know more before I apply.
           5. Could you please tell me which days of the week I would work? Is it possible to start in the first week of the holidays?
           6. I would be grateful for your reply. I look forward to hearing from you.
           7. Yours sincerely,
@@ -80,7 +80,7 @@ blocks:
           12. *The reply from the library*
           13. Dear Ms Weber,
           14. Thank you for your questions. The job is part-time, as the advert says, and you can find the details in the attached file.
-          15. If you are still interested, please send me your CV and a short letter.
+          15. If you are still interested, please send me your CV and a short letter about why you want the job.
           16. Yours sincerely,
           17. Mr Anderson
       - type: multiple-choice
@@ -197,14 +197,14 @@ blocks:
             mistakes:
               - answer: "Thanks a lot for your help."
                 message: "Thanks a lot ist ein lockerer Dank. Schreibe Thank you, wenn du höflich bleiben willst."
-        explanation: Eine formelle Mail hat keine Kurzformen und keine lockeren Wörter. Fragen werden mit Could you höflich.
+        explanation: Eine formelle Mail hat keine Kurzformen und keine lockeren Wörter. Mit Could you wird eine Frage höflich.
       - type: language-task
         id: fmail-ausdruck
         languages: { source: de, target: en }
         mode: gap
         form: { case: ok, punctuation: ok }
-        task: "Setze das fehlende Wort ein. Du kennst die Ausdrücke aus Sophies Mail und der Antwort."
-        hint: "Die Ausdrücke stehen im Lesestück, in den Zeilen 6 und 14."
+        task: "Setze das fehlende Wort ein. Du kennst die Redemittel aus Sophies Mail und der Antwort."
+        hint: "Die Redemittel stehen im Lesestück, in den Zeilen 6 und 14."
         items:
           - source: "Ich wäre dankbar für Ihre Antwort."
             target: "I would be [grateful] for your reply."
@@ -218,7 +218,7 @@ blocks:
             mistakes:
               - answer: "to"
                 message: "Du bedankst dich für etwas, darum steht nach Thank you das Wort for."
-        explanation: Feste Ausdrücke machen eine Mail höflich. Nach look forward to steht eine -ing-Form.
+        explanation: Feste Redemittel machen eine Mail höflich. Nach look forward to steht eine -ing-Form.
       - type: language-task
         id: fmail-hoeren
         languages: { source: de, target: en }
@@ -241,12 +241,12 @@ blocks:
         language: en
         task: "Höre die Sätze und sprich sie nach. So klingt ein höflicher Anfang und ein höflicher Schluss."
         items:
-          - audio: i-am-writing-about-your-advertisement-in-the-newspaper.mp3
-            text: I am writing about your advertisement in the newspaper.
+          - audio: i-have-one-question-about-the-reading-programme.mp3
+            text: I have one question about the reading programme.
           - audio: many-thanks-for-your-help-and-information.mp3
             text: Many thanks for your help and information.
-          - audio: i-would-be-grateful-if-you-could-send-me-more-details.mp3
-            text: I would be grateful if you could send me more details.
+          - audio: i-would-appreciate-an-answer-before-the-weekend.mp3
+            text: I would appreciate an answer before the weekend.
       - type: open-task
         id: fmail-schreiben
         task: "Deine Klasse möchte die Bücherei besuchen. Schreibe eine formelle E-Mail an die Bücherei und frage nach einem Termin. Du kennst keinen Namen."
@@ -278,4 +278,4 @@ blocks:
     title: Wie es weitergeht
     blocks:
       - type: text
-        text: "Du kannst jetzt höflich nach Informationen fragen. Als Nächstes schreibst du den **Lebenslauf** (CV) für den Ferienjob."
+        text: "Du kannst jetzt höflich nach Informationen fragen. Mr Anderson bittet um einen CV und einen kurzen Brief. Als Nächstes schreibst du den **Lebenslauf** (CV) für den Ferienjob."

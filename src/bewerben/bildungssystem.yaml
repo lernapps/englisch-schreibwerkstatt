@@ -1,15 +1,15 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
-title: Schulsysteme in Großbritannien und den USA
+title: Schulsysteme in England und den USA
 description: "Die Schulsysteme in England und den USA mit ihren Abschlüssen beschreiben und mit Deutschland vergleichen: mit einer Nachricht an Mr Anderson."
 competencies: [bildungssystem]
-scope: Die Seite zeigt, wie man die Schulsysteme in England und den USA mit ihren Abschlüssen beschreibt und mit Deutschland vergleicht. Lesestück ist Sophies Nachricht an Mr Anderson über ihre Schule (England in den Zeilen 3 bis 5, USA in den Zeilen 6 bis 8, Deutschland in den Zeilen 9 und 10). England, Fakten aus Education in England und Education in the United Kingdom, nämlich Key Stage 1 und 2 in der Grundschule, Key Stage 3 und 4 in der weiterführenden Schule, GCSE-Prüfungen am Ende von Year 11, Bildungspflicht oder Ausbildung bis 18, sixth form mit A-levels. USA, Fakten aus High school in the United States, nämlich grades 9 bis 12 mit den Namen freshman, sophomore, junior, senior, Credits für bestandene Kurse, GPA als Notendurchschnitt, grade 9 entspricht ungefähr Year 10. College heißt in den USA oft Universität, in England kann es auch eine Schule für ältere Schüler sein (sixth form college). Deutschland nur in groben Stufen (Grundschule, weiterführende Schule, Abitur oder anderer Abschluss). Year und grade sind Jahrgänge, nicht das Alter. Ein kurzer Absatz sagt, dass man an einer High School neben Pflichtfächern Wahlfächer wählt; das wird nicht geübt. Geübt werden Begriffe erklären, college richtig verstehen, die Namen der US-Stufen ordnen, Sätze über den eigenen Abschluss mit Cue, Hören und Nachsprechen, eine Meinung zu zwei Systemen und die Erklärung des eigenen Abschlusses für einen Lebenslauf. Nicht hier sind Berufe, E-Mail, Lebenslauf und Bewerbung.
+scope: Die Seite zeigt, wie man die Schulsysteme in England und den USA mit ihren Abschlüssen beschreibt und mit Deutschland vergleicht. Lesestück ist Sophies Nachricht an Mr Anderson über ihre Schule (England in den Zeilen 3 bis 5, USA in den Zeilen 6 bis 8, Deutschland in den Zeilen 9 und 10). England, Fakten aus Education in England und Education in the United Kingdom, nämlich Key Stage 1 und 2 in der Grundschule, Key Stage 3 und 4 in der weiterführenden Schule, GCSE-Prüfungen am Ende von Year 11, Bildungspflicht oder Ausbildung bis 18, sixth form mit A-levels. USA, Fakten aus High school in the United States, nämlich grades 9 bis 12 mit den Namen freshman, sophomore, junior, senior, Credits für bestandene Kurse, GPA als Notendurchschnitt, grade 9 entspricht ungefähr Year 10. College heißt in den USA oft Universität, in England kann es auch eine Schule für ältere Schüler sein (sixth form college). Deutschland nur in groben Stufen (Grundschule, weiterführende Schule, Abitur oder anderer Abschluss). Year und grade sind Jahrgänge, nicht das Alter. Ein kurzer Absatz sagt, dass man an einer High School neben Pflichtfächern Wahlfächer wählt; das wird nicht geübt. Geübt werden Begriffe erklären, college richtig verstehen, die Namen der US-Stufen ordnen, Sätze über den eigenen Abschluss mit Cue, Hören und Nachsprechen, eine Meinung zu zwei Systemen und die Erklärung des eigenen Abschlusses für einen Lebenslauf. Nicht hier sind Berufe, E-Mail, Lebenslauf und Bewerbung. Sophie schreibt die Nachricht auf Mr Andersons Rat und bedankt sich dafür; sie schließt mit Yours sincerely und ihrem Namen.
 blocks:
   - type: section
     id: einstieg
     title: Worum es geht
     blocks:
       - type: text
-        text: "Für einen Lebenslauf musst du deinen Schulabschluss erklären. Dazu liest du, wie Sophie Mr Anderson ihre Schule beschreibt. Danach kannst du die **Schulsysteme** in Großbritannien und den USA mit ihren Abschlüssen beschreiben und mit Deutschland vergleichen."
+        text: "Für einen Lebenslauf musst du deinen Schulabschluss erklären. Dazu liest du, wie Sophie Mr Anderson ihre Schule beschreibt. Danach kannst du die **Schulsysteme** in England und den USA mit ihren Abschlüssen beschreiben und mit Deutschland vergleichen."
       - type: single-choice
         id: bildung-start
         text: "Auf einer englischen Schulseite steht: Students in Year 11 take important exams. Was bedeutet Year 11?"
@@ -48,7 +48,7 @@ blocks:
         text: |
           1. **Message from Sophie to Mr Anderson**
           2. Dear Mr Anderson,
-          3. You asked about my school at home. The systems are different, so I want to explain them in a short message.
+          3. Thank you for your advice about the job. School systems are different, so I want to explain them in a short message.
           4. In England, children start at primary school, which has Key Stage 1 and Key Stage 2. Secondary school has Key Stage 3 and Key Stage 4 for students from 11 to 16 years old.
           5. At the end of Year 11, students take exams called GCSEs. After that, young people must stay in education or training until the age of 18. Many of them go to sixth form and study for A-levels.
       - type: single-choice
@@ -86,8 +86,8 @@ blocks:
         explanation: Zeile 8 sagt, dass college nicht überall dasselbe bedeutet.
       - type: text
         text: |
-          9. In Germany, I went to a Grundschule first. Now I go to a Gymnasium, which ends with an exam called the Abitur. Both the A-levels and the Abitur qualify students for university.
-          10. I hope this helps with my CV. Best wishes, Sophie
+          9. In Germany, I went to a Grundschule first. At home I go to a Gymnasium, which ends with an exam called the Abitur. Both the A-levels and the Abitur qualify students for university.
+          10. I hope this helps. Yours sincerely, Sophie Weber
       - type: open-task
         id: bildung-meinung
         task: "In England gibt es GCSE-Prüfungen am Ende von Year 11. In den USA sammelt man Credits in jedem Kurs. Welche Idee gefällt dir besser? Schreibe zwei bis drei Sätze auf Englisch."
@@ -114,7 +114,7 @@ blocks:
       - type: text
         text: "In England zählst du **Years** und **Key Stages**, in den USA **grades**. Ein Year oder ein grade ist ein Schuljahr, nicht dein Alter. Grade 9 entspricht ungefähr Year 10. Am Ende der weiterführenden Schule stehen in England die **GCSE**-Prüfungen, danach folgen in der **sixth form** die **A-levels**. In den USA schließt du nach grade 12 die High School ab. Für Deutschland reichen grobe Stufen: Grundschule, weiterführende Schule und ein Abschluss wie das Abitur."
       - type: text
-        text: "Noch ein Unterschied (mehr zum Alltag an einer High School steht auf der [Karte](https://lernapps.net/apps/map/englisch/c/schule-usa/)): An einer amerikanischen High School haben nicht alle dieselben Kurse. Neben Pflichtfächern wählst du Wahlfächer."
+        text: "In den USA geht vor der High School die **middle school** (steht im Bild über der High School), und an der High School haben nicht alle dieselben Kurse: Neben Pflichtfächern wählst du Wahlfächer. Mehr zum Alltag an einer High School steht auf der [Lernlandkarte von lernapps.net](https://lernapps.net/apps/map/englisch/c/schule-usa/)."
       - type: note
         title: Merke
         blocks:
@@ -205,8 +205,8 @@ blocks:
         language: en
         task: "Höre die Sätze und sprich sie nach. So kannst du deine Schule erklären."
         items:
-          - audio: i-will-explain-my-school-system-in-a-short-message.mp3
-            text: I will explain my school system in a short message.
+          - audio: i-will-describe-my-school-in-a-few-sentences.mp3
+            text: I will describe my school in a few sentences.
           - audio: please-explain-the-difference-between-the-two-systems.mp3
             text: Please explain the difference between the two systems.
           - audio: in-my-country-students-leave-school-at-different-ages.mp3
@@ -231,4 +231,4 @@ blocks:
     title: Wie es weitergeht
     blocks:
       - type: text
-        text: "Du kannst jetzt deinen Abschluss erklären. Auf der nächsten Seite schreibst du eine **formelle E-Mail**: Sophie fragt die Bücherei nach der Anzeige."
+        text: "Du kannst jetzt deinen Abschluss erklären. Auf der nächsten Seite schreibst du eine **formelle E-Mail**: Sophie hat die Schule erklärt und stellt Mr Anderson nun ihre Fragen zur Stelle."

@@ -138,12 +138,12 @@ blocks:
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "Im Vorstellungsgespräch findet der Arbeitgeber heraus, ob du für die Stelle passt. Die Fragen drehen sich um Erfahrung, Ausbildung und Fähigkeiten. Eine gute Antwort hat drei Schritte: eine **Behauptung** (claim), ein **Beispiel** (example) und den **Bezug zur Stelle**. Auch wie du sprichst, zählt: klar, mit kleinen Pausen und freundlich. Kurzformen wie *I'm* sind im Gespräch normal. Slang wie *gonna* klingt zu locker. Am Ende stellst du eine eigene Rückfrage. Am besten übst du mit einem Probegespräch und bittest danach um Rückmeldung."
+        text: "Im Vorstellungsgespräch findet der Arbeitgeber heraus, ob du für die Stelle passt. Die Fragen drehen sich um Erfahrung, Ausbildung und Fähigkeiten. Eine gute Antwort hat drei Schritte: eine **Aussage** (claim), ein **Beispiel** (example) und den **Bezug zur Stelle**. Auch wie du sprichst, zählt: klar, mit kleinen Pausen und freundlich. Kurzformen wie *I'm* sind im Gespräch normal. Slang wie *gonna* klingt zu locker. Am Ende stellst du eine eigene Rückfrage. Am besten übst du mit einem Probegespräch und bittest danach um Rückmeldung."
       - type: note
         title: Merke
         blocks:
           - type: text
-            text: "Behauptung, Beispiel, Bezug: So wird aus einem Wort eine Antwort. Am Ende fragst du selbst etwas."
+            text: "Aussage, Beispiel, Bezug: So wird aus einem Wort eine Antwort. Am Ende fragst du selbst etwas."
   - type: section
     id: uebung
     title: Übung
@@ -167,10 +167,10 @@ blocks:
         options:
           - text: Yes, I am the best team player you will ever meet, and I never have problems with other people
             correct: false
-            info: "Das ist nur eine Behauptung. Es fehlt ein Beispiel, das sie zeigt."
+            info: "Das ist nur eine Aussage. Es fehlt ein Beispiel, das sie zeigt."
           - text: Yes, I do. Last year I helped to plan a sports day, and teamwork is important in a busy library
             correct: true
-            info: "Behauptung, Beispiel und Bezug zur Stelle: alle drei Schritte sind da."
+            info: "Aussage, Beispiel und Bezug zur Stelle: alle drei Schritte sind da."
           - text: Yeah, sure, I get on with everybody in my class, no problem at all
             correct: false
             info: "Yeah und no problem klingen zu locker, und ein Beispiel fehlt."
@@ -182,7 +182,7 @@ blocks:
         id: vorstellungsgespraech-antworten
         languages: { source: de, target: en }
         form: { case: ok, punctuation: ok }
-        task: "Schreibe den Satz für eine Antwort. Der Hinweis ist auf Englisch und zeigt, was du brauchst."
+        task: "Schreibe den Satz für eine Antwort. Die Vorgabe ist auf Englisch und zeigt, was du brauchst."
         hint: "Das Beispiel ist schon vorbei: Nimm die Vergangenheit."
         items:
           - cue: "For example, I once (plan) a book sale."
@@ -223,19 +223,19 @@ blocks:
       - type: speaking-task
         id: vorstellungsgespraech-nachsprechen
         language: en
-        task: "Spiele das Gespräch. Mr Anderson fragt: „Can you tell me about a time when you were patient?“ Höre die drei Sätze einer Antwort (Behauptung, Beispiel, Bezug) und sprich sie nach."
+        task: "Spiele das Gespräch. Mr Anderson fragt: „Can you tell me about a time when you were patient?“ Höre die drei Sätze einer Antwort (Aussage, Beispiel, Bezug) und sprich sie nach."
         items:
           - audio: i-think-i-am-a-patient-person.mp3
             text: I think I am a patient person.
           - audio: for-example-i-once-helped-a-nervous-visitor.mp3
             text: For example, I once helped a nervous visitor.
-          - audio: that-helps-me-to-stay-calm-when-the-place-is-busy.mp3
-            text: That helps me to stay calm when the place is busy.
+          - audio: that-is-useful-when-visitors-ask-many-questions.mp3
+            text: That is useful when visitors ask many questions.
       - type: open-task
         id: vorstellungsgespraech-schreiben
         task: "Du bewirbst dich um einen Ferienjob als Helfer im Riverside Sports Centre (erfunden). Schreibe auf Englisch deine Antworten auf drei Fragen: „Tell me about yourself.“, „Why do you want this job?“ und „Tell me about a time when you worked in a team.“ Schreibe zu jeder Frage zwei bis drei Sätze und zum Schluss eine eigene Rückfrage. Nimm keine echten Daten."
         points:
-          - text: Jede Antwort hat eine Behauptung, ein Beispiel und einen Bezug zur Stelle.
+          - text: Jede Antwort hat eine Aussage, ein Beispiel und einen Bezug zur Stelle.
             source: /bewerben/vorstellungsgespraech/#bauplan
           - text: Bei „Tell me about yourself“ nennst du Schule, Erfahrung und Hobbys.
             source: /bewerben/vorstellungsgespraech/#lesestueck
@@ -260,4 +260,4 @@ blocks:
     title: Rückblick auf das Kapitel
     blocks:
       - type: text
-        text: "Du hast das Kapitel geschafft. Der **Bauplan** gab dir bei jedem Text die Teile vor: Anrede, Anliegen und Gruß in der formellen E-Mail, Personal details bis Interests im CV, sechs Teile in der Bewerbung und drei Schritte in der Antwort. Der **Ton-Regler** stand dabei nahe bei formal: höflich in E-Mail und Bewerbung, knapp in den Stichpunkten des CV, im Gespräch freundlich und ohne Slang. Mit beidem kannst du dich auch um ein Praktikum bewerben."
+        text: "Du hast das Kapitel geschafft. Der **Bauplan** gab dir bei jedem Text die Teile vor: Anrede, Anliegen und Gruß in der formellen E-Mail, Personal details bis Interests im CV, sechs Teile in der Bewerbung und drei Schritte in der Antwort. Den **Ton-Regler** hast du bei der formellen E-Mail ganz rechts bei formal gesehen. Derselbe Gedanke gilt weiter: höflich in der Bewerbung, knapp in den Stichpunkten des CV, im Gespräch freundlich und ohne Slang. Mit beidem kannst du dich auch um ein Praktikum bewerben."

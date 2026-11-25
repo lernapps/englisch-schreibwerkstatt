@@ -117,7 +117,7 @@ blocks:
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "**Information** kannst du nachprüfen: eine Zahl, ein Name, ein Ort, eine Zeit, ein Zitat mit dem Namen der Person. Eine **Meinung** sagt, was jemand denkt, findet oder fordert. Du kannst ihr zustimmen oder nicht, nachprüfen kannst du sie nicht. Signalwörter für Meinung sind **I think**, **in my opinion**, **clearly**, **shocking**, **should** und **must**. Auch Wörter, die bewerten (good, bad, boring), zeigen Meinung. In einer Nachricht kann Meinung stehen, wenn eine Person zitiert wird. Dann gehört sie dieser Person."
+        text: "**Information** kannst du nachprüfen: eine Zahl, ein Name, ein Ort, eine Zeit, ein Zitat mit dem Namen der Person. Eine **Meinung** sagt, was jemand denkt, findet oder fordert. Du kannst ihr zustimmen oder nicht, nachprüfen kannst du sie nicht.\n\nSignalwörter für Meinung sind **I think**, **in my opinion**, **clearly**, **shocking**, **should** und **must**. Auch Wörter, die bewerten (good, bad, boring), zeigen Meinung.\n\nIn einer Nachricht kann Meinung stehen, wenn eine Person zitiert wird. Dann gehört sie dieser Person."
       - type: text
         text: |
           Ein seriöser **Artikel** (article) beantwortet fünf Fragen:
@@ -185,7 +185,7 @@ blocks:
         id: info-umschreiben
         languages: { source: de, target: en }
         form: { case: ok, punctuation: ok }
-        task: "Schreibe aus jeder Meinung einen Informationssatz. Nutze die Stichwörter hinter dem Pfeil."
+        task: "Schreibe aus jeder Meinung einen Informationssatz. Nutze die Stichwörter hinter „becomes:“."
         hint: "Ein Informationssatz nennt etwas, das man prüfen kann: eine Zahl, einen Preis, eine Zeit."
         items:
           - cue: "“The pool is far too expensive.” becomes: ticket / cost / £6"

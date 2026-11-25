@@ -121,7 +121,7 @@ blocks:
           Der **Ton-Regler** hat drei Stellungen. Du stellst ihn nach dem Leser ein.
 
           - **informal** für Freunde: Kurzformen (short forms), lockere Wörter wie hey und cool, ein Ausrufezeichen.
-          - **neutral** für Lehrer und Klasse: ganze Sätze, please und thank you.
+          - **neutral** für Lehrer und Klasse: ganze Sätze, höfliche Fragen wie „Could you …?“ und Wörter wie please und thank you.
           - **formal** für Büros und Menschen, die du nicht kennst: keine Kurzformen, Sätze wie „I would like to ask …“.
 
           Auch **Anrede und Gruß** ändern sich. Schau dir dazu die Zeilen 1, 3 und 5 an.
@@ -147,8 +147,8 @@ blocks:
         languages: { source: de, target: en }
         mode: gap
         form: { case: ok, punctuation: ok }
-        task: "Setze Anrede oder Gruß ein. Du kennst die Wörter aus den Zeilen 1, 3 und 5."
-        hint: "Anrede und Gruß müssen zum Leser und zum selben Ton passen."
+        task: "Setze Anrede oder Gruß ein. Du kennst die Wörter aus den Zeilen 1 bis 5."
+        hint: "Anrede und Gruß müssen zum Leser und zum Ton passen."
         items:
           - source: "Mail an das Schulbüro: Wie fängt sie an?"
             target: "[Dear Sir or Madam], I am writing about the music room."
@@ -161,11 +161,11 @@ blocks:
             target: "Thank you for your help. [Yours faithfully], Sophie"
             mistakes:
               - answer: "Best wishes"
-                message: "Best wishes passt zu einer Anrede mit Namen, zum Beispiel Dear Mr Hill. Schau, wie die Mail in Zeile 5 endet."
+                message: "Best wishes ist ein neutraler Gruß, zum Beispiel für eine Nachricht an Mr Hill. Eine formale Mail endet anders. Schau, wie die Mail in Zeile 5 endet."
               - answer: "See you"
                 message: "See you ist ein Gruß unter Freunden und passt nicht zu einer formalen Mail."
           - source: "Nachricht an Ellie: Wie endet sie?"
-            target: "Hi Ellie, can you help me? [See you|See you soon|See you later|Bye|Cheers], Sophie"
+            target: "Hi Ellie, can you help me? [See you|See you soon|See you later], Sophie"
             mistakes:
               - answer: "Yours faithfully"
                 message: "Yours faithfully gehört zu einer formalen Mail. Zu Hi passt ein lockerer Gruß."
@@ -178,13 +178,15 @@ blocks:
         hint: "Lass weg, was für diesen Leser nicht passt. Oder schreibe es so, wie du es einem Freund sagst."
         items:
           - cue: "To Mr Hill, no short form: I can't come to the meeting."
-            target: "I (cannot|am unable to) come to the meeting."
+            target: "I cannot come to the meeting."
             mistakes:
               - answer: "I can't come to the meeting."
                 message: "Das ist noch die Kurzform. An Mr Hill schreibst du das Wort ganz aus."
           - cue: "To Mr Hill, polite: Hey, can you tell me when the meeting is?"
-            target: "(Could|Can) you tell me when the meeting is(, please|)?"
+            target: "Could you tell me when the meeting is(, please|)?"
             mistakes:
+              - answer: "Can you tell me when the meeting is?"
+                message: "Can you steht in Zeile 1, im Chat an Ellie. An Mr Hill schreibst du wie in Zeile 3: Could you."
               - answer: "Hey, could you tell me when the meeting is?"
                 message: "Could ist gut, aber Hey ist für Mr Hill zu locker."
           - cue: "To Ellie, in a chat: I am writing to ask if you are free on Friday."
@@ -236,7 +238,7 @@ blocks:
           Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
       - type: open-task
         id: ton-schreiben
-        task: "Du möchtest am Freitag den Musikraum für eine Sitzung der Zeitung. Schreibe die Bitte zweimal: kurz an Amir und förmlich an das Schulbüro."
+        task: "Du möchtest am Freitag den Musikraum für eine Sitzung der Zeitung nutzen. Schreibe die Bitte zweimal: kurz an Amir und förmlich an das Schulbüro."
         points:
           - text: Die Nachricht an Amir ist locker und kurz.
             source: /gliedern-und-ton/formell-informell/#ton

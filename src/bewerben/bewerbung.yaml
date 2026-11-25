@@ -9,7 +9,7 @@ blocks:
     title: Worum es geht
     blocks:
       - type: text
-        text: "Vielleicht hast du schon eine formelle E-Mail geschrieben und einen CV gebaut. Sophie schickt an die Stadtbücherei von Millbrook ihren CV und dazu eine **Bewerbung** (cover letter), einen Brief mit einem Anliegen. Danach kannst du eine Bewerbung für ein Praktikum oder einen Ferienjob schreiben."
+        text: "Auf der Seite davor hat Sophie ihren CV geschrieben, und Mr Anderson wartet noch auf den kurzen Brief. Du kennst schon die formelle E-Mail. Sophie schickt an die Stadtbücherei von Millbrook ihren CV und dazu eine **Bewerbung** (cover letter), einen Brief mit einem Anliegen. Danach kannst du eine Bewerbung für ein Praktikum oder einen Ferienjob schreiben."
       - type: single-choice
         id: bewerbung-start
         text: "Sophies CV ist fertig. Was schreibt sie in die Bewerbung dazu?"
@@ -65,9 +65,9 @@ blocks:
           - text: Sie bewirbt sich um die Stelle als Summer Library Assistant
             correct: true
             info: "So steht es in Zeile 3: I am writing to apply."
-          - text: Sie bedankt sich für ein Gespräch
+          - text: Sie bedankt sich für die Antwort auf ihre Fragen
             correct: false
-            info: "Ein Gespräch hat noch nicht stattgefunden. Sie bittet später darum."
+            info: "Das war in der E-Mail davor. Hier schreibt sie, um sich zu bewerben. Um ein Gespräch bittet sie erst am Ende."
         explanation: Der Anlass steht am Anfang. Sophie sagt in Zeile 3, dass sie sich bewirbt, und nennt die Stelle.
       - type: text
         text: |
@@ -135,7 +135,7 @@ blocks:
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "Die Bewerbung liegt dem CV bei, stellt dich vor und erklärt, warum du für die Stelle passt. Ihr **Bauplan** hat sechs Teile. Zuerst kommen die Anrede und der Anlass, dann der Hauptteil mit der Eignung und dem Bezug zur Stelle, zuletzt der Schluss und der Gruß. Für die **Eignung** nennst du eine Eigenschaft und ein Beispiel, bei einem Praktikum am besten aus Schule und Freizeit. Beim **Bezug zur Stelle** greifst du auf, was die Anzeige verlangt. Der Ton ist formal: keine Kurzformen, kein *Hi*. Jede Bewerbung gilt für genau eine Stelle."
+        text: "Der CV liegt der Bewerbung bei. Die Bewerbung stellt dich vor und erklärt, warum du für die Stelle passt. Ihr **Bauplan** hat sechs Teile. Über dem Brief steht wie in der E-Mail ein kurzer Betreff (*subject*). Dann kommen die Anrede und der Anlass, danach der Hauptteil mit der Eignung und dem Bezug zur Stelle, zuletzt der Schluss und der Gruß. Für die **Eignung** nennst du eine Eigenschaft und ein Beispiel, bei einem Praktikum am besten aus Schule und Freizeit. Beim **Bezug zur Stelle** greifst du auf, was die Anzeige verlangt. Der Ton ist formal: keine Kurzformen, kein *Hi*. Jede Bewerbung gilt für genau eine Stelle."
       - type: note
         title: Merke
         blocks:
@@ -171,7 +171,7 @@ blocks:
         id: bewerbung-verbessern
         languages: { source: de, target: en }
         form: { case: ok, punctuation: ok }
-        task: "Der Satz im Hinweis ist zu informell für eine Bewerbung. Schreibe ihn neu: ohne Umgangssprache und ohne Kurzformen."
+        task: "Der vorgegebene Satz ist zu informell für eine Bewerbung. Schreibe ihn neu: ohne Umgangssprache und ohne Kurzformen."
         hint: "Eine Bewerbung ist formal. Schreibe Kurzformen aus und nimm höfliche Wörter."
         items:
           - cue: "Hi Ms Reed,"
@@ -222,8 +222,8 @@ blocks:
             text: I am very interested in this opportunity.
           - audio: i-have-helped-at-several-school-events.mp3
             text: I have helped at several school events.
-          - audio: thank-you-for-considering-my-application.mp3
-            text: Thank you for considering my application.
+          - audio: i-hope-you-will-find-my-letter-helpful.mp3
+            text: I hope you will find my letter helpful.
       - type: open-task
         id: bewerbung-schreiben
         task: "Schreibe eine kurze Bewerbung um einen Ferienjob. Erfinde die Person und die Stelle: Helfer im Hillside Garden Centre, der Brief geht an Ms Reed. Nimm keine echten Daten."
@@ -232,7 +232,7 @@ blocks:
             source: /bewerben/bewerbung/#bauplan
           - text: Du nennst die Stelle und sagst, warum du schreibst.
             source: /bewerben/bewerbung/#bauplan
-          - text: Du nennst eine Eigenschaft mit zwei Beispielen und knüpfst an die Anzeige an.
+          - text: Du nennst eine Eigenschaft mit einem Beispiel und knüpfst an die Anzeige an.
             source: /bewerben/bewerbung/#bauplan
           - text: Du bittest am Schluss um ein Gespräch.
             source: /bewerben/bewerbung/#bauplan

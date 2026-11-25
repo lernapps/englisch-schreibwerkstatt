@@ -22,7 +22,7 @@ blocks:
             info: "Zuerst Thema und wichtigste Entwicklung, danach stützen ein paar Zahlen die Aussage."
           - text: Welche Farbe die Linie hat
             correct: false
-            info: "Die Farbe sagt nichts über die Daten. Sie ist nur Aussehen."
+            info: "Die Farbe sagt nichts über die Daten. Sie gehört nur zum Aussehen."
         explanation: Eine Beschreibung nennt die wichtigste Entwicklung und stützt sie mit wenigen Zahlen.
   - type: section
     id: lesestueck
@@ -52,7 +52,7 @@ blocks:
         text: |
           1. **How young people in Brindley spend their free time**
           2. A new survey by Brindley Youth Council asked 900 young people between 13 and 18 how they spend their free time. The survey ran in schools and youth clubs for two weeks, and every young person could tick as many activities as they liked.
-          3. Meeting friends came first: 68 per cent said that they meet friends at least once a week. Watching videos was close behind with 61 per cent. Sport followed with 44 per cent, and 36 per cent said that they play computer games. Reading came last, but still 22 per cent read for pleasure every week.
+          3. Meeting friends came first: 68 per cent said that they meet friends at least once a week. Watching videos was close behind with 61 per cent. Sport followed with 44 per cent, and 36 per cent said that they play computer games (gaming). Reading came last, but still 22 per cent read for pleasure every week.
           4. The youth council says that sport is twice as popular as reading and that fewer than one in four young people read for pleasure every week. In other words, a young person in Brindley is more likely to do sport than to open a book.
       - type: figure
         image: images/diagramm-freizeit.svg
@@ -127,12 +127,12 @@ blocks:
           - Der Unterschied: **rose by** …, **fell by** …
           - Der neue Wert: **rose to** …, **fell to** …, **rose from** … **to** …
           - Der höchste und der niedrigste Wert: **the highest**, **the lowest**
-          - Vergleich: **more than**, **fewer than**, **twice as many as**, **half as many as**
+          - Vergleich: **more than**, **fewer than**, **twice as many as**, **half as many as**, **twice as popular as**, **half as popular as**
       - type: note
         title: Merke
         blocks:
           - type: text
-            text: "**By** nennt den Unterschied, **to** den neuen Wert: The price rose by two pounds, to eight pounds. Nach **twice as many** steht **as**: There are twice as many cars as bikes."
+            text: "**By** nennt den Unterschied, **to** den neuen Wert: The price rose by two pounds, to eight pounds. Nach **twice as many** steht **as**: There are twice as many cars as bikes. Bei Adjektiven ist es genauso: Tea is half as popular as coffee."
   - type: section
     id: uebung
     title: Übung
@@ -153,7 +153,7 @@ blocks:
             info: "Drei Balken sind länger als der von Gaming, ein Balken ist kürzer."
           - text: Gaming is the most popular activity
             correct: false
-            info: "Der längste Balken gehört zu einer anderen Tätigkeit. Gaming liegt in der Mitte."
+            info: "Der längste Balken gehört zu einer anderen Tätigkeit. Gaming liegt im unteren Bereich, an vierter Stelle von fünf."
           - text: Gaming is as popular as sport
             correct: false
             info: "Der Balken von Sport ist länger als der von Gaming, die Werte sind nicht gleich."
@@ -261,8 +261,8 @@ blocks:
         items:
           - audio: the-bars-show-the-results-of-the-survey.mp3
             target: The bars show the results of the survey.
-          - audio: the-line-goes-up-slowly-and-then-very-quickly.mp3
-            target: The line goes up slowly and then very quickly.
+          - audio: the-line-drops-at-the-start-and-then-climbs-steadily.mp3
+            target: The line drops at the start and then climbs steadily.
           - audio: reading-is-much-less-popular-than-watching-videos.mp3
             target: Reading is much less popular than watching videos.
         explanation: Die Sätze beschreiben, was ein Diagramm zeigt.
@@ -293,7 +293,7 @@ blocks:
         points:
           - text: Die Einleitung sagt, was das Diagramm zeigt, mit Thema und Einheit.
             source: /zeitung-und-statistik/diagramm-beschreiben/#bauplan
-          - text: Du nennst die wichtigste Entwicklung oder den größten Unterschied, zum Beispiel den höchsten und den niedrigsten Wert.
+          - text: Du nennst den größten Unterschied oder die wichtigste Aussage, zum Beispiel den höchsten und den niedrigsten Wert.
             source: /zeitung-und-statistik/diagramm-beschreiben/#bauplan
           - text: Du nennst zwei oder drei Zahlen aus dem Diagramm und vergleichst, zum Beispiel mit more than oder fewer than.
             kind: form

@@ -14,7 +14,7 @@ blocks:
         id: umwandeln-start
         text: "Aus einer Geschichte über einen verlorenen Schlüssel soll ein Bericht werden. Was machst du als Erstes?"
         options:
-          - text: Ich suche die Fakten, also wer, wo, wann und was
+          - text: Ich suche die Fakten, also wer, was, wo, wann und warum
             correct: true
             info: "Die Fakten sind der Kern eines Berichts. Aus ihnen baust du die Einleitung."
           - text: Ich schreibe alle Sätze der Geschichte ab und ändere nichts
@@ -29,7 +29,7 @@ blocks:
     title: Lesestück · Eine Geschichte und ihr Bericht
     blocks:
       - type: text
-        text: "Lies den Chat, die Geschichte und den Bericht in vier Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
+        text: "Lies den Chat, die Geschichte und den Bericht in drei Abschnitten. Die Zahlen vor den Zeilen brauchst du bei den Aufgaben. Schwere Wörter stehen hier."
       - type: vocabulary
         caption: Randglossar
         languages: { source: de, target: en }
@@ -67,7 +67,7 @@ blocks:
             info: "Mango springt freiwillig auf das Dach und später in Amirs Arme. Sie fällt nicht."
           - text: Amir holt Mango vom Dach
             correct: true
-            info: "Amir klettert mit einem Stück Fisch auf die Leiter und trägt Mango nach unten (Zeile 7)."
+            info: "Amir klettert mit einem Stück Fisch auf die Leiter, und Mango springt in seine Arme (Zeile 7)."
           - text: Die Nachbarin holt Mango allein vom Dach
             correct: false
             info: "Die Nachbarin hat nur die Leiter (Zeile 6). Amir klettert hinauf."
@@ -76,15 +76,15 @@ blocks:
         text: |
           9. *Cat Rescue in Oak Road*
           10. A cat sat on a garage roof in Oak Road on Saturday morning. Amir, a student of Millbrook School, and a neighbour got the cat down.
-          11. The cat jumped out of a kitchen window and stayed on the roof. The neighbour said that she had a ladder. Amir climbed up with a piece of fish and carried the cat down.
-          12. At the end, the cat was safe. She is called Mango.
+          11. The cat jumped out of a kitchen window and stayed on the roof, because it could not get down by itself. The neighbour said that she had a ladder. Amir climbed up with a piece of fish and carried the cat down.
+          12. At the end, the cat was safe. She was called Mango.
       - type: single-choice
         id: umwandeln-zeile
         text: "In welcher Zeile des Berichts steht indirekte Rede, also etwas, das jemand sagte?"
         options:
           - text: Zeile 10
             correct: false
-            info: "Zeile 10 nennt, wer, wo und wann. Niemand spricht."
+            info: "Zeile 10 nennt, wer, was, wo und wann. Niemand spricht."
           - text: Zeile 11
             correct: true
             info: "In Zeile 11 steht said that she had a ladder. Das ist indirekte Rede."
@@ -94,7 +94,7 @@ blocks:
         explanation: Zeile 11 macht aus der wörtlichen Rede in Zeile 6 indirekte Rede.
       - type: text
         text: |
-          13. **Mr Hill:** Good work. The report tells who, where, when and what.
+          13. **Mr Hill:** Good work. The report tells who, what, where, when and why.
           14. **Amir:** I left out the speech and the feelings, and I changed one sentence with “said that”.
           15. **Sophie:** And the headline is short. It tells the news.
       - type: open-task
@@ -121,9 +121,9 @@ blocks:
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "Beim Umwandeln bleibt der Inhalt, die Form ändert sich. Der **Erzählstil** und die **Gefühle** fallen weg. **Wer, wo, wann, was** kommen in die Einleitung, der Ablauf kommt der Reihe nach in den Hauptteil, ein letzter Fakt in den Schluss. Die **headline** ist kurz."
+        text: "Beim Umwandeln bleibt der Inhalt, die Form ändert sich. Der **Erzählstil** und die **Gefühle** fallen weg. **Wer, was, wo, wann und warum** kommen in die Einleitung, der Ablauf kommt der Reihe nach in den Hauptteil, ein letzter Fakt in den Schluss. Die **headline** ist kurz."
       - type: text
-        text: "**Wörtliche Rede** streichst du oder du machst sie zu **indirekter Rede**: Das Verb rutscht eine Zeit zurück, aus *live* wird *lived*. *“I live here,” said Ellie* wird zu *Ellie said that she lived there.*"
+        text: "**Wörtliche Rede** streichst du oder du machst sie zu **indirekter Rede**: Wenn der Bericht in der Vergangenheit steht (*said that*), rutscht das Verb eine Zeit zurück: aus *live* wird *lived*. *“I live here,” said Ellie* wird zu *Ellie said that she lived there.*"
       - type: text
         text: "Eine Geschichte kann auch aus der Sicht einer Figur erzählt sein (Perspektivwechsel, [mehr auf der Karte](https://lernapps.net/apps/map/englisch/c/perspektive-wechseln/)): *I climbed up.* Im Bericht schreibst du von außen und nennst den Namen: *Amir climbed up.*"
       - type: note
@@ -178,7 +178,7 @@ blocks:
                 message: "Das Verb rutscht eine Zeit zurück: aus need wird needed."
               - answer: "Peter said that I needed help."
                 message: "Aus I wird in der indirekten Rede he, denn der Bericht spricht von außen."
-        explanation: Indirekte Rede steht im simple past, und die Person wechselt von ich zu er, sie oder sie (Mehrzahl).
+        explanation: Nach said that rutscht das Verb ins simple past, und die Person wechselt von ich zu er, sie oder sie (Mehrzahl).
       - type: ordering
         id: umwandeln-ordnen
         text: "Ein Bericht über ein Fußballspiel ist durcheinander. Bringe die Teile in die Reihenfolge des Bauplans."
@@ -224,7 +224,7 @@ blocks:
         points:
           - text: Der Bericht hat eine kurze headline.
             source: /fuer-die-schuelerzeitung/textsorte-umwandeln/#bauplan
-          - text: Die Einleitung sagt, wer, wo, wann und was.
+          - text: Die Einleitung sagt, wer, was, wo, wann und warum.
             source: /fuer-die-schuelerzeitung/textsorte-umwandeln/#bauplan
           - text: Die Verben stehen im simple past.
             kind: form

@@ -9,7 +9,7 @@ blocks:
     title: Worum es geht
     blocks:
       - type: text
-        text: "Sophie hat der Klasse die Schülerzeitung vorgestellt. Jetzt erzählt sie davon auf dem Schulblog. Ein **Blog** ist ein Online-Tagebuch, das alle lesen können. Unter dem Beitrag können Leser einen **Kommentar** schreiben. Danach kannst du einen Blogbeitrag oder einen Kommentar in einem Online-Forum schreiben."
+        text: "Sophie hat der Klasse die Schülerzeitung vorgestellt. Jetzt erzählt sie davon auf dem Schulblog. Ein **Blog** ist ein Online-Tagebuch, das alle lesen können. Unter dem Beitrag können Leser einen **Kommentar** schreiben. Danach kannst du einen Blogbeitrag oder einen Kommentar unter einem Beitrag schreiben."
       - type: single-choice
         id: blog-start
         text: "Du schreibst auf dem Schulblog über ein neues Hobby. Wie beginnst du den Beitrag?"
@@ -112,11 +112,11 @@ blocks:
           Ein Blogbeitrag hat vier Teile. Du schreibst in der Ich-Form und **informal**, denn die Leser sind Mitschüler.
 
           - **Titel:** kurz, er macht neugierig.
-          - **Einstieg:** ein bis zwei lockere Sätze. Du sprichst die Leser an und sagst, worum es geht.
+          - **Einstieg** (die Einleitung des Beitrags): ein bis zwei lockere Sätze. Du sprichst die Leser an und sagst, worum es geht.
           - **Hauptteil:** die Neuigkeiten in kurzen Absätzen (paragraphs).
           - **Aufruf:** Du fragst die Leser nach ihrer Meinung und bittest um einen Kommentar.
 
-          Ein **Kommentar** im Forum hat drei Teile: einen lockeren Gruß, einen Bezug auf den Beitrag und deine eigene Idee oder Frage.
+          Ein **Kommentar** unter dem Beitrag hat drei Teile: einen lockeren Gruß, einen Bezug auf den Beitrag und deine eigene Idee oder Frage.
       - type: note
         title: Merke
         blocks:
@@ -151,12 +151,12 @@ blocks:
             target: "I'm (so|very|really) happy about the new reading corner."
             mistakes:
               - answer: "I am very happy about the new reading corner."
-                message: "Das ist der Satz aus dem Entwurf. Es fehlt die Kurzform."
+                message: "Das ist der Satz aus dem Entwurf. Es fehlt die Kurzform: Schreibe I'm statt I am."
           - cue: "We do not have enough chairs yet."
             target: "We don't have enough chairs yet."
             mistakes:
               - answer: "We do not have enough chairs yet."
-                message: "Das ist der Satz aus dem Entwurf. Es fehlt die Kurzform."
+                message: "Das ist der Satz aus dem Entwurf. Es fehlt die Kurzform: Schreibe don't statt do not."
           - cue: "Dear readers, I would like to welcome you."
             target: "(Hi|Hello|Hey) (everyone|everybody|all|there)"
             mistakes:

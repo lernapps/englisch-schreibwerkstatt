@@ -2,7 +2,7 @@
 title: Berufe und Ferienjobs
 description: "Berufe benennen und über Ferienjob, Praktikum und Berufswünsche sprechen: mit der Anzeige einer Bücherei."
 competencies: [berufswelt]
-scope: Die Seite zeigt, wie man Berufe benennt und über Ferienjob, Praktikum und Berufswünsche spricht. Lesestück ist die Anzeige Summer Library Assistant der Millbrook Library (Zeilen 1 bis 7, Aufgaben Bücher einsortieren, Besucher am Schalter unterstützen, bei Lesegruppen helfen; vier Stunden am Tag, drei Tage pro Woche, in den Sommerferien), ein Gespräch von Sophie mit Mr Anderson über Ferienjob, Praktikum und work experience (Zeilen 8 bis 15) und Sophies Notizen (Zeilen 16 bis 20). Ein holiday job ist bezahlte Arbeit für einige Wochen, work experience ist in der Schule meist ein bis zwei Wochen und meist unbezahlt, ein internship dauert meist ein bis vier Monate und kann bezahlt oder unbezahlt sein; part-time heißt in Teilzeit, apply for a job heißt sich bewerben. Vor einem Beruf steht a oder an (a vet, an engineer); job ist zählbar, work nicht. Geübt werden Berufe den Tätigkeiten zuordnen, a und an einsetzen, Sätze mit Cue schreiben, Hören und Nachsprechen, eine Meinung zu Ferienjob und work experience und drei Sätze über einen Wunschberuf. Nicht hier sind Schulabschlüsse, E-Mail, Lebenslauf und Bewerbung.
+scope: Die Seite zeigt, wie man Berufe benennt und über Ferienjob, Praktikum und Berufswünsche spricht. Lesestück ist die Anzeige Summer Library Assistant der Millbrook Library (Zeilen 1 bis 7, Aufgaben Bücher einsortieren, Besucher am Schalter unterstützen, bei Lesegruppen helfen; vier Stunden am Tag, drei Tage pro Woche, in den Sommerferien), ein Gespräch von Sophie mit Mr Anderson über Ferienjob, Praktikum und work experience (Zeilen 8 bis 15) und Sophies Notizen (Zeilen 16 bis 20). Ein holiday job ist bezahlte Arbeit für einige Wochen, work experience ist in der Schule meist ein bis zwei Wochen und meist unbezahlt, ein internship dauert meist ein bis vier Monate und kann bezahlt oder unbezahlt sein; part-time heißt in Teilzeit, apply for a job heißt sich bewerben. Vor einem Beruf steht a oder an (a vet, an engineer); job ist zählbar, work nicht. Geübt werden Berufe den Tätigkeiten zuordnen, a und an einsetzen, Sätze mit Cue schreiben, Hören und Nachsprechen, eine Meinung zu Ferienjob und work experience und drei Sätze über einen Wunschberuf. Nicht hier sind Schulabschlüsse, E-Mail, Lebenslauf und Bewerbung. Im Gespräch sagt Sophie, dass sie für ein Schuljahr aus Deutschland hier ist; Mr Anderson rät ihr, zuerst über ihre Schule zu schreiben, dann Fragen zu stellen und sich zu bewerben.
 blocks:
   - type: section
     id: einstieg
@@ -77,12 +77,12 @@ blocks:
         text: |
           8. **Sophie:** Good morning, Mr Anderson. I saw your advert for the summer job.
           9. **Mr Anderson:** Good morning, Sophie. Yes, we need a helper for the holidays. Have you worked before?
-          10. **Sophie:** Not in a real job. But I write for the school newspaper, and I help in the school library. Is that useful?
+          10. **Sophie:** Not in a real job. I am here from Germany for one school year. But I write for the school newspaper, and I help in the school library. Is that useful?
           11. **Mr Anderson:** Very useful. That is a kind of work experience too.
           12. **Sophie:** Is a holiday job the same as an internship?
           13. **Mr Anderson:** Not quite. A holiday job is paid work for a few weeks. An internship is a time in a company to learn about a job, and it can be paid or unpaid. At school, work experience usually lasts one or two weeks, and most students are not paid.
           14. **Sophie:** I see. I would like to be a librarian one day. Or perhaps a journalist, or a translator.
-          15. **Mr Anderson:** Then this job is a good start. Send us an email with your questions, and then you can apply.
+          15. **Mr Anderson:** Then this job is a good start. Please write to me about your school in Germany first, because school systems are different. After that you can ask your questions and apply.
       - type: multiple-choice
         id: berufe-zeile
         text: "Welche Zeilen zeigen, dass Sophie schon etwas kann, das für den Job nützlich ist? Wähle alle passenden Zeilen."
@@ -103,7 +103,7 @@ blocks:
           17. Holiday job: paid, a few weeks, for example in the summer. I can do this one.
           18. Work experience: one or two weeks at school, not paid. I can ask my teacher about it.
           19. Job ideas: librarian, journalist, translator. I like books, words and stories. I want a job with words.
-          20. Next step: write an email with my questions. Then apply.
+          20. Next step: write to Mr Anderson about my school. Then ask my questions and apply.
       - type: open-task
         id: berufe-meinung
         task: "Was ist für Jugendliche besser, ein Ferienjob oder eine Woche work experience? Schreibe zwei bis drei Sätze auf Englisch."
@@ -133,7 +133,7 @@ blocks:
         title: Merke
         blocks:
           - type: text
-            text: "*A job, two jobs* aber *work* ohne a. Vor jedem Beruf steht a oder an. Du bewirbst dich *for* a job, nicht *to* a job."
+            text: "*A job, two jobs* aber *work* ohne a. Du bewirbst dich *for* a job, nicht *to* a job."
   - type: section
     id: uebung
     title: Übung
@@ -148,7 +148,7 @@ blocks:
           - { left: "He explains new words to a class.", right: a teacher }
         distractors:
           - a mechanic
-        hint: "Lies die Wörter in den Beschreibungen genau: books, reports, text, class."
+        hint: "Lies die Beschreibungen genau: Was tut die Person?"
         explanation: Jede Beschreibung nennt die Arbeit, die zum Beruf gehört.
       - type: language-task
         id: berufe-artikel
@@ -179,7 +179,7 @@ blocks:
         languages: { source: de, target: en }
         form: { case: ok, punctuation: ok }
         task: "Schreibe zu jedem Cue einen Satz über einen Ferienjob. Du darfst Wörter ergänzen."
-        hint: "Denke an a vor dem Job, an at/for und an das kleine to nach want."
+        hint: "Denke an a vor dem Job, an das kleine Wort nach look und apply und an das kleine to nach want."
         items:
           - cue: "I / look for / holiday job / summer"
             target: "I am looking for a holiday job (for|in) the summer."
@@ -227,8 +227,8 @@ blocks:
             text: I am interested in a career in medicine.
           - audio: i-would-like-to-work-with-animals-in-the-future.mp3
             text: I would like to work with animals in the future.
-          - audio: i-enjoy-working-with-other-people.mp3
-            text: I enjoy working with other people.
+          - audio: i-would-enjoy-a-job-with-lots-of-variety.mp3
+            text: I would enjoy a job with lots of variety.
       - type: open-task
         id: berufe-schreiben
         task: "Schreibe drei Sätze über einen Beruf, den du später gern ausüben möchtest. Schreibe auf Englisch."
@@ -249,4 +249,4 @@ blocks:
     title: Wie es weitergeht
     blocks:
       - type: text
-        text: "Du kennst jetzt die Wörter für Arbeit und Beruf. Auf der nächsten Seite geht es um Schulabschlüsse: Wie erklärst du in England, welche Schule du besucht hast?"
+        text: "Du kennst jetzt die Wörter für Arbeit und Beruf. Auf der nächsten Seite geht es um Schulabschlüsse: Mr Anderson möchte wissen, wie Sophies Schule in Deutschland aufgebaut ist. Wie erklärst du in England, welche Schule du besucht hast?"

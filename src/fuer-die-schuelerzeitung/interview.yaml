@@ -70,7 +70,7 @@ blocks:
       - type: text
         text: |
           4. *Interview: Mr Hill and the new newspaper*
-          5. **Q:** Why did you start a school newspaper?
+          5. **Q:** Hello, Mr Hill. Why did you start a school newspaper?
           6. **A:** I wanted every student to have a voice. A newspaper gives them a place for their ideas.
           7. **Q:** How do you choose the texts?
           8. **A:** The team reads them together. We look for clear texts about things that happened at school.
@@ -98,7 +98,7 @@ blocks:
         text: |
           15. **Amir:** Thank you very much for your time, Mr Hill.
           16. **Peter:** Every question starts with a question word. Nobody answered with only yes or no.
-          17. **Ellie:** And the interview starts with the topic and ends with a thank you.
+          17. **Ellie:** And the interview starts with the topic and a friendly greeting and ends with a thank you.
       - type: multiple-choice
         id: interview-bauplan
         text: "Welche Zeilen zeigen, wie das Interview gebaut ist? Wähle alle passenden Zeilen."
@@ -112,7 +112,7 @@ blocks:
           - text: Zeile 5 ist eine Frage, auf die man nur yes oder no sagt
             correct: false
             info: "Zeile 5 beginnt mit why. Mr Hill muss einen Grund nennen."
-        explanation: Das Interview hat ein Thema am Anfang, abwechselnd Q und A und am Ende einen Dank.
+        explanation: Das Interview hat ein Thema und einen Gruß am Anfang, abwechselnd Q und A und am Ende einen Dank.
       - type: open-task
         id: interview-meinung
         task: "Welche Frage aus dem Interview findest du am besten, und warum? Schreibe zwei bis drei Sätze auf Englisch."
@@ -132,14 +132,14 @@ blocks:
     blocks:
       - type: figure
         image: images/bauplan-interview.svg
-        alt: "Vier Kästen untereinander. Oben die Vorbereitung, dann der Einstieg, dann Frage und Antwort im Wechsel, unten der Dank."
+        alt: "Vier Kästen untereinander. Oben die Vorbereitung, dann die Einleitung, dann Frage und Antwort im Wechsel, unten der Dank."
         caption: "Der Bauplan eines Interviews von oben nach unten gelesen. Achte darauf, was vor dem Gespräch passiert."
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
-        text: "Ein **Interview** ist ein Gespräch, das du als Text aufschreibst. Vorher wählst du das Thema und sammelst fünf **offene Fragen**. Sie beginnen mit einem Fragewort (*what, why, how, when, where, who*) und lassen den Gast erzählen. Im Text steht zuerst der **Einstieg** mit Thema und Gast. Dann folgen **Q** (Frage) und **A** (Antwort) im Wechsel. Am Ende bedankst du dich."
+        text: "Ein **Interview** ist ein Gespräch, das du als Text aufschreibst. Vorher wählst du das Thema und sammelst fünf **offene Fragen**. Sie beginnen mit einem Fragewort (*what, why, how, when, where, who*) und lassen den Gast erzählen. Im Text steht zuerst die **Einleitung** mit Thema und Gast und einem freundlichen Gruß (*Hello, Mr Hill.*). Dann folgen **Q** (Frage) und **A** (Antwort) im Wechsel. Am Ende bedankst du dich."
       - type: text
-        text: "In einer Frage kommt nach dem Fragewort zuerst das Hilfsverb *do*, *does* oder *did*, dann die Person und dann das Verb: *When do you start?* Das Verb nach *did* bleibt in der Grundform."
+        text: "In einer Frage kommt nach dem Fragewort zuerst das Hilfsverb *do*, *does* oder *did*, dann die Person und dann das Verb: *When do you start?* Das Verb nach *did* bleibt in der Grundform. Mit *be* geht es ohne *do*: Das Verb steht direkt nach dem Fragewort, zum Beispiel *What is your job?*"
       - type: note
         title: Merke
         blocks:
@@ -156,12 +156,12 @@ blocks:
         task: "Baue jede Ja-Nein-Frage zu einer offenen Frage um. Das Fragewort im Cue sagt dir, wonach du fragst."
         hint: "Das Fragewort steht vorn. Danach folgen do, does oder did, die Person und das Verb."
         items:
-          - cue: "Do you play an instrument? (which)"
-            target: "(Which|What) instrument do you play?"
+          - cue: "Do you play an instrument? (what)"
+            target: "What instrument do you play?"
             mistakes:
-              - answer: "Which instrument you play?"
+              - answer: "What instrument you play?"
                 message: "Nach dem Fragewort fehlt do. Eine Frage braucht das Hilfsverb."
-              - answer: "Which instrument play you?"
+              - answer: "What instrument play you?"
                 message: "Die Person steht vor dem Verb: you play, nicht play you."
           - cue: "Did you go to the park? (when)"
             target: "When did you go to the park?"
@@ -244,7 +244,7 @@ blocks:
             source: /fuer-die-schuelerzeitung/interview/#bauplan
           - text: Jede Frage beginnt mit einem Fragewort und kann nicht mit yes oder no beantwortet werden.
             source: /fuer-die-schuelerzeitung/interview/#bauplan
-          - text: Nach dem Fragewort steht do, does oder did, dann die Person und das Verb.
+          - text: Nach dem Fragewort steht do, does oder did, dann die Person und das Verb. Mit is oder was steht das Verb direkt nach dem Fragewort.
             kind: form
           - text: Die Fragen passen zum Thema Hausmeister und Schule.
             source: /fuer-die-schuelerzeitung/interview/#bauplan

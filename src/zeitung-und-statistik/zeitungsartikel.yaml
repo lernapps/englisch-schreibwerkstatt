@@ -56,7 +56,7 @@ blocks:
         options:
           - text: Er will Geld sparen
             correct: false
-            info: "Von Sparen steht in Zeile 2 nichts. Die Sonntagsöffnung kostet sogar zusätzliches Geld."
+            info: "Von Sparen steht in Zeile 2 nichts. Die Sonntagsöffnung kostet sogar zusätzliches Geld (Zeile 4)."
           - text: Mehr Menschen sollen am Wochenende in die Bücherei kommen
             correct: true
             info: "Das steht am Ende von Zeile 2: Familien, Schüler und Berufstätige sollen die Bücherei am Wochenende nutzen."
@@ -192,7 +192,7 @@ blocks:
             target: "Two hundred people signed a petition last week."
             mistakes:
               - answer: "Two hundred people have signed a petition last week."
-                message: "Mit last week steht die einfache Vergangenheit: signed."
+                message: "Mit last week steht das simple past: signed."
         explanation: Der lead berichtet in ganzen Sätzen, was geschehen ist oder geschehen wird, und nennt dabei Wer, Was und Wann.
       - type: ordering
         id: zeitung-ordnen

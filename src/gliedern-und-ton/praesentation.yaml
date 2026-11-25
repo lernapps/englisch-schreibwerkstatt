@@ -117,10 +117,10 @@ blocks:
         licence: CC-BY-4.0
       - type: text
         text: |
-          Ein Vortrag hat denselben **Bauplan** wie ein Sachtext: Einleitung, Hauptteil, Schluss. Neu sind die **Redemittel**. Sie sagen deinen Zuhörern, wo du gerade bist.
+          Ein Vortrag hat denselben **Bauplan** wie ein Text: Einleitung, Hauptteil, Schluss. Neu sind die **Redemittel**. Sie sagen deinen Zuhörern, wo du gerade bist.
 
           - **Einleiten:** Du begrüßt die Zuhörer und nennst das Thema. Sophie macht das in Zeile 1.
-          - **Überleiten:** Du kündigst den nächsten Punkt an. Sophie macht das in den Zeilen 4 bis 6.
+          - **Überleiten:** Du kündigst den nächsten Punkt an. Sophie macht das in den Zeilen 3 bis 6: First, Now let me turn to, Next und Finally.
           - **Abschließen:** Du fasst zusammen und dankst. Sophie macht das in Zeile 7.
 
           Sprich im neutralen Ton: ganze Sätze, kein Slang. Sieh deine Zuhörer an, nicht deinen Zettel.
@@ -148,9 +148,9 @@ blocks:
         id: praes-zuordnen
         text: "Zu welchem Teil des Vortrags gehört das Redemittel?"
         pairs:
-          - { left: "I would like to talk about our library.", right: Einleiten }
-          - { left: "Let us look at the next point.", right: Überleiten }
-          - { left: "That brings me to the end.", right: Abschließen }
+          - { left: "Good morning, everybody.", right: Einleiten }
+          - { left: "Next, I will tell you when the newspaper will come out.", right: Überleiten }
+          - { left: "To sum up, we have a team, a plan and a date.", right: Abschließen }
         explanation: Wer ein Thema nennt, leitet ein. Wer den nächsten Punkt ankündigt, leitet über. Wer das Ende nennt, schließt ab.
       - type: language-task
         id: praes-luecke
@@ -219,7 +219,7 @@ blocks:
           Die App bewertet deinen Text nicht. Vergleiche ihn mit den Punkten.
       - type: open-task
         id: praes-schreiben
-        task: "Du stellst der Klasse deine eigene Klasse vor. Schreibe einen kurzen Vortrag mit drei bis fünf Sätzen: Begrüßung und Thema, ein Übergang, ein Punkt, Schluss mit Dank."
+        task: "Du stellst einer Gastklasse deine Klasse vor. Schreibe einen kurzen Vortrag mit drei bis fünf Sätzen: Begrüßung und Thema, ein Übergang, ein Punkt, Schluss mit Dank."
         points:
           - text: Die Einleitung begrüßt die Zuhörer und nennt das Thema.
             source: /gliedern-und-ton/praesentation/#bauplan
